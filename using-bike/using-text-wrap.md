@@ -10,7 +10,12 @@ Text wrap will also scale your document to fit large windows. For example if you
 
 * View > Text Wrap > Wrap to Column
 
+#### To set column width
+
+* View > Text Wrap > 64 Columns
+* View > Text Wrap > 72 Columns
+* View > Text Wrap > 80 Columns
+
 #### To disable text wrap
 
 * View > Text Wrap > Wrap to Window
-

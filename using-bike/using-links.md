@@ -10,6 +10,8 @@ Anytime there is a link in your document Bike will insert a "link button" after 
 
 * Click the link button to activate the link.
 * Or use Go > Open Link (`Command-Shift-O`) to activate links.
+* `Command-Click` a link to open it in a new tab.
+* `Command-Option-Click` a link to open it in a new window.
 * Click and edit the link text without fear that you'll activate the link.
 * To edit the URL associated with a link right click on the link text or link button and choose "Edit Link" from the popup menu.
 
@@ -42,7 +44,7 @@ bike://KOcw9x9N/ch#zf
 
 #### To create a Bike link:
 
-* Use Format > Add Link to Row… `Command-Option-K` to quickly select a row and insert a link to that row. &#x20;
+* Use Format > Add Link to Row… `Command-Option-K` to quickly select a row and insert a link to that row.
 * Use Edit > Copy > Row Link `Shift-Command-C` to copy a link to the selected row. If your view is focused when you copy then the link will also include the focused row id.
 
 Alternatively you can drag a row by its triangle handle and then hold down the `Control` key before releasing the mouse. A link to the dragged row will be inserted into your outline.

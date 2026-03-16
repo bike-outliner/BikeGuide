@@ -1,10 +1,6 @@
 # Getting Started
 
-{% embed url="https://vimeo.com/698171831" %}
-Bike: Structured Focused Writing
-{% endembed %}
-
-Bike is an outliner.&#x20;
+Bike is an outliner.
 
 Indent to create a structured outline. Fold this outline to hide details. Focus your outline to see specifics. Use your outline to track ideas, projects, writing, to-do lists.
 
@@ -27,6 +23,7 @@ Indent to create a structured outline. Fold this outline to hide details. Focus 
 * Click the focus button to the right of a row's text.
 * Click that same focus button to unfocus an already focused row.
 * Use Go > Focus Heading… `Command-P` to focus any heading in your outline.
+* Use the [sidebar](using-bike/using-sidebar.md) to navigate your outline's structure.
 
 **To format text in your outline**
 

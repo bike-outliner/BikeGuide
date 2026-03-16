@@ -2,11 +2,7 @@
 
 Bike supports bold, italic, code, highlight, and strikethrough text formatting. You can also insert links.
 
-Bike's rich text editing should be familiar, but also has a few innovations. My goal is to make Bike formatting precise like Markdown, but without all the syntax characters. Please watch this Rich Text Intro movie to see how the new features work:
-
-{% embed url="https://vimeo.com/758067700" %}
-Rich Text Intro
-{% endembed %}
+Bike's rich text editing should be familiar, but also has a few innovations. My goal is to make Bike formatting precise like Markdown, but without all the syntax characters.
 
 #### Link Buttons
 

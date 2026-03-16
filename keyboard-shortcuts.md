@@ -25,12 +25,12 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Outdent Row: `Shift-Tab` or `Control-Command-Left`
 * Move Row Up: `Control-Command-Up`
 * Move Row Down: `Control-Command-Down`
-* Delete Rows: `Escape` to outline mode, then `Delete` or `Command-Shift-K`
+* Delete Rows: `Escape` to block mode, then `Delete` or `Command-Shift-K`
 
-### Expand / Collapse&#x20;
+### Expand / Collapse
 
-* Expand Row: `Command-0` or `Escape` to outline mode, then `Right`
-* Collapse Row: `Command-9` or `Escape` to outline mode, then `Left`
+* Expand Row: `Command-0` or `Escape` to block mode, then `Right`
+* Collapse Row: `Command-9` or `Escape` to block mode, then `Left`
 * Expand Row Completely: `Control-Command-0`
 * Collapse Row Completely: `Control-Command-9`
 
@@ -39,14 +39,16 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Focus In: `Option-Command-Right`
 * Focus Out: `Option-Command-Left`
 * Focus Heading…: `Command-P`
+* Pin / Unpin: `Command-Y`
 
 ### View
 
-* Toggle Focus mode: `Option-Command-F`
+* Toggle Sidebar: `Command-S`
+* Toggle Writing Focus Mode: `Option-Command-F`
 * Toggle Typewriter Mode: `Option-Command-T`
 
 ### More
 
-* Toggle text/outline mode: `Escape`
+* Toggle text/block mode: `Escape`
 * Close Find Panel: `Escape`
 * Close Check Panel `Escape`

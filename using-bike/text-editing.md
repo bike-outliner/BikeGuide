@@ -8,20 +8,7 @@ Text editing should work as you expect. This is a nice feature of Bike. Often ou
 
 In addition to expected text editing commands Bike also adds a few new ones.
 
-Selection commands:
-
-* Selection > Select Word (`Control-W`)\
-  Expand selection to word boundaries.
-* Selection > Select Sentence (`Control-S`)\
-  Expand selection to sentence boundaries.
-* Selection > Select Paragraph (`Shift-Command-L`)\
-  Expand selection to paragraph boundaries.
-* Selection > Select Branch (`Shift-Command-B`)\
-  Expand selection to branch boundaries.
-* Selection > Expand Selection (`Option-Command-Up`)\
-  Expand the selection up through the different boundary levels.
-* Selection > Contract Selection (`Option-Command-Down`)\
-  Undo previous Expand Selection command.
+See [Using Selection](using-selection.md) for selection commands.
 
 Outline commands:
 
@@ -32,7 +19,8 @@ Outline commands:
 * Outline > Outdent (`Control-Command-Left`)
 * Outline > Move Up (`Control-Command-Up`)
 * Outline > Move Down (`Control-Command-Down`)
-* Outline > Move to Heading... (`Command-\`)&#x20;
+* Outline > Move to Heading... (`Command-\`)
+* Outline > Promote Children
 * Outline > Delete Rows (`Command-Shift-K`)
 
 {% hint style="info" %}
@@ -40,5 +28,5 @@ Indent and Outdent are important and used frequently. There are multiple keyboar
 {% endhint %}
 
 {% hint style="info" %}
-In text editing mode, these commands all work on individual rows, unconstrained by the outline structure. This is as you would expect in a text editor, but maybe different than you would expect if you are used to outliners. See [outline editing](outline-editing.md) for outline editing behavior.
+These outline commands always work on the outline structure, moving rows with their children. This is the same in both text mode and block mode. See [outline editing](outline-editing.md) for more details.
 {% endhint %}
