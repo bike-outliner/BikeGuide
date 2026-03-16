@@ -6,7 +6,7 @@ Currently, you can present a custom sheet over a window or add custom views to t
 
 #### App Context Summary
 
-* [DOM Context API](https://github.com/jessegrosjean/bike-extension-kit/tree/main/api/dom).
+* [DOM Context API](https://github.com/bike-outliner/extension-kit/tree/main/api/dom).
 * Entry points: `dom/*.ts(x)`
 * Code runs in web views embedded in Bike’s UI.
 * Web views are sandboxed and have no network access.

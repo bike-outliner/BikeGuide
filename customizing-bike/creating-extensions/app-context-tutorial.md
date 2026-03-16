@@ -4,7 +4,7 @@ Use the app context to add commands, keybindings, and work with system resources
 
 #### App Ccontext Summary
 
-* [App Context API](https://github.com/jessegrosjean/bike-extension-kit/tree/main/api/app).
+* [App Context API](https://github.com/bike-outliner/extension-kit/tree/main/api/app).
 * Entry point `app/main.ts`.
 * Code runs in Bike's native app environment.
 * Interact with outlines, clipboard, networking, etc.

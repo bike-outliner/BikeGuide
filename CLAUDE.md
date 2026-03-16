@@ -55,4 +55,4 @@ When Bike app features or APIs change, this documentation must be updated:
 - **Theme/style changes**: Update `customizing-bike/creating-themes.md`
 - **Keybinding changes** (`Bike/OutlineEditor/.../Keymaps/`): Update `customizing-bike/creating-keybindings.md`
 
-The extension API documentation in `customizing-bike/creating-extensions/` references the [bike-extension-kit](https://github.com/jessegrosjean/bike-extension-kit) repository for detailed API specifications.
+The extension API documentation in `customizing-bike/creating-extensions/` references the [bike-extension-kit](https://github.com/bike-outliner/extension-kit) repository for detailed API specifications.

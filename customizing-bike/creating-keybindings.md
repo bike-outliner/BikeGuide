@@ -42,4 +42,4 @@ Any single typed character (a–z, 0–9, punctuation) is also a valid key.
 
 ### Full API Reference
 
-For the complete keybindings API including programmatic access from extensions, see the [keybindings type definitions](https://github.com/jessegrosjean/bike-extension-kit/blob/main/api/app/keybindings.d.ts).
+For the complete keybindings API including programmatic access from extensions, see the [keybindings type definitions](https://github.com/bike-outliner/extension-kit/blob/main/api/app/keybindings.d.ts).

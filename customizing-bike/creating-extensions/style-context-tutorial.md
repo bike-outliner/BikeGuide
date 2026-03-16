@@ -4,7 +4,7 @@ Use the style context to create or modify Bike editor styles.
 
 #### Style Context Summary
 
-* [Style Context API](https://github.com/jessegrosjean/bike-extension-kit/tree/main/api/style).
+* [Style Context API](https://github.com/bike-outliner/extension-kit/tree/main/api/style).
 * Entry point `style/main.ts`
 * Fun custom styles, but complex!
 * Use to define custom stylesheets for Bike’s outline editor.
@@ -14,7 +14,7 @@ Use the style context to create or modify Bike editor styles.
 
 Styles are powerful, but also quite complex.
 
-This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default editor style that's [included](https://github.com/jessegrosjean/bike-extension-kit/tree/main/src/!bike.bkext/style) in the Bike extension kit.
+This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default editor style that's [included](https://github.com/bike-outliner/core-extensions/tree/main/src/!bike.bkext/style) in the Bike extension kit.
 
 Each editor style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or included from) existing editor styles.
 
@@ -312,6 +312,6 @@ Last, you can copy an existing style. Rename it, and make modifications.
 
 ## Next Steps
 
-* Study the extensions that come with the [Bike Extension Kit](https://github.com/jessegrosjean/bike-extension-kit).
-* Read through the API's documentation in the [Bike Extension Kit](https://github.com/jessegrosjean/bike-extension-kit).
+* Study the extensions that come with the [Bike Extension Kit](https://github.com/bike-outliner/extension-kit).
+* Read through the API's documentation in the [Bike Extension Kit](https://github.com/bike-outliner/extension-kit).
 * Ask questions in the [Support Forums](https://support.hogbaysoftware.com/c/bike/22).
