@@ -4,22 +4,22 @@ Extend and customize Bike with extensions. They introduce new commands, keybindi
 
 ### Installing Extensions
 
-Use the extension settings panel to browse and install extensions.
+Use the Extensions Explorer to browse and install extensions.
 
-#### To open the extension settings panel
+#### To open the Extensions Explorer
 
-* Bike > Settings > Extensions
+* Window > Extensions Explorer
 
-From the settings panel you can browse available extensions, install them, and manage which extensions are enabled.
+From the Extensions Explorer you can browse available extensions, install them, and manage which extensions are enabled.
 
 ### Managing Extensions
 
 #### To disable an extension
 
-* Open Bike > Settings > Extensions and uncheck the extension
+* Open Window > Extensions Explorer and uncheck the extension
 
 #### To remove an extension
 
-* Open Bike > Settings > Extensions and remove the extension
+* Open Window > Extensions Explorer and remove the extension
 
 See the [Creating Extensions](../customizing-bike/creating-extensions/) section to learn how to create your own extensions.
