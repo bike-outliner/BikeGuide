@@ -8,7 +8,7 @@ Use the Extensions Explorer to browse and install extensions.
 
 #### To open the Extensions Explorer
 
-* Window > Extensions Explorer
+* Bike > Extensions Explorer
 
 From the Extensions Explorer you can browse available extensions, install them, and manage which extensions are enabled.
 
@@ -16,10 +16,10 @@ From the Extensions Explorer you can browse available extensions, install them, 
 
 #### To disable an extension
 
-* Open Window > Extensions Explorer and uncheck the extension
+* Open Bike > Extensions Explorer and uncheck the extension
 
 #### To remove an extension
 
-* Open Window > Extensions Explorer and remove the extension
+* Open Bike > Extensions Explorer and remove the extension
 
 See the [Creating Extensions](../customizing-bike/creating-extensions/) section to learn how to create your own extensions.

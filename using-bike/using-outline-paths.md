@@ -28,12 +28,12 @@ Outline paths don't do much on their own, but they are an important building blo
 
 ### Outline Path Explorer
 
-Use the Window > Outline Path Explorer to play with outline paths and learn how they work.
+Use the Bike > Outline Path Explorer to play with outline paths and learn how they work.
 
 #### To open the Outline Path Explorer:
 
 1. Open the outline that you would like to query
-2. Open menu Window > Outline Path Explorer
+2. Open menu Bike > Outline Path Explorer
 
 Type an outline path in the top text field in the Outline Path Explorer window. The path results are displayed in a label to the trailing side of the search field. Matching rows are highlighted in green. Matching text runs are highlighted in darker green. Last you see a diagnostics text area that shows how your outline path was understood.
 
@@ -207,7 +207,7 @@ Each row in your outline has associated attributes that you can use in outline p
 
 Some attributes are built in to all rows, other attributes are optional and maybe be set by scripts or other features within Bike. For example when you click the checkmark of a task row it adds the @done attribute.
 
-Open Window > Outline Path Explorer and notice that the outline view showns each row's attributes. The built in attributes include:
+Open Bike > Outline Path Explorer and notice that the outline view showns each row's attributes. The built in attributes include:
 
 * `@id`
 * `@type`

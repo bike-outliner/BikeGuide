@@ -45,7 +45,7 @@ import { defineEditorStyle } from 'bike/style'
 let style = defineEditorStyle('tutorial', 'Tutorial')
 ```
 
-Save and then select your style: Bike > Window > Style Sheets > Tutorial.
+Save and then select your style: Bike > Style Sheets > Tutorial.
 
 Notice that your outline editor now shows no indentation or formatting. It also doesn't show selection, etc. Editor styles are responsible for defining the visual state of the outline editor, and this style has no rules.
 
@@ -118,7 +118,7 @@ style.layer('selection', (row, run, caret, viewport, include) => {
 
 Save, and now you should see selection marks when you select within a single paragraph. They will disappear when you select multiple paragraphs, but we'll fix that eventually.
 
-How would you even know about that `@view-selected-range` attribute we just used? This is where the outline path explorer is useful. Select Window > Outline Path Explorer. Then make sure that "Show View Attributes" is selected. Then make some selections.
+How would you even know about that `@view-selected-range` attribute we just used? This is where the outline path explorer is useful. Select Bike > Outline Path Explorer. Then make sure that "Show View Attributes" is selected. Then make some selections.
 
 You should see the `@view-selected-range` attribute show up in the outline path explorer when you select a range of text. You can also type `.@view-selected-range` into the outline path explorer’s search field, and then the selected range of text will be highlighted green.
 
