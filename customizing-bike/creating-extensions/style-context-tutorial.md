@@ -14,7 +14,7 @@ Use the style context to create or modify Bike editor styles.
 
 Styles are powerful, but also quite complex.
 
-This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default editor style that's [included](https://github.com/bike-outliner/core-extensions/tree/main/src/!bike.bkext/style) in the Bike extension kit.
+This tutorial will show you how styles work and what they can do. If you decide to create your own style, you should also see the default editor style that's [included](https://github.com/bike-outliner/core-extensions/tree/main/src/bike.bkext/style) in the Bike extension kit.
 
 Each editor style is an ordered list of rules, organized into layer groups. A rule is composed of a relative [outline path](../../using-bike/using-outline-paths.md) and a callback function. The callback function is passed the editor state and a style object to modify. The purpose of layer groups is to allow rules to be inserted into (or included from) existing editor styles.
 
