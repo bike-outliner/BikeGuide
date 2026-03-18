@@ -16,10 +16,10 @@ BikeGuide/
 │   ├── outline-editing.md
 │   ├── using-selection.md
 │   ├── using-scripts.md
-│   ├── using-extensions.md
 │   ├── using-outline-paths.md
 │   └── ...
 ├── customizing-bike/            # Developer/power-user documentation
+│   ├── installing-extensions.md # Installing and managing extensions
 │   ├── creating-keybindings.md  # Custom keyboard shortcuts
 │   ├── creating-scripts.md      # AppleScript examples
 │   ├── creating-themes.md       # Theme creation

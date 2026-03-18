@@ -1,6 +1,8 @@
 # Creating Keybindings
 
-Customize Bike's keybindings through the Keybindings Explorer.
+Customize Bike's keybindings through the Keybindings Explorer window.
+
+Custom keybindings are only active when the outline editor has focus. They are not processed when focus is in the sidebar, find panel, or other UI elements.
 
 ### Keybindings Explorer
 
@@ -9,6 +11,18 @@ Open **Bike > Keybindings Explorer** to view all commands and their current keyb
 Use the mode picker at the top to switch between **Text Mode** and **Block Mode**. Each mode has its own set of keybindings. Text mode is active when the selection is a caret or text range. Block mode is active when entire rows are selected. The same command can have different keybindings in each mode.
 
 Sort by the **Keybinding** column to see the order keybindings are processed in. When multiple commands share the same key sequence, the one with the lowest process order takes priority.
+
+### Command Sources
+
+Commands in the Keybindings Explorer come from several sources:
+
+- **Bike Menu** — Commands with a corresponding menu item in Bike's menu bar. Their default keybindings come from the menu item's key equivalent.
+
+- **Cocoa Keybindings** — Commands derived from macOS's text system keybinding dictionaries (`StandardKeyBinding.dict` and `~/Library/KeyBindings/DefaultKeyBinding.dict`). These provide standard text editing actions like `moveForward:`, `deleteWordForward:`, and `uppercaseWord:`. They appear as the lowest-priority fallback when no mode-specific or menu keybinding exists.
+
+- **Bike** — Commands added directly by Bike that don't correspond to a menu item.
+
+- **Extensions** — Commands added by installed Bike extensions.
 
 ### Key Sequence Format
 
