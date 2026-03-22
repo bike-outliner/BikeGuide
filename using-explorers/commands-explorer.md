@@ -1,12 +1,12 @@
-# Creating Keybindings
+# Commands Explorer
 
-Customize Bike's keybindings through the Keybindings Explorer window.
+Customize Bike's keybindings through the Commands Explorer window.
 
 Custom keybindings are only active when the outline editor has focus. They are not processed when focus is in the sidebar, find panel, or other UI elements.
 
-### Keybindings Explorer
+### Opening the Commands Explorer
 
-Open **Bike > Keybindings Explorer** to view all commands and their current keybindings. Select a command and press Return (or double-click the keybinding cell) to edit it. Press Delete to clear a custom keybinding. User-customized bindings are underlined.
+Open **Bike > Commands Explorer** to view all commands and their current keybindings. Select a command and press Return (or double-click the keybinding cell) to edit it. Press Delete to clear a custom keybinding. User-customized bindings are underlined.
 
 Use the mode picker at the top to switch between **Text Mode** and **Block Mode**. Each mode has its own set of keybindings. Text mode is active when the selection is a caret or text range. Block mode is active when entire rows are selected. The same command can have different keybindings in each mode.
 
@@ -14,7 +14,7 @@ Sort by the **Keybinding** column to see the order keybindings are processed in.
 
 ### Command Sources
 
-Commands in the Keybindings Explorer come from several sources:
+Commands in the Commands Explorer come from several sources:
 
 - **Bike Menu** — Commands with a corresponding menu item in Bike's menu bar. Their default keybindings come from the menu item's key equivalent.
 
