@@ -13,7 +13,7 @@ Use the app context to add commands and work with system resources like the clip
 
 ## Setup
 
-Tutorial assumes that you have [created](./) an extension and run the `npm run watch` command. Your extension should automatically build and install when you save changes.
+Tutorial assumes that you have [created](./) an extension and run the `npx bike-ext watch` command. Your extension should automatically build and install when you save changes.
 
 ## Create a new Command
 

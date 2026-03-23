@@ -1,6 +1,6 @@
 # Creating Extensions
 
-Extend and customize Bike with extensions. They introduce new commands, keybindings, views, styles, and more. Sensitive features are safeguarded by a permission system.
+Extend and customize Bike with extensions. They introduce new commands, views, styles, and more. Sensitive features are safeguarded by a permission system.
 
 This section of the user guide provides an overview and tutorial. For the most up-to-date and detailed API documentation, see [bike-extension-kit/api](https://github.com/bike-outliner/extension-kit/tree/main/api). If you prefer not to follow the step-by-step instructions, I’ve also created screencasts that cover the same information.
 
@@ -12,13 +12,13 @@ This section of the user guide provides an overview and tutorial. For the most u
 
 ## Install Bike Extension Kit
 
-Use the [Bike Extension Kit](https://github.com/bike-outliner/extension-kit) to create and modify extensions.
+Use the [Bike Extension Kit](https://github.com/bike-outliner/extension-kit) to create extensions.
 
-The extension kit requires setup. First, download the kit and follow the kit's README.md setup instructions. Once you've got it working, the development cycle is fast–save a change to the extension, then Bike reloads the extension immediately.
+Follow the instructions in the kit's README to get started. The kit includes tools for creating, building, installing, and testing extensions, as well as API documentation. It also includes tools to package, release, and submit your extension to Bike's Extension registry.
 
 ## Extension Development Overview
 
-You've set up the kit and built and installed some existing extensions. Now we'll take a closer look at what an individual extension looks like and what it can do.
+Let's take a closer look at what an individual extension looks like and what it can do.
 
 ```
 extension.bkext
@@ -65,8 +65,7 @@ Each subfolder corresponds to a different context where the extension code can r
 #### Tests
 
 * Test files live in the `tests/` subfolder with a `.test.ts` extension.
-* Tests have full access to the `bike` API and run against a real outline.
-* When you create an extension with an app context, a starter test file is scaffolded automatically.
+* Tests have full access to the app context API and run against a real outline.
 * Run tests with `npx bike-ext test` or from Bike's Logs Explorer.
 
 The app context and DOM context can communicate using the `postMessage` and `onmessage` methods. The common pattern involves performing work in the app context, such as querying the outline or making network requests, and then sending the results to the DOM context for display.
@@ -77,7 +76,7 @@ There is also a `theme` folder. Themes are configuration files used by the style
 
 You should have the Bike Extension Kit installed and open it in Visual Studio Code.
 
-We'll be creating a new extension now. Later, we'll add commands, custom views, and styles. The [finished extension](/tree/main/src/tutorial.bkext) is included with the extension kit. If you get stuck and something doesn't work, check the finished tutorial to see where my instructions went wrong.
+We'll be creating a new extension now. Later, we'll add commands, custom views, and styles. The [finished extension](https://github.com/bike-outliner/example-extensions/tree/main/src/tutorial.bkext) is included with the example extensions. If you get stuck and something doesn't work, check the finished tutorial to see where my instructions went wrong.
 
 ### Open Terminal
 
@@ -88,7 +87,7 @@ You need a terminal open to run extension kit commands. You can use the Terminal
 To create a new extension, run the command:
 
 ```
-npm run new
+npx bike-ext new
 ```
 
 The new extension is created for you in `src`. This command is just creating the folder structure; you could also create a new extension by creating the extension folder and files manually.
@@ -98,7 +97,7 @@ The new extension is created for you in `src`. This command is just creating the
 To build your extension, run the command:
 
 ```
-npm run build
+npx bike-ext build
 ```
 
 New extensions are set to install automatically on each build. If you have Bike running, your extension should now be loaded.
@@ -108,7 +107,7 @@ New extensions are set to install automatically on each build. If you have Bike 
 To build and install your extension when you save changes:
 
 ```
-npm run watch
+npx bike-ext watch
 ```
 
 A background process monitors your extension for changes. The rest of the tutorials assume you are in watch mode, so as soon as you save changes, the results are loaded into Bike.

@@ -33,7 +33,7 @@ Styles are not inherited from parents as they are in CSS. Instead, you should cr
 
 ## Setup
 
-Tutorial assumes that you have run the `npm run watch` command. Your extension should automatically build and install when you save changes.
+Tutorial assumes that you have run the `npx bike-ext watch` command. Your extension should automatically build and install when you save changes.
 
 ## Create Editor Style
 
@@ -232,13 +232,13 @@ In `style/main.ts`, position the checkbox in a better location:
 style.layer('row-formatting', (row, run, caret, viewport, include) => {
   row(`.@type = task`, (context, row) => {
     row.text.decoration('mark', (mark, layout) => {
-      let lineHeight = layout.firstLine.height;
-      mark.commandName = 'row:toggle-done'
-      mark.x = layout.leading.offset(-28 / 2);
-      mark.y = layout.firstLine.centerY;
-      mark.width = lineHeight;
-      mark.height = lineHeight;
-      mark.contents.gravity = 'center’;
+      let lineHeight = layout.firstLine.height
+      mark.commandName = ‘row:toggle-done’
+      mark.x = layout.leading.offset(-28 / 2)
+      mark.y = layout.firstLine.centerY
+      mark.width = lineHeight
+      mark.height = lineHeight
+      mark.contents.gravity = ‘center’
       mark.contents.image = Image.fromSymbol(
         new SymbolConfiguration('square')
           .withHierarchicalColor(Color.text())
@@ -280,7 +280,7 @@ Each rule callback takes two parameters—context and style object. So far, we'v
 For example, you might add these lines to the first match-all `.*` rule:
 
 ```typescript
-row.text.font = editor.theme.font
+row.text.font = context.theme.font
 row.text.lineHeightMultiple = context.theme.lineHeightMultiple
 ```
 
