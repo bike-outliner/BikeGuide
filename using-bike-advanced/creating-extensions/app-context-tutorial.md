@@ -1,8 +1,8 @@
 # App Context Tutorial
 
-Use the app context to add commands, keybindings, and work with system resources like the clipboard. When creating an extension, the app context is likely where you should start.
+Use the app context to add commands and work with system resources like the clipboard. When creating an extension, the app context is likely where you should start.
 
-#### App Ccontext Summary
+#### App Context Summary
 
 * [App Context API](https://github.com/bike-outliner/extension-kit/tree/main/api/app).
 * Entry point `app/main.ts`.
@@ -23,8 +23,8 @@ In `app/main.ts`, add a function to implement the command:
 
 ```typescript
 function archiveDoneCommand(context: CommandContext): boolean {
-  console.log("Archive Done!");
-  return true;
+  console.log('Archive Done!')
+  return true
 }
 ```
 
@@ -34,35 +34,15 @@ In `app/main.ts`, associate that function with a Bike Command:
 export async function activate(context: AppExtensionContext) {
   bike.commands.addCommands({
     commands: {
-      "extension-name:archive-done": archiveDoneCommand,
+      'tutorial:archive-done': archiveDoneCommand,
     },
-  });
+  })
 }
 ```
 
 Save, and your updated extension should build and then install into Bike.
 
-In Bike, open the Command Pallet (`Command-Shift-P`). You should see your command listed. Select the command, and you should see "Archive Done!" printed in Bike's Logs Explorer window.
-
-Next, let’s add a keybinding to activate this command.
-
-In `app/main.ts`:
-
-```typescript
-export async function activate(context: AppExtensionContext) {
-  ...
-  bike.keybindings.addKeybindings({
-    keymap: "block-mode",
-    keybindings: {
-      "a": "startup:archive-done",
-    },
-  });
-}
-```
-
-Save and then switch back to Bike.
-
-In Bike, enter block selection mode (press `Escape`), then type `a`. You should again see "Archive Done!" printed in the Logs Explorer window. Keybindings are used when Bike's outline editor has keyboard focus. They are not used when other UI elements have keyboard focus.
+In Bike, open the Command Pallet (`Command-Shift-P`). You should see your command listed. Select the command, and you should see "Archive Done!" printed in Bike’s Logs Explorer window.
 
 ### Implement Archive Done
 
@@ -75,7 +55,7 @@ To do this:
 In `app/main.ts`, add new Row import and updated archiveDoneCommand:
 
 ```typescript
-import { AppExtensionContext, Row } from 'bike/app'
+import { AppExtensionContext, Row, CommandContext } from 'bike/app'
 
 ...
 
@@ -85,21 +65,21 @@ function archiveDoneCommand(context: CommandContext): boolean {
 
   // Get the outline, done rows, and archive row
   let outline = editor.outline
-  let donePath = "//@data-done except //@id = archive//*"
+  let donePath = '//@done except //@id = archive//*'
   let doneRows = outline.query(donePath).value as Row[]
-  let archiveRow = (outline.query("//@id = archive").value as Row[])[0]
-  
+  let archiveRow = (outline.query('//@id = archive').value as Row[])[0]
+
   // Insert an Archive row if needed and move done rows
-  outline.transaction({ animate: "default" }, () => {
+  outline.transaction({ animate: 'default' }, () => {
     if (!archiveRow) {
-      archiveRow = outline.insertRows([{ 
-        id: "archive",
-        text: "Archive",
+      archiveRow = outline.insertRows([{
+        id: 'archive',
+        text: 'Archive',
       }], outline.root)[0]
     }
     outline.moveRows(doneRows, archiveRow)
   })
-    
+
   return true
 }
 ```

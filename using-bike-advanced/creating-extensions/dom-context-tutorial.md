@@ -4,7 +4,7 @@ Use the DOM context to display custom UI using HTML and DOM.
 
 Currently, you can present a custom sheet over a window or add custom views to the inspector bar. Note, your extension might not need to use the DOM context. Instead, you can use the app context to present alerts and add items to the sidebar, just not fully custom UI.
 
-#### App Context Summary
+#### DOM Context Summary
 
 * [DOM Context API](https://github.com/bike-outliner/extension-kit/tree/main/api/dom).
 * Entry points: `dom/*.ts(x)`
@@ -16,7 +16,7 @@ Currently, you can present a custom sheet over a window or add custom views to t
 
 ## Setup
 
-Turitoral assumes that you have completed the [App Context Tutorial](app-context-tutorial.md) and run the `npm run watch` command. Your extension should automatically build and install when you save changes.
+Tutorial assumes that you have completed the [App Context Tutorial](app-context-tutorial.md) and run the `npm run watch` command. Your extension should automatically build and install when you save changes.
 
 ## Create "Archive Done" Sheet
 
@@ -33,13 +33,15 @@ We will modify the "Archive Done" command to show a sheet with the number of arc
 Create the DOM script at `dom/archive-done-sheet.ts`:
 
 ```typescript
-import { DOMExtensionContext } from "bike/dom";
+import { DOMExtensionContext } from 'bike/dom'
 
 export async function activate(context: DOMExtensionContext) {
-    context.element.textContent = "Loading..."
-    context.onmessage = (message) => {
-        context.element.textContent = message
+  context.element.textContent = 'Loading...'
+  context.onmessage = (message) => {
+    if (message.type === 'archiveCount') {
+      context.element.textContent = String(message['count'])
     }
+  }
 }
 ```
 
@@ -50,12 +52,11 @@ function archiveDoneCommand(context: CommandContext): boolean {
   ...
 
   bike.frontmostWindow?.presentSheet('archive-done-sheet.js').then((handle) => {
-    handle.postMessage(doneRows.length);
+    handle.postMessage({ type: 'archiveCount', count: doneRows.length })
   })
-  
-  return true;
-}
 
+  return true
+}
 ```
 
 Save, your modified extension should rebuild and install.
