@@ -22,10 +22,7 @@ BikeGuide/
 │   ├── creating-scripts.md      # AppleScript examples
 │   ├── creating-themes.md       # Theme creation
 │   ├── creating-shortcuts.md    # macOS Shortcuts integration
-│   └── creating-extensions/     # Extension development tutorials
-│       ├── app-context-tutorial.md
-│       ├── dom-context-tutorial.md
-│       └── style-context-tutorial.md
+│   └── creating-extensions.md   # Links to extension-kit docs
 └── .gitbook/assets/             # Screenshots and images
 ```
 
@@ -48,9 +45,9 @@ Helpful tip here
 
 When Bike app features or APIs change, this documentation must be updated:
 
-- **Extension API changes** (`bike-extension-kit/api/`): Update `using-bike-advanced/creating-extensions/` tutorials
+- **Extension API changes** (`extension-kit/api/`): Update tutorials in `extension-kit/docs/`
 - **New app features** (`Bike/`): Update relevant `using-bike/` pages
 - **Theme/style changes**: Update `using-bike-advanced/creating-themes.md`
-- **Keybinding changes** (`Bike/OutlineEditor/.../Keymaps/`): Update `using-bike-advanced/creating-keybindings.md`
+- **Keybinding changes** (`Bike/OutlineEditor/.../Keymaps/`): Update keyboard shortcuts documentation
 
-The extension API documentation in `using-bike-advanced/creating-extensions/` references the [bike-extension-kit](https://github.com/bike-outliner/extension-kit) repository for detailed API specifications.
+Extension development documentation now lives in the [extension-kit](https://github.com/bike-outliner/extension-kit/tree/main/docs) repository. The BikeGuide page links there.

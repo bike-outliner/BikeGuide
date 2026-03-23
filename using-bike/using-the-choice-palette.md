@@ -1,8 +1,8 @@
 # Using the Choice Palette
 
-Quickly find and select items in long lists. Bike's choice palette is used by the "Go > Focus Heading" and "Format > Add Link to Row" commands. In the future I expect the choice palette to show up in other places too.
+Quickly find and select items in long lists. Bike's choice palette is used by the "Go > Focus Index Row" and "Format > Add Link to Row" commands. In the future I expect the choice palette to show up in other places too.
 
-<figure><img src="../.gitbook/assets/Focus Heading 1.png" alt=""><figcaption><p>Choice palette</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Focus Index Row 1.png" alt=""><figcaption><p>Choice palette</p></figcaption></figure>
 
 #### To make a choice
 
@@ -14,7 +14,7 @@ Quickly find and select items in long lists. Bike's choice palette is used by th
 
 Filtering is really fast, even in big outlines!
 
-<figure><img src="../.gitbook/assets/Focus Heading 2.png" alt=""><figcaption><p>Choice palette while filtering</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/Focus Index Row 2.png" alt=""><figcaption><p>Choice palette while filtering</p></figcaption></figure>
 
 * Start typing to filter the list
 * Filtering is "fuzzy". Matches must have all searched letters, but they can also have unmatched letters between.
@@ -30,7 +30,7 @@ When you filter your list the containing parent items of each match are always i
 
 ### Choice Palette Settings
 
-To the right of the filter field is the settings button. Each choice palette has its own settings. The settings for "Focus Heading" can be different then the settings for "Add Link to Row".
+To the right of the filter field is the settings button. Each choice palette has its own settings. The settings for "Focus Index Row" can be different then the settings for "Add Link to Row".
 
 #### Sort by match quality
 
@@ -56,7 +56,7 @@ When the above sorting option is selected you might see duplicate containing par
 
 Use the "outline path" setting to specify the rows that you'll see and filter.
 
-For example the "Focus Heading" commands shows "heading" type and top level rows by default. If you would like to see different rows when you "Focus Heading" you can do that by customizing the outline path.
+For example the "Focus Index Row" commands shows "heading" type and top level rows by default. If you would like to see different rows when you "Focus Index Row" you can do that by customizing the outline path.
 
 {% content-ref url="using-outline-paths.md" %}
 [using-outline-paths.md](using-outline-paths.md)

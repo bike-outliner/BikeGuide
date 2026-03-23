@@ -2,7 +2,7 @@
 
 Create scripts to automate Bike and integrate with other apps. If you just want to run a script that someone else has written please see the [Using Scripts](../using-bike/using-scripts.md) section.
 
-Also consider using Bike's more powerful [extension context](creating-extensions/).
+Also consider using Bike's more powerful [extension system](creating-extensions.md).
 
 ### Overview
 
@@ -12,7 +12,7 @@ Each row represents a row in your outline. Rows have a `name` for accessing the 
 
 You gain access to rows in a few ways:
 
-1. From properties of a document such as `root row`, `selected row`, `focused row`.
+1. From properties of a document such as `root row`, `selection row`, `focused row`.
 2. From the `rows` collection belonging to each document. This collection contains all rows in the document (except for the root). This collection is a good place to quickly find existing rows.
 3. From the `rows` collection belonging to each `row.` This collection contains only the rows that are directly contained by the row (the children). This collection is a good place for making new rows and to use as a target to moving existing rows into.
 
@@ -194,7 +194,7 @@ end getOrMake
 
 #### Run app context script
 
-You can call from ApplesScript into Bike's app [context extension](creating-extensions/app-context-tutorial.md) API using the `evaluate` command.
+You can call from AppleScript into Bike's app [extension](https://github.com/bike-outliner/extension-kit/blob/main/docs/app-context-tutorial.md) API using the `evaluate` command.
 
 Why might you want to do this? Generaly, Bike's app context extension API is faster and more powerful than the AppleScript API. This lets you jump from AppleScript land, to Bike extension land, and then back to AppleScript land again.
 

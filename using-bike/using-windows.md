@@ -8,11 +8,6 @@ From macOS User Guide:
 
 ### Bike Window Options
 
-#### To make a window float above all other windows
-
-* Check the menu item Window > Float on Top
-* Uncheck that same menu item to restore normal behavior.
-
 #### To open a single document in multiple windows
 
 ![Multiple Window Views](../.gitbook/assets/Windows.png)

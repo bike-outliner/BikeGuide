@@ -4,11 +4,11 @@ Bike's sidebar gives you quick access to navigate your outline's structure. It s
 
 #### To show the sidebar
 
-* View > Show Sidebar (`Command-S`)
+* View > Show Sidebar (`Control-Command-S`)
 
 #### To hide the sidebar
 
-* View > Hide Sidebar (`Command-S`)
+* View > Hide Sidebar (`Control-Command-S`)
 
 ### Home
 

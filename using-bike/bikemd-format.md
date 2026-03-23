@@ -29,6 +29,7 @@ Within that list structure, Bike uses standard markdown syntax to represent diff
 | Ordered list    | `1. `         | `1. First item`         |
 | Unordered list  | `+ `          | `+ Bullet item`         |
 | Code block      | `` - `...` `` | `` - `code content` ``  |
+| Note            | `- ` with `{type=note}` | `- A note {type=note}` |
 | Horizontal rule | `- ---`       | `- ---`                 |
 
 Most of these — headings, blockquotes, task checkboxes, ordered lists — are standard markdown or widely supported extensions (like GFM task lists).
@@ -43,6 +44,7 @@ Inline formatting uses standard markdown syntax:
 | _Italic_          | `*text*`      |
 | ~~Strikethrough~~ | `~~text~~`    |
 | `Code`            | `` `text` ``  |
+| Highlight         | `[text]{highlight}` |
 | Link              | `[text](url)` |
 
 ### Pandoc Attributes

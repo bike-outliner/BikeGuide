@@ -16,9 +16,9 @@ Bike has several ways to view big outlines:
 *   Outline > Collapse Row (`Command-9`)
 
     Collapse selected row.
-* Outline > Expand Row Completely (`Control-Command-0`)\
+* Outline > Expand Row Completely\
   Expand the selected row and all rows that it contains. See all contained rows.
-* Outline > Collapse Row Completely (`Control-Command-9`)\
+* Outline > Collapse Row Completely\
   Collapse the selected row and all rows that it contains. This is a nice way to clean up a view, when you next expand the row its contained rows will still be collapsed.
 *   Outline > Expand All (`Control-Command-0`)
 
@@ -39,6 +39,6 @@ Bike has several ways to view big outlines:
 
 * Go > Focus In (`Option-Command-Right`)
 * Go > Focus Out (`Option-Command-Left`)
-* Go > Focus Heading… (`Command-P`) to quickly select and focus a heading.
+* Go > Focus Index Row… (`Command-P`) to quickly select and focus a heading.
 
 In block mode (`Escape`) you can use arrow keys to expand and collapse rows.

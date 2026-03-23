@@ -14,4 +14,4 @@ To remove an extension:
 
 * Open Bike > Extensions Explorer and remove the extension
 
-See the [Creating Extensions](../using-bike-advanced/creating-extensions/) section to learn how to create your own extensions.
+See the [Creating Extensions](../using-bike-advanced/creating-extensions.md) section to learn how to create your own extensions.

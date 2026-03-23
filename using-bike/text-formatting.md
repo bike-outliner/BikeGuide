@@ -1,6 +1,6 @@
 # Text Formatting
 
-Bike supports bold, italic, code, highlight, and strikethrough text formatting. You can also insert links.
+Bike supports bold, italic, code, highlight, strikethrough, superscript, and subscript text formatting. You can also insert links.
 
 Bike's rich text editing should be familiar, but also has a few innovations. My goal is to make Bike formatting precise like Markdown, but without all the syntax characters.
 

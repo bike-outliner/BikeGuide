@@ -1,3 +1,3 @@
 # Using Bike: Advanced
 
-* [Creating Extensions](creating-extensions/)
+* [Creating Extensions](creating-extensions.md)

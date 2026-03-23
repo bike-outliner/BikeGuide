@@ -18,4 +18,4 @@ When multiple extensions add items to the inspector, each item gets its own tab.
 
 ### Extension Integration
 
-For more on creating extensions that use the inspector, see [DOM Context Tutorial](../using-bike-advanced/creating-extensions/dom-context-tutorial.md).
+For more on creating extensions that use the inspector, see the [DOM Context Tutorial](https://github.com/bike-outliner/extension-kit/blob/main/docs/dom-context-tutorial.md).

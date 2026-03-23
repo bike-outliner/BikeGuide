@@ -13,6 +13,8 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Code: `` Shift-Command-` ``
 * Highlight: `Shift-Command-H`
 * Strikethrough: `Shift-Command--`
+* Superscript: `Shift-Control-Command-=`
+* Subscript: `Control-Command--`
 * Add Link: `Command-K`
 * Add Row Link: `Command-Option-K`
 * Edit Formatting: `Command-E`
@@ -29,23 +31,24 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 
 ### Expand / Collapse
 
-* Expand Row: `Command-0` or `Escape` to block mode, then `Right`
-* Collapse Row: `Command-9` or `Escape` to block mode, then `Left`
-* Expand Row Completely: `Control-Command-0`
-* Collapse Row Completely: `Control-Command-9`
+* Expand Row: `Command-0`
+* Collapse Row: `Command-9`
+* Expand All: `Control-Command-0`
+* Collapse All: `Control-Command-9`
 
 ### Go
 
 * Focus In: `Option-Command-Right`
 * Focus Out: `Option-Command-Left`
-* Focus Heading…: `Command-P`
+* Focus Index Row…: `Command-P`
 * Pin / Unpin: `Command-Y`
 
 ### View
 
-* Toggle Sidebar: `Command-S`
+* Toggle Sidebar: `Control-Command-S`
 * Toggle Writing Focus Mode: `Option-Command-F`
 * Toggle Typewriter Mode: `Option-Command-T`
+* Toggle Status Bar: `Command-/`
 
 ### More
 

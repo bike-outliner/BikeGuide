@@ -240,6 +240,9 @@ Use relation modifiers in brackets after the relation to change how it is evalua
 *   `n` Numeric compare
 
     Values are converted to numbers before comparing. This means `"01"` will equal `"1.0"`, which is not true when doing the default string compare.
+*   `d` Date compare
+
+    Values are converted to dates before comparing.
 
 </details>
 
@@ -304,12 +307,12 @@ Outline path functions serve a variety of purposes:
 
 These functions provide easy and efficient access to outline structure.
 
-In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `depth()` you could use `count(.ancestor::*)`, but you should expect `depth()` to have better performance.&#x20;
+In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `level()` you could use `count(.ancestor::*)`, but you should expect `level()` to have better performance.&#x20;
 
 *   parent() -> boolean
 
     True if has children
-*   depth() -> number
+*   level() -> number
 
     Number of steps to root
 *   leaf() -> boolean
@@ -360,7 +363,7 @@ These functions all provide access to editor state. They are only available when
 *   focused-branch() -> boolean
 
     True if row is in the focused branch
-*   focused-depth() -> number
+*   focused-level() -> number
 
     Number of steps to focused root, or max value if not focused
 *   expanded() -> boolean
