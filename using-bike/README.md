@@ -1,6 +1,6 @@
 # Using Bike 2
 
 * [Using Selection](using-selection.md)
-* [Installing Extensions](../using-bike-advanced/installing-extensions.md)
+* [Extensions](../using-explorers/extensions-explorer.md)
 * [Using Outline Paths](using-outline-paths.md)
 * [Using Outline Filtering  ](using-outline-filtering.md)

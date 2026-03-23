@@ -34,7 +34,6 @@
   - [Creating Scripts](using-bike-advanced/creating-scripts.md)
   - [Creating Themes](using-bike-advanced/creating-themes.md)
   - [Creating Shortcuts](using-bike-advanced/creating-shortcuts.md)
-  - [Installing Extensions](using-bike-advanced/installing-extensions.md)
   - [Creating Extensions](using-bike-advanced/creating-extensions.md)
 - [Using Explorers](using-explorers/README.md)
   - [Commands Explorer](using-explorers/commands-explorer.md)
