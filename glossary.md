@@ -4,7 +4,7 @@ When describing an outline it's common to use the following terms:
 
 * _Branch_: A branch consists of an row together with all the rows that it contains. The row's children, the children's children, etc.
 * _Child_: The children of an row are the rows that it directly contains
-* _Extension_: A plugin that adds new features to Bike. See [Extensions Explorer](using-explorers/extensions-explorer.md).
+* _Extension_: A plugin that adds new features to Bike. See [Using Extensions](using-bike/using-extensions.md).
 * _Handle_: The triangle to the left of each row
 * _Outline Path_: A query syntax for filtering and selecting rows in your outline. See [Using Outline Paths](using-bike/using-outline-paths.md).
 * _Parent_: The parent of a row is the row that directly contains it
