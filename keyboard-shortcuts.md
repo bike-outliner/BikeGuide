@@ -10,7 +10,7 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 
 * Bold: `Command-B`
 * Italic: `Command-I`
-* Code: `` Shift-Command-` ``
+* Code: `Shift-Command-C`
 * Highlight: `Shift-Command-H`
 * Strikethrough: `Shift-Command--`
 * Superscript: `Shift-Control-Command-=`
