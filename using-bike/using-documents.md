@@ -16,11 +16,11 @@ In Bike your data is fully within your control, stored in normal document files 
 
 ### Format Options
 
-![Format Options](../.gitbook/assets/formats.png)
+![Format Options](/assets/formats.png)
 
 `.bike`: This is Bike's native format and the one I would recommend using. It supports all Bike features. It is also an HTML document – you can view Bike files in your web browser.
 
-`.bikemd`: [Bike Markdown](bikemd-format.md) is a text-based format that uses markdown syntax to represent your outline. It supports all Bike features including row types, text formatting, and hierarchy. Because it's plain text, it works well with version control and other text-based tools.
+`.md`: [Bike Markdown](bike-markdown-format.md) is a text-based format that uses markdown syntax to represent your outline. It supports all Bike features including row types, text formatting, and hierarchy. Because it's plain text, it works well with version control and other text-based tools. Bike Markdown is a subset of standard markdown — when you open a `.md` file that uses markdown Bike can't represent, Bike will warn you before opening it.
 
 `.opml`: This is a standard format for saving outlines. Use `.opml` if you wish to edit your outline with Bike and another [OPML compatible application](../bike-compatible-apps.md).
 
@@ -34,9 +34,9 @@ This setting is for when you open a document while Bike is running. When Bike re
 
 ### File Extensions
 
-When you save a Bike document the filename will default to a `.bike`, `.bikemd`, `.opml`, or `.txt` file extension. This is usually what you want.
+When you save a Bike document the filename will default to a `.bike`, `.md`, `.opml`, or `.txt` file extension. This is usually what you want.
 
-If it's not what you want you have the option to use your own file extension. For example you may wish to save "Bike" files with a `.html` file extension, or you might want to save "Plain Text" documents with a `.md` file extension.
+If it's not what you want you have the option to use your own file extension. For example you may wish to save "Bike" files with a `.html` file extension, or you might want to save "Plain Text" documents with a `.text` file extension.
 
 #### To use a custom file extension
 

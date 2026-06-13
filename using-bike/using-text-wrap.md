@@ -1,6 +1,6 @@
 # Using Text Wrap
 
-<figure><img src="../.gitbook/assets/TextWrap.png" alt=""><figcaption><p>Text wrap adds margins</p></figcaption></figure>
+![Text wrap adds margins](/assets/TextWrap.png)
 
 Text wrap limits the number of characters that your outline uses until the text wraps to the next line. When text is wrapping margins are added to keep the text centered in the window. You can see text wrap in effect in the above screenshot.
 

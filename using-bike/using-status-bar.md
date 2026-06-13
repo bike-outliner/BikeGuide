@@ -1,16 +1,16 @@
 # Using Status Bar
 
-<figure><img src="../.gitbook/assets/StatusBar.png" alt=""><figcaption><p>Status Bar</p></figcaption></figure>
+![Status Bar](/assets/StatusBar.png)
 
 Bike's optional status bar, at the bottom of the window, gives you quick access to options, statistics, row type picker, and editor settings.
 
 #### To show the status bar
 
-* View > Show Status Bar (`Command-/`)
+* View > Show Status Bar (<kbd>Command-/</kbd>)
 
 #### To hide the status bar
 
-* View > Hide Status Bar (`Command-/`)
+* View > Hide Status Bar (<kbd>Command-/</kbd>)
 
 ### Options
 

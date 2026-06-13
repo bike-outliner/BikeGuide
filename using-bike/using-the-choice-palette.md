@@ -2,7 +2,7 @@
 
 Quickly find and select items in long lists. Bike's choice palette is used by the "Go > Focus Index Row" and "Format > Add Link to Row" commands. In the future I expect the choice palette to show up in other places too.
 
-<figure><img src="../.gitbook/assets/Focus Index Row 1.png" alt=""><figcaption><p>Choice palette</p></figcaption></figure>
+![Choice palette](/assets/Focus%20Index%20Row%201.png)
 
 #### To make a choice
 
@@ -14,7 +14,7 @@ Quickly find and select items in long lists. Bike's choice palette is used by th
 
 Filtering is really fast, even in big outlines!
 
-<figure><img src="../.gitbook/assets/Focus Index Row 2.png" alt=""><figcaption><p>Choice palette while filtering</p></figcaption></figure>
+![Choice palette while filtering](/assets/Focus%20Index%20Row%202.png)
 
 * Start typing to filter the list
 * Filtering is "fuzzy". Matches must have all searched letters, but they can also have unmatched letters between.
@@ -40,7 +40,7 @@ When checked the best matches are shown first. Otherwise the outline is only fil
 
 When the above sorting option is selected you might see duplicate containing parent items in your filter results.
 
-<figure><img src="../.gitbook/assets/Filter Options.png" alt=""><figcaption><p>No filter, sorted matches, sorted matches + remove duplicates</p></figcaption></figure>
+![No filter, sorted matches, sorted matches + remove duplicates](/assets/Filter%20Options.png)
 
 1. Unfiltered list
 2. Filtered list, matches sorted.
@@ -58,6 +58,4 @@ Use the "outline path" setting to specify the rows that you'll see and filter.
 
 For example the "Focus Index Row" commands shows "heading" type and top level rows by default. If you would like to see different rows when you "Focus Index Row" you can do that by customizing the outline path.
 
-{% content-ref url="using-outline-paths.md" %}
-[using-outline-paths.md](using-outline-paths.md)
-{% endcontent-ref %}
+[Using Outline Paths](using-outline-paths.md)

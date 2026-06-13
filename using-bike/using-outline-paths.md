@@ -178,7 +178,7 @@ Each step can include a row type test at the start.
 * `ordered`
 * `task`
 * `hr`
-* &#x20;`*` Matches any type
+* `*` Matches any type
 
 </details>
 
@@ -307,7 +307,7 @@ Outline path functions serve a variety of purposes:
 
 These functions provide easy and efficient access to outline structure.
 
-In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `level()` you could use `count(.ancestor::*)`, but you should expect `level()` to have better performance.&#x20;
+In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `level()` you could use `count(.ancestor::*)`, but you should expect `level()` to have better performance.
 
 *   parent() -> boolean
 

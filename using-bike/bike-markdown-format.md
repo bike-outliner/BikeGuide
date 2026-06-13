@@ -1,6 +1,6 @@
 # Bike Markdown Format
 
-Bike Markdown (`.bikemd`) is Bike's text-based file format. It's a subset of standard markdown — open a `.bikemd` file in any markdown viewer and it will render reasonably well.
+Bike Markdown is Bike's text-based file format, saved with a `.md` extension. It's a subset of standard markdown — open a `.md` file in any markdown viewer and it will render reasonably well. Because it's a subset, Bike will warn you when you open a `.md` file that uses markdown features Bike can't represent.
 
 ### Markdown Subset
 
@@ -93,7 +93,7 @@ Files can optionally begin with a JSON metadata block between `---` delimiters:
 
 ```
 ---
-{"bikemd":true,"root-id":"c43J5daN"}
+{"root-id":"c43J5daN"}
 ---
 
 - First row
@@ -119,7 +119,7 @@ Here's a complete example showing several features together:
 
 ```
 ---
-{"bikemd":true,"root-id":"root123"}
+{"root-id":"root123"}
 ---
 
 - # Project Notes {#notes}

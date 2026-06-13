@@ -25,7 +25,7 @@ Use Bike's scripting dictionary to learn what parts of Bike are scriptable.
 * Drag and drop Bike onto Script Editor's application icon.
 * Or from Script Editor use File > Open Dictionary and choose Bike's dictionary.
 
-![](<../.gitbook/assets/Screen Shot 2022-05-05 at 12.20.00 PM.png>)
+![Scripting Dictionary](/assets/Screen%20Shot%202022-05-05%20at%2012.20.00%20PM.png)
 
 ### Getting Started
 
@@ -45,7 +45,7 @@ You'll get the most out of these scripts by using [Script Debugger](https://late
 
 This is a nonsense script that demonstrates many of Bike's scripting abilities. It's a good place to learn how basic things are done like making and moving rows.
 
-```
+```applescript
 tell application "Bike"
   
   -- This script makes a new demo document so that it won't mess up any documents that you have open.
@@ -134,7 +134,7 @@ end tell
 
 This script resets your view state to "Home"
 
-```
+```applescript
 tell front document of application "Bike"
   set focused row to root row
   if exists first row then
@@ -147,7 +147,7 @@ end tell
 
 This script saves the current selected row. Collapses all rows. Then restores your selection, which also expands any rows needed to show the selection. Use it to cleanup when you have to many rows expanded, but you still want to keep working where you are.
 
-```
+```applescript
 tell front document of application "Bike"
   set saved to selection row
   collapse root row with all
@@ -159,7 +159,7 @@ end tell
 
 This script create a simple calendar structure in your outline and adds a new line to "today" where you can start taking notes. It's interesting because it uses row `id`'s to track rows. Once the calendar is created you can move it to any place in your outline and the script will keep working.
 
-```
+```applescript
 set yearName to do shell script "date +'%Y'"
 set yearId to do shell script "date +'%Y'" & "/00/00"
 set monthName to do shell script "date +'%B, %Y'"
@@ -198,7 +198,9 @@ You can call from AppleScript into Bike's app [extension](https://github.com/bik
 
 Why might you want to do this? Generaly, Bike's app context extension API is faster and more powerful than the AppleScript API. This lets you jump from AppleScript land, to Bike extension land, and then back to AppleScript land again.
 
-Note: The script that you pass should be plain JavaScript, not the TypeScript code used in most of the extension API documentation.
+::: tip
+The script that you pass should be plain JavaScript, not the TypeScript code used in most of the extension API documentation.
+:::
 
 Here's a explanation of each step in the process:
 
@@ -209,7 +211,11 @@ Here's a explanation of each step in the process:
 
 **Examples:**
 
-```Applescript
+Apple's Script Editor accepts either AppleScript or JavaScript (JXA) syntax:
+
+::: code-group
+
+```applescript [AppleScript]
 tell application "Bike"
 	evaluate script "bike.version"
 end tell
@@ -219,11 +225,11 @@ tell application "Bike"
 end tell
 ```
 
-Apple's script editor also allows Javascript syntax, which looks like this:
-
-```Javascript
+```javascript [JXA]
 Application("Bike").evaluate({ script: "bike.version" })
 
 Application("Bike").evaluate({ input: "hello", script: "(input) => { return input + \" world\" }" })
 ```
+
+:::
 

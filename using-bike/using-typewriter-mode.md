@@ -4,7 +4,7 @@ Typewriter Mode positions your text caret vertically in the window as you type. 
 
 #### To enable typewriter mode
 
-* View > Typewriter Mode > Enable Typewriter (`Option-Command-T`)
+* View > Typewriter Mode > Enable Typewriter (<kbd>Option-Command-T</kbd>)
 * Alternatively you can use the "Options" menu on the left side of the status bar
 
 #### To configure typewriter mode position
@@ -20,5 +20,5 @@ Choose where the text caret is positioned in the window:
 
 #### To disable typewriter mode
 
-* View > Typewriter Mode > Disable Typewriter (`Option-Command-T`)
+* View > Typewriter Mode > Disable Typewriter (<kbd>Option-Command-T</kbd>)
 * Alternatively you can use the "Options" menu on the left side of the status bar

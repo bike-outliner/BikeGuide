@@ -4,11 +4,11 @@ Bike's sidebar gives you quick access to navigate your outline's structure. It s
 
 #### To show the sidebar
 
-* View > Show Sidebar (`Control-Command-S`)
+* View > Show Sidebar (<kbd>Control-Command-S</kbd>)
 
 #### To hide the sidebar
 
-* View > Hide Sidebar (`Control-Command-S`)
+* View > Hide Sidebar (<kbd>Control-Command-S</kbd>)
 
 ### Home
 
@@ -20,11 +20,11 @@ Pin important rows to the sidebar for quick access. Pinned items stay visible re
 
 #### To pin a row
 
-* Select the row and use Go > Pin (`Command-Y`)
+* Select the row and use Go > Pin (<kbd>Command-Y</kbd>)
 
 #### To unpin a row
 
-* Select the pinned row and use Go > Unpin (`Command-Y`)
+* Select the pinned row and use Go > Unpin (<kbd>Command-Y</kbd>)
 
 ### Index
 

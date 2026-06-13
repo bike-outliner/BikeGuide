@@ -1,6 +1,6 @@
 # Using Links
 
-![Links](../.gitbook/assets/Links.png)
+![Links](/assets/Links.png)
 
 Bike allows you to insert links into your outline.
 
@@ -9,9 +9,9 @@ Bike also automatically detects URLs that you type.
 Anytime there is a link in your document Bike will insert a "link button" after that link.
 
 * Click the link button to activate the link.
-* Or use Go > Open Link (`Command-Shift-O`) to activate links.
-* `Command-Click` a link to open it in a new tab.
-* `Command-Option-Click` a link to open it in a new window.
+* Or use Go > Open Link (<kbd>Command-Shift-O</kbd>) to activate links.
+* <kbd>Command-Click</kbd> a link to open it in a new tab.
+* <kbd>Command-Option-Click</kbd> a link to open it in a new window.
 * Click and edit the link text without fear that you'll activate the link.
 * To edit the URL associated with a link right click on the link text or link button and choose "Edit Link" from the popup menu.
 
@@ -21,8 +21,8 @@ More information on formatting and activating links can be found in the [text-fo
 
 Bike includes its own link type that allows you to link directly to a row in your outline. When activating a Bike link you can:
 
-* `Command-Click` to open a Bike link in a new tab
-* `Command-Option-Click` to open a Bike link in a new window
+* <kbd>Command-Click</kbd> to open a Bike link in a new tab
+* <kbd>Command-Option-Click</kbd> to open a Bike link in a new window
 
 Bike links are normal URLs. You can paste them into other apps and they'll continue to work as long as Bike is installed on your computer. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked row.
 
@@ -44,10 +44,10 @@ bike://KOcw9x9N/ch#zf
 
 #### To create a Bike link:
 
-* Use Format > Add Link to Row… `Command-Option-K` to quickly select a row and insert a link to that row.
-* Use Edit > Copy > Row Link `Shift-Command-C` to copy a link to the selected row. If your view is focused when you copy then the link will also include the focused row id.
+* Use Format > Add Link to Row… <kbd>Command-Option-K</kbd> to quickly select a row and insert a link to that row.
+* Use Edit > Copy > Row Link <kbd>Shift-Command-C</kbd> to copy a link to the selected row. If your view is focused when you copy then the link will also include the focused row id.
 
-Alternatively you can drag a row by its triangle handle and then hold down the `Control` key before releasing the mouse. A link to the dragged row will be inserted into your outline.
+Alternatively you can drag a row by its triangle handle and then hold down the <kbd>Control</kbd> key before releasing the mouse. A link to the dragged row will be inserted into your outline.
 
 ### Bike Path Row Links
 

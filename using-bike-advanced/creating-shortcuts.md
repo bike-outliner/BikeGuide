@@ -2,7 +2,7 @@
 
 Create shortcuts to automate Bike and integrate it with other apps. If you are just interested in runnings shortcuts that someone else has written please see the [Using Shortcuts](../using-bike/using-shortcuts.md) section.
 
-<figure><img src="../.gitbook/assets/shortcut_automation.png" alt=""><figcaption><p>Creating a Bike Shortcut</p></figcaption></figure>
+![Creating a Bike Shortcut](/assets/shortcut_automation.png)
 
 ### Overview
 
@@ -18,9 +18,9 @@ Shortcuts are a general purpose automation technology. I'm not the best one to t
 
 To create shortcuts for Bike you'll need to learn how to use Bike's actions. There are a few ways you can go about this.
 
-{% hint style="info" %}
+::: info
 No matter the approach, when experimenting with a shortcut that uses Bike, it's best to first open Bike and open a new outline where you can see the results of your experiments.
-{% endhint %}
+:::
 
 #### Just go for it
 
@@ -34,4 +34,4 @@ If you get stuck an example can help. I've created a short tutorial and some exa
 
 Each Bike shortcut action comes with documentation describing the input parameters and what (if anything) the shortcut returns. To view this documentation mouse over the action in the Shortcuts app and click the (i) information button as seen here:
 
-<figure><img src="../.gitbook/assets/shortcut_information.png" alt=""><figcaption><p>Click the (i) to see detailed documentation</p></figcaption></figure>
+![Click the (i) to see detailed documentation](/assets/shortcut_information.png)

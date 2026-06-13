@@ -1,44 +1,44 @@
 # Outline Viewing
 
-Bike has several ways to view big outlines:
+Bike offers several ways to view your outlines:
 
 1. Collapse rows to see the big picture without being distracted by the details
 2. Focus in to work on the details without being distracted by everything else
-3. Use the [sidebar](using-sidebar.md) to navigate your outline's structure
 
 #### To collapse rows in your outline
 
-![Collapse](../.gitbook/assets/Folding.png)
+![Collapse](/assets/Folding.png)
 
-*   Outline > Expand Row (`Command-0`)
+* Outline > Expand Row (<kbd>Command-0</kbd>)
 
     Expand selected row.
-*   Outline > Collapse Row (`Command-9`)
+
+* Outline > Collapse Row (<kbd>Command-9</kbd>)
 
     Collapse selected row.
-* Outline > Expand Row Completely\
-  Expand the selected row and all rows that it contains. See all contained rows.
-* Outline > Collapse Row Completely\
-  Collapse the selected row and all rows that it contains. This is a nice way to clean up a view, when you next expand the row its contained rows will still be collapsed.
-*   Outline > Expand All (`Control-Command-0`)
+
+* Outline > Expand All (<kbd>Control-Command-0</kbd>)
 
     Expand all top level rows.
-*   Outline > Collapse All (`Control-Command-9`)
+
+* Outline > Collapse All (<kbd>Control-Command-9</kbd>)
 
     Collapse all top level rows.
-*   Outline > Expand All by Level (`Shift-Command-0`)
 
-    Find the minimum level that is collapsed. Expand all rows at that level.
-*   Outline > Collapse All by Level (`Shift-Command-9`)
-
-    Find the maximum level that is expanded. Collapse all rows at that level.
+::: tip
+Include <kbd>Option</kbd> the above shortcuts to fold rows one level at a time. For example use <kbd>Option-Command-9</kbd> to collapse the selected row by level. Pressing it multiple times will prune your outline one level at a time.
+:::
 
 #### To focus into your outline
 
-![Focus In](../.gitbook/assets/Focusing.png)
+![Focus In](/assets/Focusing.png)
 
-* Go > Focus In (`Option-Command-Right`)
-* Go > Focus Out (`Option-Command-Left`)
-* Go > Focus Index Row… (`Command-P`) to quickly select and focus a heading.
+* Go > Focus In (<kbd>Option-Command-Right</kbd>)
+* Go > Focus Out (<kbd>Option-Command-Left</kbd>)
+* Go > Go To… (<kbd>Command-P</kbd>) to quickly focus rows
 
-In block mode (`Escape`) you can use arrow keys to expand and collapse rows.
+See also:
+
+* [Using the Sidebar](using-sidebar.md)
+* [Using the Calendar](using-calendar.md)
+* [Using Outline Filtering](using-outline-filtering)

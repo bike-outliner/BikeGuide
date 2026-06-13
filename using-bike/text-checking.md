@@ -1,6 +1,6 @@
 # Using Text Checking
 
-![Checking Panel](../.gitbook/assets/CheckingPanel.png)
+![Checking Panel](/assets/CheckingPanel.png)
 
 Bike supports autocorrect, substitutions, user replacements, and spell checking. Bike's text checking interface is custom built, adopting and then improving upon macOS standard behavior.
 
@@ -10,14 +10,14 @@ Bike supports autocorrect, substitutions, user replacements, and spell checking.
 
 Bike will highlight spelling errors in your outline with a red zigzag underline. To fix a spelling error move the text caret to the end of the word. After a half second the text caret will bounce and a popup will show with a suggestion.
 
-<figure><img src="../.gitbook/assets/word-suggestions (1).png" alt=""><figcaption></figcaption></figure>
+![Word suggestions](/assets/word-suggestions%20(1).png)
 
 Sometimes text checking can't guess a word. In that case the text caret still bounce when it tries, but no popup will show. Then you'll have to fix the spelling manually. This happens to me quite often because I really can't spell, or even come close sometimes!
 
 #### To find a text checking error
 
-* Edit > Checking > Check Next (`Command-;`)
-* Edit > Checking > Check Previous (`Command-:`)
+* Edit > Checking > Check Next (<kbd>Command-;</kbd>)
+* Edit > Checking > Check Previous (<kbd>Command-:</kbd>)
 
 These commands both select the found error and show the text checking panel. In the text checking panel you can also select suggestions and change text checking options.
 
@@ -51,7 +51,7 @@ In Bike all autocorrected text is underlined with a blue zigzag line. This under
 
 Bike makes undoing the previous autocorrect easy.
 
-Press the Delete key and the autocorrect is reversed. You can also use undo (`Command-z`), but I find Delete to be faster. There is a preference to disable this special Delete behavior if you don't like it.
+Press the Delete key and the autocorrect is reversed. You can also use undo (<kbd>Command-z</kbd>), but I find Delete to be faster. There is a preference to disable this special Delete behavior if you don't like it.
 
 You can also reverse an autocorrections by placing the text caret at the end of the corrected text. A popup will show allowing you to reverse that correction.
 
@@ -61,26 +61,26 @@ To show the text checking panel use Edit > Checking > Show Checking or use the C
 
 #### To select a correction
 
-* Press the `Down` arrow to select any suggestion
+* Press the <kbd>Down</kbd> arrow to select any suggestion
 * Or type your own correction into the text field
 
 #### To apply a correction and find the next
 
 * Click the `Replace` button in the checking panel
-* Or press `Return` to apply the correction
+* Or press <kbd>Return</kbd> to apply the correction
 
 #### To apply a correction and return to work
 
-* Press `Option-Return` to apply the correction and return to work
+* Press <kbd>Option-Return</kbd> to apply the correction and return to work
 
 #### To hide the checking panel
 
 * Click the `Done` button in the checking panel
-* Or press the `Escape` key
+* Or press the <kbd>Escape</kbd> key
 
 ### Checking panel options
 
-* _Show spelling_: Use macOS spell checker to perform spell checking, highlighting problems in your outline.&#x20;
+* _Show spelling_: Use macOS spell checker to perform spell checking, highlighting problems in your outline.
 * _Show grammar with spelling_: Use the macOS spell checker to perform grammar checking, highlighting problems in your outline.
 
 ### Autocorrect options

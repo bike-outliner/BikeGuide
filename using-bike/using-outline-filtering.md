@@ -1,3 +1,11 @@
+Enter - Select next match
+Shift-Enter - Select previous match
+filter maintaining selection and folds
+Escape/Clear - Cancel filter, restoring previous selection and foldsCommand-Enter - Cancel 
+
+Click hidden region to reveal. Undo before editing to restore.
+
+
 # Using Outline Filtering
 
 Outline filtering hides rows that don't match your filter, letting you focus on just the rows you need. Unlike the [find panel](using-find-panel.md) which highlights matches, filtering changes which rows are visible.
@@ -5,12 +13,12 @@ Outline filtering hides rows that don't match your filter, letting you focus on 
 #### To start filtering
 
 * Click the filter button in the titlebar
-* Or use Edit > Find > Filter (`Command-Shift-F`)
+* Or use Edit > Find > Filter (<kbd>Command-Shift-F</kbd>)
 
 #### To navigate between matches
 
-* Press `Return` to go to the next match
-* Press `Shift-Return` to go to the previous match
+* Press <kbd>Return</kbd> to go to the next match
+* Press <kbd>Shift-Return</kbd> to go to the previous match
 
 #### To clear the filter
 

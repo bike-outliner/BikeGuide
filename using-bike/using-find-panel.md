@@ -1,29 +1,29 @@
 # Using Find Panel
 
-![Find Panel](../.gitbook/assets/Finding.png)
+![Find Panel](/assets/Finding.png)
 
 Use the find panel to find text in your outline.
 
 #### To show the find panel
 
-* Use the menu Edit > Find > Find... (`Command-F`)
+* Use the menu Edit > Find > Find... (<kbd>Command-F</kbd>)
 
 #### To advance to the next match
 
 * Click the Next button in the find panel
-* Or use Edit > Find > Find Next (`Command-G`)
+* Or use Edit > Find > Find Next (<kbd>Command-G</kbd>)
 
 The current match is highlighted brighter then other matches.
 
 #### To go back to the previous match
 
 * Click the Previous button in the find panel
-* Or use Edit > Find > Find Previous (`Shift-Command-G`)
+* Or use Edit > Find > Find Previous (<kbd>Shift-Command-G</kbd>)
 
 #### To replace the current match with the contents of the replace field
 
 * Click the replace button
-* Or press the `Return` key when the replace field has keyboard focus
+* Or press the <kbd>Return</kbd> key when the replace field has keyboard focus
 
 #### To replace all matches
 
@@ -32,7 +32,7 @@ The current match is highlighted brighter then other matches.
 #### To hide the find panel
 
 * Click the `Done` button in the find panel
-* Or press the `Escape` key
+* Or press the <kbd>Escape</kbd> key
 
 ### What is Searched?
 

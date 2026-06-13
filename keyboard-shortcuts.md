@@ -4,54 +4,54 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 
 ### Edit
 
-* Check Next: `Command-;`
+* Check Next: <kbd>Command-;</kbd>
 
 ### Format
 
-* Bold: `Command-B`
-* Italic: `Command-I`
-* Code: `Shift-Command-C`
-* Highlight: `Shift-Command-H`
-* Strikethrough: `Shift-Command--`
-* Superscript: `Shift-Control-Command-=`
-* Subscript: `Control-Command--`
-* Add Link: `Command-K`
-* Add Row Link: `Command-Option-K`
-* Edit Formatting: `Command-E`
-* Clear Formatting: `Option-Command-Delete`
+* Bold: <kbd>Command-B</kbd>
+* Italic: <kbd>Command-I</kbd>
+* Code: <kbd>Shift-Command-C</kbd>
+* Highlight: <kbd>Shift-Command-H</kbd>
+* Strikethrough: <kbd>Shift-Command--</kbd>
+* Superscript: <kbd>Shift-Control-Command-=</kbd>
+* Subscript: <kbd>Control-Command--</kbd>
+* Add Link: <kbd>Command-K</kbd>
+* Add Row Link: <kbd>Command-Option-K</kbd>
+* Edit Formatting: <kbd>Command-E</kbd>
+* Clear Formatting: <kbd>Option-Command-Delete</kbd>
 
 ### Outline
 
-* New Row: `Return`
-* Indent Row: `Tab` or `Control-Command-Right`
-* Outdent Row: `Shift-Tab` or `Control-Command-Left`
-* Move Row Up: `Control-Command-Up`
-* Move Row Down: `Control-Command-Down`
-* Delete Rows: `Escape` to block mode, then `Delete` or `Command-Shift-K`
+* New Row: <kbd>Return</kbd>
+* Indent Row: <kbd>Tab</kbd> or <kbd>Control-Command-Right</kbd>
+* Outdent Row: <kbd>Shift-Tab</kbd> or <kbd>Control-Command-Left</kbd>
+* Move Row Up: <kbd>Control-Command-Up</kbd>
+* Move Row Down: <kbd>Control-Command-Down</kbd>
+* Delete Rows: <kbd>Escape</kbd> to block mode, then <kbd>Delete</kbd> or <kbd>Command-Shift-K</kbd>
 
 ### Expand / Collapse
 
-* Expand Row: `Command-0`
-* Collapse Row: `Command-9`
-* Expand All: `Control-Command-0`
-* Collapse All: `Control-Command-9`
+* Expand Row: <kbd>Command-0</kbd>
+* Collapse Row: <kbd>Command-9</kbd>
+* Expand All: <kbd>Control-Command-0</kbd>
+* Collapse All: <kbd>Control-Command-9</kbd>
 
 ### Go
 
-* Focus In: `Option-Command-Right`
-* Focus Out: `Option-Command-Left`
-* Focus Index Row…: `Command-P`
-* Pin / Unpin: `Command-Y`
+* Focus In: <kbd>Option-Command-Right</kbd>
+* Focus Out: <kbd>Option-Command-Left</kbd>
+* Focus Index Row…: <kbd>Command-P</kbd>
+* Pin / Unpin: <kbd>Command-Y</kbd>
 
 ### View
 
-* Toggle Sidebar: `Control-Command-S`
-* Toggle Writing Focus Mode: `Option-Command-F`
-* Toggle Typewriter Mode: `Option-Command-T`
-* Toggle Status Bar: `Command-/`
+* Toggle Sidebar: <kbd>Control-Command-S</kbd>
+* Toggle Writing Focus Mode: <kbd>Option-Command-F</kbd>
+* Toggle Typewriter Mode: <kbd>Option-Command-T</kbd>
+* Toggle Status Bar: <kbd>Command-/</kbd>
 
 ### More
 
-* Toggle text/block mode: `Escape`
-* Close Find Panel: `Escape`
-* Close Check Panel `Escape`
+* Toggle text/block mode: <kbd>Escape</kbd>
+* Close Find Panel: <kbd>Escape</kbd>
+* Close Check Panel <kbd>Escape</kbd>
