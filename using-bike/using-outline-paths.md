@@ -88,7 +88,7 @@ Paths are divided into steps. For example the path `/a/b` has two steps. Each st
 
 By default each step passes the children of the matched rows to the next step. This is because "child" is the default axis. Other axes are also possible.
 
-For example, say you want to search your entire outline for the text "pizza". That would be difficult if each step could only process the children of the previous step. To search the entire outline we would need to keep creating longer paths to seach each level of the outline:
+For example, say you want to search your entire outline for the text "pizza". That would be difficult if each step could only process the children of the previous step. To search the entire outline we would need to keep creating longer paths to search each level of the outline:
 
 * \`/pizza\`
 * \`/\*/pizza\`
@@ -205,7 +205,7 @@ Each step can include a predicate test. You can then combine predicates with `an
 
 Each row in your outline has associated attributes that you can use in outline path predicate tests.
 
-Some attributes are built in to all rows, other attributes are optional and maybe be set by scripts or other features within Bike. For example when you click the checkmark of a task row it adds the @done attribute.
+Some attributes are built in to all rows, other attributes are optional and may be set by scripts or other features within Bike. For example when you click the checkmark of a task row it adds the @done attribute.
 
 Open Bike > Outline Path Explorer and notice that the outline view showns each row's attributes. The built in attributes include:
 

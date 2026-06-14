@@ -145,7 +145,7 @@ end tell
 
 #### Cleanup Script
 
-This script saves the current selected row. Collapses all rows. Then restores your selection, which also expands any rows needed to show the selection. Use it to cleanup when you have to many rows expanded, but you still want to keep working where you are.
+This script saves the current selected row. Collapses all rows. Then restores your selection, which also expands any rows needed to show the selection. Use it to cleanup when you have too many rows expanded, but you still want to keep working where you are.
 
 ```applescript
 tell front document of application "Bike"
@@ -196,7 +196,7 @@ end getOrMake
 
 You can call from AppleScript into Bike's app [extension](https://github.com/bike-outliner/extension-kit/blob/main/docs/app-context-tutorial.md) API using the `evaluate` command.
 
-Why might you want to do this? Generaly, Bike's app context extension API is faster and more powerful than the AppleScript API. This lets you jump from AppleScript land, to Bike extension land, and then back to AppleScript land again.
+Why might you want to do this? Generally, Bike's app context extension API is faster and more powerful than the AppleScript API. This lets you jump from AppleScript land, to Bike extension land, and then back to AppleScript land again.
 
 ::: tip
 The script that you pass should be plain JavaScript, not the TypeScript code used in most of the extension API documentation.
@@ -204,9 +204,9 @@ The script that you pass should be plain JavaScript, not the TypeScript code use
 
 Here's a explanation of each step in the process:
 
-1. Call `evaluate` command with `script` parameter and optional `input` parmeter.
+1. Call `evaluate` command with `script` parameter and optional `input` parameter.
 2. Bike will then evaluate that Javascript string in Bike's app extension context
-3. If the result is not a closure it's string form is returned immediatly. 
+3. If the result is not a closure its string form is returned immediately.
 6. If the result is a closure, then Bike will call the closure, passing in the provided input (if any), and the string form of that closure result is returned.
 
 **Examples:**

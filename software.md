@@ -12,4 +12,4 @@ Bike uses the following open source software packages:
 * [Swift Identified Collections](https://github.com/pointfreeco/swift-identified-collections)
 * [Swift Parsing](https://github.com/pointfreeco/swift-parsing)
 
-Bike also benifits from many friendly mac developers who answer my dumb questions so that I can get things to work. Thanks!
+Bike also benefits from many friendly mac developers who answer my dumb questions so that I can get things to work. Thanks!

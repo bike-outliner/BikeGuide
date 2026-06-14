@@ -15,7 +15,7 @@ Anytime there is a link in your document Bike will insert a "link button" after 
 * Click and edit the link text without fear that you'll activate the link.
 * To edit the URL associated with a link right click on the link text or link button and choose "Edit Link" from the popup menu.
 
-More information on formatting and activating links can be found in the [text-formatting.md](text-formatting.md "mention") section.
+More information on formatting and activating links can be found in the [Text Formatting](text-formatting.md) section.
 
 ### Bike Row Links
 
@@ -72,7 +72,7 @@ Links can "break" for some obvious and non-obvious reasons.
 * Create a link to a document and then delete that document. When you activate the link the document won't be found. This is probably not surprising!
 * Create a link to a row in a document and then delete that row. When you activate the link the document will be opened, but you'll get a warning that the linked row could not be found.
 * Bike uses Spotlight searches to resolve links. It associates the outline id with the document file and then searches for that id using Spotlight. This means if something is going wrong with Spotlight then your links won't work. This is a temporary problem, they will work again once the document id is again indexed with Spotlight.
-* Another problem with spotlight searches is that they only find documents that Bike already has Sandbox permission to open. If Bike does not have permision to open the document it won't be included in the results, and the link won't work. See Sandbox Requirements.
+* Another problem with spotlight searches is that they only find documents that Bike already has Sandbox permission to open. If Bike does not have permission to open the document it won't be included in the results, and the link won't work. See [Sandbox Requirements](#sandbox-requirements).
 * This association between a document file and root id is done by setting the `com.apple.metadata:kMDItemIdentifier` extended file attribute each time Bike saves a file. This means if a file's extended attributes are somehow lost then links to that file will break until next time the file is opened and saved through Bike.
 * If you have two outline documents with the same outline id (for example if you duplicate an outline file) then links to that root id will open both documents.
 

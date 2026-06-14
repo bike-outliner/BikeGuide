@@ -1,6 +1,6 @@
 # Using the Choice Palette
 
-Quickly find and select items in long lists. Bike's choice palette is used by the "Go > Focus Index Row" and "Format > Add Link to Row" commands. In the future I expect the choice palette to show up in other places too.
+Quickly find and select items in long lists. Bike's choice palette is used by the "Go > Go To…" and "Format > Add Link to Row" commands. In the future I expect the choice palette to show up in other places too.
 
 ![Choice palette](/assets/Focus%20Index%20Row%201.png)
 
@@ -30,7 +30,7 @@ When you filter your list the containing parent items of each match are always i
 
 ### Choice Palette Settings
 
-To the right of the filter field is the settings button. Each choice palette has its own settings. The settings for "Focus Index Row" can be different then the settings for "Add Link to Row".
+To the right of the filter field is the settings button. Each choice palette has its own settings. The settings for "Go To…" can be different than the settings for "Add Link to Row".
 
 #### Sort by match quality
 
@@ -56,6 +56,6 @@ When the above sorting option is selected you might see duplicate containing par
 
 Use the "outline path" setting to specify the rows that you'll see and filter.
 
-For example the "Focus Index Row" commands shows "heading" type and top level rows by default. If you would like to see different rows when you "Focus Index Row" you can do that by customizing the outline path.
+For example the "Go To…" command shows "heading" type and top level rows by default. If you would like to see different rows when you "Go To…" you can do that by customizing the outline path.
 
 [Using Outline Paths](using-outline-paths.md)

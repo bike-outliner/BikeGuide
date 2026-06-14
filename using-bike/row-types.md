@@ -22,11 +22,11 @@ The shortcut text is replaced and the row type is set. If smart row types are no
 
 #### Use the Formatting Popover
 
-Use the same Formatting Popover (<kbd>Command-E</kbd>) that you use for text formatting to also set row types. Open the popover, and then press the down arrow to get a list of availible row types to choose from. This is fast, and you don't have to remember any of the row type completions described above.
+Use the same Formatting Popover (<kbd>Command-E</kbd>) that you use for text formatting to also set row types. Open the popover, and then press the down arrow to get a list of available row types to choose from. This is fast, and you don't have to remember any of the row type completions described above.
 
 #### Use the Format > Row menu
 
-This is slower then the above methods. I've added this option mostly so that you can assign a keyboard shortcut for a specific row type. I think learning the smart row type completions described above is better for most people.
+This is slower than the above methods. I've added this option mostly so that you can assign a keyboard shortcut for a specific row type. I think learning the smart row type completions described above is better for most people.
 
 #### Tips and Tricks
 

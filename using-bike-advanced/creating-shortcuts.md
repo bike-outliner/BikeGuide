@@ -1,6 +1,6 @@
 # Creating Shortcuts
 
-Create shortcuts to automate Bike and integrate it with other apps. If you are just interested in runnings shortcuts that someone else has written please see the [Using Shortcuts](../using-bike/using-shortcuts.md) section.
+Create shortcuts to automate Bike and integrate it with other apps. If you are just interested in running shortcuts that someone else has written please see the [Using Shortcuts](../using-bike/using-shortcuts.md) section.
 
 ![Creating a Bike Shortcut](/assets/shortcut_automation.png)
 

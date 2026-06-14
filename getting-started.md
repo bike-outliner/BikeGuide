@@ -25,7 +25,7 @@ Indent to create a structured outline. Fold this outline to hide details. Focus 
 * Use Go > Go To… <kbd>Command-P</kbd> to focus any heading in your outline.
 * Use the [sidebar](using-bike/using-sidebar.md) to navigate your outline's structure.
 
-**To format text in your outline**
+#### To format text in your outline
 
 * Show the formatting popover with <kbd>Command-E</kbd>
 * Select formatting options from the popover with your mouse or with the single letter keyboard shortcuts displayed on the panel.

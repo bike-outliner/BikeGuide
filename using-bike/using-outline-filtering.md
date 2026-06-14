@@ -1,19 +1,20 @@
-Enter - Select next match
-Shift-Enter - Select previous match
-filter maintaining selection and folds
-Escape/Clear - Cancel filter, restoring previous selection and foldsCommand-Enter - Cancel 
-
-Click hidden region to reveal. Undo before editing to restore.
-
-
 # Using Outline Filtering
 
 Outline filtering hides rows that don't match your filter, letting you focus on just the rows you need. Unlike the [find panel](using-find-panel.md) which highlights matches, filtering changes which rows are visible.
 
 #### To start filtering
 
-* Click the filter button in the titlebar
-* Or use Edit > Find > Filter (<kbd>Command-Shift-F</kbd>)
+* Use Edit > Find > Filter (<kbd>Command-Shift-F</kbd>)
+
+The filter field lives in the editor [toolbar](using-toolbar.md). Start typing there to filter your outline.
+
+### What you see while filtering
+
+Filtering generates a set of matching rows, then reshapes the outline around them:
+
+* Every match and each of its ancestors stays visible, so you always see your matches in context.
+* A branch with no matches inside it is folded away.
+* Siblings of a match that don't match themselves are tucked into a hidden range. Click the hidden range to reveal them.
 
 #### To navigate between matches
 
@@ -24,6 +25,18 @@ Outline filtering hides rows that don't match your filter, letting you focus on 
 
 * Click the X button in the filter bar
 * Or delete all text in the filter field
+* Or press <kbd>Command-Return</kbd> to clear the filter while keeping the folds it created
+
+When you clear a filter Bike restores the scroll position and folded rows you had before you started, so filtering never loses your place. <kbd>Command-Return</kbd> is the exception — it keeps the folds the filter set, so you can carry that pruned view back into normal editing.
+
+### Working with matches
+
+Right-click the filter field for commands that act on the whole set of matches at once:
+
+* **Cut Matches** — remove the matching rows from your outline and place them on the clipboard.
+* **Copy Matches** — copy the matching rows, including their children.
+* **Copy Matches (Without Children)** — copy just the matching rows, leaving their children behind.
+* **Save Filter in Sidebar** — save the current filter as a [query shortcut](#sidebar-query-shortcuts).
 
 ### Filter Syntax
 
@@ -43,4 +56,4 @@ Examples:
 
 ### Sidebar Query Shortcuts
 
-You can save frequently used filters as query shortcuts in the [sidebar](using-sidebar.md). Click a query shortcut to instantly apply that filter to your outline.
+You can save frequently used filters as query shortcuts in the [sidebar](using-sidebar.md). With a filter active, right-click the filter field and choose **Save Filter in Sidebar**. Click a saved query shortcut to instantly apply that filter to your outline.

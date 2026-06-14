@@ -14,7 +14,7 @@ This list welcome your feedback, additions, results, and notes. I have made this
 - [Checkvist (Web)](https://checkvist.com) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
 - [Cloud Outliner (macOS + iOS)](https://xwavesoft.com/cloud-outliner-for-iphone-ipad-mac-os-x.html) – Import and export OPML.
 - [Drummer (Web + Electron)](http://drummer.scripting.com) – Uses OPML as native format. The Electron version saves OPML directly to disk so you can work on the same file with Bike and Drummer without import/export. Both the web and Electron versions support import and export of OPML. Copy and paste outlines with Bike.
-- [Dynalist (Web)](https://dynalist.io) – Import and export OPML. Copy and paste outlines with Bike, many need formatting cleanup.
+- [Dynalist (Web)](https://dynalist.io) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
 - [iThoughtsX (macOS, iOS, Windows)](https://www.toketaware.com) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
 - [LittleOutliner (Web)](http://littleoutliner.com) – Uses OPML as native format. Import and export OPML. Copy and paste outlines with Bike.
 - [Logseq (Electron)](https://logseq.com) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.

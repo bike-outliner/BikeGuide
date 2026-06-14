@@ -44,7 +44,7 @@ If it's not what you want you have the option to use your own file extension. Fo
 
 #### To load an outline that has a custom file extension
 
-Open the file normally and Bike with detect the content format. When Bike loads an unknown file extension it performs these steps:
+Open the file normally and Bike will detect the content format. When Bike loads an unknown file extension it performs these steps:
 
 1. Read as Bike, if that fails then...
 2. Read as Bike Markdown, if that fails then...

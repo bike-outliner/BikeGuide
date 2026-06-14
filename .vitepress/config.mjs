@@ -35,6 +35,7 @@ export default defineConfig({
           { text: 'Using Full Screen Mode', link: '/using-bike/using-full-screen-mode' },
           { text: 'Using Sidebar', link: '/using-bike/using-sidebar' },
           { text: 'Using Inspector', link: '/using-bike/using-inspector' },
+          { text: 'Using Calendar', link: '/using-bike/using-calendar' },
           { text: 'Using Toolbar', link: '/using-bike/using-toolbar' },
           { text: 'Using Status Bar', link: '/using-bike/using-status-bar' },
           { text: 'Using Windows', link: '/using-bike/using-windows' },

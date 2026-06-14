@@ -18,7 +18,7 @@ Your outlines stay yours, in plain files you can read anywhere.
 
 - **[Themes and styles](using-bike/using-themes.md)** — customize Bike's colors and pick separate themes for light and dark mode.
 - **[Custom keybindings](using-bike/using-commands.md)** — rebind almost any command through the Commands Explorer.
-- **Minimal full window mode** — strip the window down to just your outline when you want to disappear into your writing.
+- **[Minimal full window mode](using-bike/using-windows.md#full-window-mode)** — strip the window down to just your outline when you want to disappear into your writing.
 - **[Interface Explorer](using-bike/using-interface-explorer.md)** — organize the views and commands extensions add, deciding how they show up across the window title bar, editor toolbar, status bar, sidebar, and inspector.
 
 ### Automating and extending

@@ -13,7 +13,7 @@ Use the find panel to find text in your outline.
 * Click the Next button in the find panel
 * Or use Edit > Find > Find Next (<kbd>Command-G</kbd>)
 
-The current match is highlighted brighter then other matches.
+The current match is highlighted brighter than other matches.
 
 #### To go back to the previous match
 
@@ -46,4 +46,4 @@ Find options show to the left of the search text field:
 
 `""` - Your search will match whole words.
 
-`.*` - Your search will be interperted as a [regular expression](https://www.quora.com/What-are-the-best-resources-for-learning-regular-expressions).
+`.*` - Your search will be interpreted as a [regular expression](https://www.quora.com/What-are-the-best-resources-for-learning-regular-expressions).

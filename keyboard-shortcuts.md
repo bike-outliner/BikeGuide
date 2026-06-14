@@ -5,6 +5,9 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 ### Edit
 
 * Check Next: <kbd>Command-;</kbd>
+* Find: <kbd>Command-F</kbd>
+* Filter: <kbd>Command-Shift-F</kbd>
+* Clear Filter, Keep Folds: <kbd>Command-Return</kbd>
 
 ### Format
 
@@ -40,7 +43,8 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 
 * Focus In: <kbd>Option-Command-Right</kbd>
 * Focus Out: <kbd>Option-Command-Left</kbd>
-* Focus Index Row…: <kbd>Command-P</kbd>
+* Go To…: <kbd>Command-P</kbd>
+* Go to Command…: <kbd>Shift-Command-P</kbd>
 * Pin / Unpin: <kbd>Command-Y</kbd>
 
 ### View
@@ -49,6 +53,9 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Toggle Writing Focus Mode: <kbd>Option-Command-F</kbd>
 * Toggle Typewriter Mode: <kbd>Option-Command-T</kbd>
 * Toggle Status Bar: <kbd>Command-/</kbd>
+* Toggle Full Screen: <kbd>Control-Command-F</kbd>
+* Toggle Full Window: <kbd>Command-.</kbd>
+* Toggle Auto-Hide Toolbar: <kbd>Option-Command-/</kbd>
 
 ### More
 
