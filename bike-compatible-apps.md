@@ -26,3 +26,8 @@ This list welcome your feedback, additions, results, and notes. I have made this
 - [Outliner (iOS)](https://carbonfin.com) – Uses OPML as its native document format. I think you can share an OPML document on iCloud and edit on iOS with Outliner and on macOS with Bike. I have not tested this.
 - [WorkFlowy (Web + iOS + Electron)](https://workflowy.com/) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
 - [Zavala (macOS + iOS)](https://zavala.vincode.io) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
+
+### See also
+
+* [Bike Markdown Format](using-bike/bike-markdown-format.md)
+* [Using Documents](using-bike/using-documents.md)

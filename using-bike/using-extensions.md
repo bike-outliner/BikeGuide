@@ -16,3 +16,9 @@ To remove an extension:
 
 See the [Creating Extensions](../using-bike-advanced/creating-extensions.md) section to learn how to create your own extensions.
 
+### See also
+
+* [Interface Explorer](using-interface-explorer.md)
+* [Logs Explorer](using-logs.md)
+* [Creating Extensions](../using-bike-advanced/creating-extensions.md)
+

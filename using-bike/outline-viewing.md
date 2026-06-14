@@ -37,8 +37,9 @@ Include <kbd>Option</kbd> the above shortcuts to fold rows one level at a time. 
 * Go > Focus Out (<kbd>Option-Command-Left</kbd>)
 * Go > Go To… (<kbd>Command-P</kbd>) to quickly focus rows
 
-See also:
+### See also
 
-* [Using the Sidebar](using-sidebar.md)
-* [Using the Calendar](using-calendar.md)
-* [Using Outline Filtering](using-outline-filtering)
+* [Outline Editing](outline-editing.md)
+* [Using Sidebar](using-sidebar.md)
+* [Using Calendar](using-calendar.md)
+* [Using Outline Filtering](using-outline-filtering.md)

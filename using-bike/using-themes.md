@@ -1,6 +1,6 @@
 # Using Themes
 
-Use themes to customize Bike's colors and fonts (in future). You can quickly switch themes in Bike's "Appearance" settings panel. You can share themes with other users.
+Use themes to customize Bike's colors, materials, and typography. You can quickly switch themes in Bike's "Appearance" settings panel. You can share themes with other users.
 
 **To choose a theme:**
 
@@ -14,3 +14,8 @@ Use themes to customize Bike's colors and fonts (in future). You can quickly swi
 3. Drag or modify any top level `.bktheme` file in that folder
 4. New themes should immediately appear in the popup menus in the Appearance settings panel.
 5. If it doesn't appear in popup, there may be a syntax error in the theme. Use Bike > Logs Explorer to see problem.
+
+### See also
+
+* [Creating Themes](../using-bike-advanced/creating-themes.md)
+* [Logs Explorer](using-logs.md)

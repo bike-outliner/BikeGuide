@@ -8,4 +8,9 @@ You can use shortcuts with Bike on macOS 13 and later. Find Bike specific shortc
 
 [Apple's macOS shortcuts documentation](https://support.apple.com/en-gb/guide/shortcuts-mac/apdf22b0444c/mac) teaches you how to run shortcuts, place then in your menu bar, assign _keyboard shortcuts_, and more.
 
+### See also
+
+* [Creating Shortcuts](../using-bike-advanced/creating-shortcuts.md)
+* [Using Scripts](using-scripts.md)
+
 [^1]: These are not the same as _keyboard shortcuts_.

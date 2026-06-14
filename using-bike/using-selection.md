@@ -11,3 +11,9 @@ Bike has two selection modes: text mode and block mode.
 * Press <kbd>Escape</kbd> to toggle between text mode and block mode.
 
 In block mode the [outline commands](outline-editing.md) — move, indent, duplicate, delete, and so on — act on the selected rows. Many of those commands work the same way in text mode too, always operating on whole rows.
+
+### See also
+
+* [Outline Editing](outline-editing.md)
+* [Row Types](row-types.md)
+* [Keyboard Shortcuts](../keyboard-shortcuts.md)

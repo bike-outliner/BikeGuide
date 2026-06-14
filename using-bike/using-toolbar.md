@@ -11,3 +11,9 @@ With auto-hide on the toolbar stays hidden until you start [filtering](using-out
 ### Toolbar Buttons
 
 The buttons on the toolbar come from Bike and from [extensions](using-extensions.md). To add a button, change its symbol, reorder the buttons, or remove one, use the [Interface Explorer](using-interface-explorer.md) and look under **Editor Toolbar Buttons**.
+
+### See also
+
+* [Interface Explorer](using-interface-explorer.md)
+* [Using Status Bar](using-status-bar.md)
+* [Using Outline Filtering](using-outline-filtering.md)

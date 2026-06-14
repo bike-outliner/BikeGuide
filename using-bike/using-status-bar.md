@@ -36,3 +36,8 @@ The current row's type is indicated in the status bar. Click the row type indica
 ### Editor Settings
 
 Click the editor settings button on the right side of the status bar to access per-document editor settings.
+
+### See also
+
+* [Using Toolbar](using-toolbar.md)
+* [Interface Explorer](using-interface-explorer.md)

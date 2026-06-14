@@ -33,3 +33,9 @@ The index section shows headings in your outline by default. Click any heading t
 ### Query Shortcuts
 
 Query shortcuts are saved [outline path](using-outline-paths.md) filters. They let you create reusable filtered views of your outline that are accessible from the sidebar.
+
+### See also
+
+* [Using Outline Filtering](using-outline-filtering.md)
+* [Using Inspector](using-inspector.md)
+* [Using Calendar](using-calendar.md)

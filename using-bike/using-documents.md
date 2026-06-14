@@ -1,6 +1,6 @@
 # Using Documents
 
-From macOS User Guide:
+Bike documents are ordinary macOS files — you open, save, version, and organize them just like documents in any other Mac app. Apple's guides cover the basics:
 
 * [Open documents](https://support.apple.com/guide/mac-help/open-documents-mchl971293e1/12.0/mac/12.0)
 * [Create and work with documents](https://support.apple.com/guide/mac-help/create-and-work-with-documents-mchldc1dd114/12.0/mac/12.0)
@@ -12,19 +12,19 @@ Bike is a document based app that uses open file formats.
 
 This combination gives you full ownership of your data. Your notes and thoughts aren't locked behind a proprietary web-service. They aren't hidden away in a database available for [export only](https://twitter.com/andy\_matuschak/status/1452438176996347907).
 
-In Bike your data is fully within your control, stored in normal document files right on your computer. These files use open file formats. Even if you delete Bike from your computer you should still be able to view and edit your outlines.
-
 ### Format Options
 
 ![Format Options](/assets/formats.png)
 
-`.bike`: This is Bike's native format and the one I would recommend using. It supports all Bike features. It is also an HTML document – you can view Bike files in your web browser.
+The three main formats, `.bike`, `.md`, and `.opml`, are equivalent: each can represent all of your Bike outline state, including row types, text formatting, attributes, and hierarchy. The format you choose depends on how you want to work with the file outside Bike. 
 
-`.md`: [Bike Markdown](bike-markdown-format.md) is a text-based format that uses markdown syntax to represent your outline. It supports all Bike features including row types, text formatting, and hierarchy. Because it's plain text, it works well with version control and other text-based tools. Bike Markdown is a subset of standard markdown — when you open a `.md` file that uses markdown Bike can't represent, Bike will warn you before opening it.
+[Bike HTML Format](bike-html-format.md) `.bike`: Uses a subset of standard HTML. It's also a valid HTML document you can open in a web browser.
 
-`.opml`: This is a standard format for saving outlines. Use `.opml` if you wish to edit your outline with Bike and another [OPML compatible application](../bike-compatible-apps.md).
+[Bike Markdown Format](bike-markdown-format.md) `.md`: Uses a subset of standard markdown. Good for interoperability with other text-based tools.
 
-`.txt`: Bike can also work with plain text files. The outline structure is determined by the leading tab indentation. Text files don't offer any good place to store metadata (such as item ids). For this reason some features (such as links to rows) will break when you close and then reopen a `.txt` based outline.
+[Bike OPML Format](bike-opml-format.md) `.opml`: Uses the standard outline format for exchanging outlines with other outliners.
+
+`.txt`: plain text, with hierarchy from leading tab indentation. It can't store metadata, so features like row links break when you reopen a `.txt` outline.
 
 ### Open Options
 
@@ -46,9 +46,17 @@ If it's not what you want you have the option to use your own file extension. Fo
 
 Open the file normally and Bike will detect the content format. When Bike loads an unknown file extension it performs these steps:
 
-1. Read as Bike, if that fails then...
+1. Read as Bike (the native `.bike` format), if that fails then...
 2. Read as Bike Markdown, if that fails then...
 3. Read as OPML, if that fails then...
 4. Read as Plain Text, which should never fail
 
 These same steps are followed when reading text from the pasteboard.
+
+### See also
+
+* [Bike HTML Format](bike-html-format.md)
+* [Bike Markdown Format](bike-markdown-format.md)
+* [Bike OPML Format](bike-opml-format.md)
+* [Using Windows](using-windows.md)
+* [Bike Compatible Apps](../bike-compatible-apps.md)

@@ -77,3 +77,9 @@ Markdown outside the span formats the row. A leading `#` or `##` makes it a head
 The calendar isn't built into Bike — it's one of Bike's [open core extensions](https://github.com/bike-outliner/core-extensions/tree/main/src/calendar.bkext). The whole thing is just an extension, so you can read its source, change how it behaves, or use it as a starting point for something of your own.
 
 If the default date structure or formatting doesn't fit how you work, you can modify the extension directly. And if you want a different kind of dated workflow altogether, the calendar is a good example to learn from when [creating your own extension](../using-bike-advanced/creating-extensions.md).
+
+### See also
+
+* [Using Inspector](using-inspector.md)
+* [Using Sidebar](using-sidebar.md)
+* [Creating Extensions](../using-bike-advanced/creating-extensions.md)

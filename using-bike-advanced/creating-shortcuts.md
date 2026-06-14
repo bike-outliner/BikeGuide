@@ -35,3 +35,8 @@ If you get stuck an example can help. I've created a short tutorial and some exa
 Each Bike shortcut action comes with documentation describing the input parameters and what (if anything) the shortcut returns. To view this documentation mouse over the action in the Shortcuts app and click the (i) information button as seen here:
 
 ![Click the (i) to see detailed documentation](/assets/shortcut_information.png)
+
+### See also
+
+* [Using Shortcuts](../using-bike/using-shortcuts.md)
+* [Creating Extensions](creating-extensions.md)

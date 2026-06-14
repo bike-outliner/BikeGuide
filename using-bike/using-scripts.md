@@ -31,3 +31,10 @@ I recommend that you first close your documents and create a new test document b
 Open Script Editor and choose Help > Script Editor Help. Search for the help section "Access your scripts using the Script menu". That will lead you through the steps of enabling and saving scripts into the system script menu.
 
 You can also use [FastScripts](http://www.red-sweater.com/fastscripts/) or [Keyboard Maestro](http://www.keyboardmaestro.com/main/) to run your scripts with assigned keyboard shortcuts.
+
+### See also
+
+* [Creating Scripts](../using-bike-advanced/creating-scripts.md)
+* [Using Shortcuts](using-shortcuts.md)
+* [Using MCP Server](using-mcp-server.md)
+* [Command Line Tool](../using-bike-advanced/command-line-tool.md)

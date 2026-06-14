@@ -19,3 +19,9 @@ When multiple extensions add items to the inspector, each item gets its own tab.
 ### Extension Integration
 
 For more on creating extensions that use the inspector, see the [DOM Context Tutorial](https://github.com/bike-outliner/extension-kit/blob/main/docs/dom-context-tutorial.md).
+
+### See also
+
+* [Using Calendar](using-calendar.md)
+* [Interface Explorer](using-interface-explorer.md)
+* [Using Sidebar](using-sidebar.md)

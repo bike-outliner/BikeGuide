@@ -29,3 +29,10 @@ Bike's formatting popover makes this easier. You only need to learn one keyboard
 Normally when you type, the text is formatted the same as surrounding text. But there are some cases where this isn't true. For example if you have an empty selection and choose "Bold" then the text you type will be different than the surrounding text.
 
 Bike indicates this hidden formatting state by showing the hidden attributes as part of the text caret. For example in the above example the bold "B" icon would show above the text caret.
+
+### See also
+
+* [Using Links](using-links.md)
+* [Row Types](row-types.md)
+* [Bike Markdown Format](bike-markdown-format.md)
+* [Keyboard Shortcuts](../keyboard-shortcuts.md)

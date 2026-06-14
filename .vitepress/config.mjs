@@ -62,7 +62,9 @@ export default defineConfig({
         text: 'Files',
         items: [
           { text: 'Using Documents', link: '/using-bike/using-documents' },
+          { text: 'Bike HTML Format', link: '/using-bike/bike-html-format' },
           { text: 'Bike Markdown Format', link: '/using-bike/bike-markdown-format' },
+          { text: 'Bike OPML Format', link: '/using-bike/bike-opml-format' },
         ]
       },
       {

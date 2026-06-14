@@ -19,3 +19,9 @@ Writing Focus Mode focuses the current word, sentence, or paragraph by dimming o
 
 * View > Writing Focus > Disable Focus (<kbd>Option-Command-F</kbd>)
 * Alternatively you can use the "Options" menu on the left side of the status bar
+
+### See also
+
+* [Using Typewriter Mode](using-typewriter-mode.md)
+* [Using Full Screen Mode](using-full-screen-mode.md)
+* [Using Text Wrap](using-text-wrap.md)

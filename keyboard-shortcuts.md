@@ -61,4 +61,8 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 
 * Toggle text/block mode: <kbd>Escape</kbd>
 * Close Find Panel: <kbd>Escape</kbd>
-* Close Check Panel <kbd>Escape</kbd>
+* Close Check Panel: <kbd>Escape</kbd>
+
+### See also
+
+* [Commands Explorer](using-bike/using-commands.md) — customize Bike's keybindings

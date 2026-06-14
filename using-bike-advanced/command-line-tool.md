@@ -38,3 +38,9 @@ man bike
 ```
 
 Per-subcommand help is also available with `--help`, e.g. `bike get outline --help`.
+
+### See also
+
+* [Using MCP Server](../using-bike/using-mcp-server.md)
+* [Using Scripts](../using-bike/using-scripts.md)
+* [Using Outline Paths](../using-bike/using-outline-paths.md)

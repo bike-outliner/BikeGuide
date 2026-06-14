@@ -9,3 +9,9 @@ Text wrap will also scale your document to fit large windows. For example if you
 #### To configure text wrap
 
 Text wrap can be configured in Settings > Editor. You can choose to wrap to the window width or to a specific column width (64, 72, or 80 columns).
+
+### See also
+
+* [Writing Focus Mode](using-focus-mode.md)
+* [Using Typewriter Mode](using-typewriter-mode.md)
+* [Using Full Screen Mode](using-full-screen-mode.md)

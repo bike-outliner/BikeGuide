@@ -417,3 +417,9 @@ These functions all provide access to editor state. They are only available when
 * boolean(expression) -> boolean
 
 </details>
+
+### See also
+
+* [Outline Path Explorer](using-outline-path-explorer.md)
+* [Using Outline Filtering](using-outline-filtering.md)
+* [Using the Choice Palette](using-the-choice-palette.md)

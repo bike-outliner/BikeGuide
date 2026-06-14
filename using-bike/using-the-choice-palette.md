@@ -58,4 +58,8 @@ Use the "outline path" setting to specify the rows that you'll see and filter.
 
 For example the "Go To…" command shows "heading" type and top level rows by default. If you would like to see different rows when you "Go To…" you can do that by customizing the outline path.
 
-[Using Outline Paths](using-outline-paths.md)
+### See also
+
+* [Using Outline Paths](using-outline-paths.md)
+* [Using Links](using-links.md)
+* [Using Outline Filtering](using-outline-filtering.md)

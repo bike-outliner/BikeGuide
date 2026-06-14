@@ -14,3 +14,9 @@ Open **Bike > Logs Explorer** to view Bike's log output. It's mainly a tool for 
 * A toggle for whether warnings also appear in the window title bar.
 
 Most people will never need the Logs Explorer. Reach for it when you're writing an extension or theme, or when Bike points you here to explain a problem.
+
+### See also
+
+* [Using Extensions](using-extensions.md)
+* [Using Themes](using-themes.md)
+* [Creating Extensions](../using-bike-advanced/creating-extensions.md)

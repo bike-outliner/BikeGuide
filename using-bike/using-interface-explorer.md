@@ -35,3 +35,10 @@ When an extension adds a command, that command can suggest where its button shou
 In the Interface Explorer you can move that button to another bar, change its symbol, or remove it, and your choice persists. A removed button is not added back the next time the extension loads. Items that came from an extension show a "from \<extension>" label, and right-clicking one offers **Reset to Extension Default** to restore the placement the extension originally suggested.
 
 This division of labor is the point: an extension suggests sensible defaults, and the Interface Explorer lets you have the final say. If you're building your own extension, see [Creating Extensions](../using-bike-advanced/creating-extensions.md) to learn how to declare commands, views, and their default placements.
+
+### See also
+
+* [Using Extensions](using-extensions.md)
+* [Using Toolbar](using-toolbar.md)
+* [Using Status Bar](using-status-bar.md)
+* [Using Inspector](using-inspector.md)

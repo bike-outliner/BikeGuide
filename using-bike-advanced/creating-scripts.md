@@ -233,3 +233,9 @@ Application("Bike").evaluate({ input: "hello", script: "(input) => { return inpu
 
 :::
 
+### See also
+
+* [Using Scripts](../using-bike/using-scripts.md)
+* [Creating Extensions](creating-extensions.md)
+* [Command Line Tool](command-line-tool.md)
+

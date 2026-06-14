@@ -47,3 +47,8 @@ Find options show to the left of the search text field:
 `""` - Your search will match whole words.
 
 `.*` - Your search will be interpreted as a [regular expression](https://www.quora.com/What-are-the-best-resources-for-learning-regular-expressions).
+
+### See also
+
+* [Using Outline Filtering](using-outline-filtering.md)
+* [Using Text Checking](text-checking.md)

@@ -57,3 +57,10 @@ Examples:
 ### Sidebar Query Shortcuts
 
 You can save frequently used filters as query shortcuts in the [sidebar](using-sidebar.md). With a filter active, right-click the filter field and choose **Save Filter in Sidebar**. Click a saved query shortcut to instantly apply that filter to your outline.
+
+### See also
+
+* [Using Find Panel](using-find-panel.md)
+* [Using Outline Paths](using-outline-paths.md)
+* [Using Sidebar](using-sidebar.md)
+* [Using Toolbar](using-toolbar.md)

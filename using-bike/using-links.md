@@ -86,3 +86,8 @@ When you link to a row in a Bike outline Bike resolve the link using a Spotlight
 2. Grant Bike access to the location where you are storing the link target outline document. You can do this using Bike > Settings > Sandbox.
 
 Sandbox behavior can be quite confusing. For example when you open a file in Bike then Bike is granted access to read/write that file. When you close that document Bike retains the right to read/write that file, as long as the document is in your recent documents list. Once it is no longer in your recent documents list, then Bike won't be able to read/write the file.
+
+### See also
+
+* [Text Formatting](text-formatting.md)
+* [Using Documents](using-documents.md)

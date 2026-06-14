@@ -22,3 +22,9 @@ Choose where the text caret is positioned in the window:
 
 * View > Typewriter Mode > Disable Typewriter (<kbd>Option-Command-T</kbd>)
 * Alternatively you can use the "Options" menu on the left side of the status bar
+
+### See also
+
+* [Writing Focus Mode](using-focus-mode.md)
+* [Using Full Screen Mode](using-full-screen-mode.md)
+* [Using Text Wrap](using-text-wrap.md)

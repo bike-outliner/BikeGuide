@@ -57,3 +57,9 @@ Any single typed character (a–z, 0–9, punctuation) is also a valid key.
 ### Full API Reference
 
 For the complete keybindings API including programmatic access from extensions, see the [keybindings type definitions](https://github.com/bike-outliner/extension-kit/blob/main/api/app/keybindings.d.ts).
+
+### See also
+
+* [Keyboard Shortcuts](../keyboard-shortcuts.md)
+* [Using Extensions](using-extensions.md)
+* [Interface Explorer](using-interface-explorer.md)

@@ -35,3 +35,9 @@ To change a row's type back to "body" place your text caret at the start of the 
 To change a horizontal rule's row type back to "body" you can just start typing on the horizontal rule line.
 
 The current row's type is indicated in the bottom status bar. You can also click this indicator to change the type.
+
+### See also
+
+* [Text Formatting](text-formatting.md)
+* [Bike Markdown Format](bike-markdown-format.md)
+* [Using Status Bar](using-status-bar.md)

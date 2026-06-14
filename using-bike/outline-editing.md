@@ -34,5 +34,12 @@ Indent and Outdent are important and used frequently. There are multiple keyboar
 :::
 
 ::: info
-These outline commands always work on the outline structure, moving rows with their children. This is the same in both text mode and block mode. See [outline editing](outline-editing.md) for more details.
+These outline commands always work on the outline structure, moving rows with their children. This is the same in both text mode and block mode. See [Using Selection](using-selection.md) for more on text and block mode.
 :::
+
+### See also
+
+* [Using Selection](using-selection.md)
+* [Row Types](row-types.md)
+* [Text Formatting](text-formatting.md)
+* [Keyboard Shortcuts](../keyboard-shortcuts.md)
