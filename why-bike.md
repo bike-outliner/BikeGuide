@@ -1,6 +1,7 @@
 # Why Bike?
 
-> We were promised bicycles for the mind, but we got aircraft carriers instead – Jonathan Edwards
+> “We were promised bicycles for the mind, but we got aircraft carriers instead”\
+> – [Jonathan Edwards](https://twitter.com/jonathoda)
 
 That's why I'm building Bike.
 
@@ -10,7 +11,7 @@ Bike is small, but designed for real work. It's fast. It can handle big outlines
 
 Bike makes your work open and accessible. Outlines are stored in text files using standard file formats, including [Markdown](using-bike/bike-markdown-format.md). Bike is also scriptable and extensible. Automate Bike with [scripts](using-bike/using-scripts.md), customize it with [themes](using-bike/using-themes.md), and add new features with [extensions](using-bike/using-extensions.md).
 
-I hope you'll give it a try, get a license, and let me know what to improve for the next release.
+Please give Bike a try!
 
 ### See also
 

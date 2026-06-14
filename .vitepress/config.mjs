@@ -12,9 +12,9 @@ export default defineConfig({
         text: 'Introduction',
         items: [
           { text: 'Bike Guide', link: '/' },
-          { text: 'Getting Started', link: '/getting-started' },
           { text: 'Why Bike?', link: '/why-bike' },
           { text: 'What\'s New?', link: '/whats-new' },
+          { text: 'Getting Started', link: '/getting-started' },
         ]
       },
       {
