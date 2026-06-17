@@ -1,6 +1,8 @@
 # Commands Explorer
 
-Customize Bike's keybindings through the Commands Explorer window.
+The Commands Explorer is the one place that lists *every* command Bike knows — the ones in the menus, the ones that aren't, and the ones added by extensions — along with the key you press to run each. Open it when you want to discover what Bike can do, or when a built-in shortcut isn't the one your fingers expect and you'd rather change it.
+
+I think this is the honest way to handle keybindings: instead of hiding them, Bike shows you the whole list and lets you rebind anything.
 
 Custom keybindings are only active when the outline editor has focus. They are not processed when focus is in the sidebar, find panel, or other UI elements.
 
@@ -8,9 +10,9 @@ Custom keybindings are only active when the outline editor has focus. They are n
 
 Open **Bike > Commands Explorer** to view all commands and their current keybindings. Select a command and press Return (or double-click the keybinding cell) to edit it. Press Delete to clear a custom keybinding. User-customized bindings are underlined.
 
-Use the mode picker at the top to switch between **Text Mode** and **Block Mode**. Each mode has its own set of keybindings. Text mode is active when the selection is a caret or text range. Block mode is active when entire rows are selected. The same command can have different keybindings in each mode.
+Each command shows its keybindings in two columns: **Text Mode** and **Block Mode**. They sit side by side, so you can see both at once. Text mode is active when the selection is a caret or text range. Block mode is active when entire rows are selected. The same command can have different keybindings in each mode.
 
-Sort by the **Keybinding** column to see the order keybindings are processed in. When multiple commands share the same key sequence, the one with the lowest process order takes priority.
+Click any column header to sort the table. By default commands are grouped by **Source**, then sorted by name. When multiple commands share the same key sequence, the one with the highest priority wins. Priority comes from the command's source: your own bindings from the keybindings file rank highest, then Bike and extension bindings, then menu items, and finally the Cocoa fallbacks rank lowest.
 
 ### Command Sources
 
@@ -25,6 +27,11 @@ Commands in the Commands Explorer come from several sources:
 - **Extensions** — Commands added by installed Bike extensions.
 
 ### Key Sequence Format
+
+When you edit a keybinding you'll type its key sequence. Most of the time you don't need to think about the format — you just press the keys. The full reference is here if you want it:
+
+<details>
+<summary>Key sequence format reference</summary>
 
 A key sequence is one or more keys separated by spaces. Each key is a combination of modifiers and a key name joined by hyphens. The format is case-insensitive.
 
@@ -53,6 +60,8 @@ Any single typed character (a–z, 0–9, punctuation) is also a valid key.
 | `cmd-k cmd-c`   | Chord: Command-K followed by Command-C |
 | `ctrl-x ctrl-s` | Chord: Control-X followed by Control-S |
 | `m d`           | Chord: M followed by D (no modifiers)  |
+
+</details>
 
 ### Full API Reference
 

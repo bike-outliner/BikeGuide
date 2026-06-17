@@ -2,6 +2,8 @@
 
 [Extensions](using-extensions.md) can add new commands and views to Bike. The Interface Explorer is where you decide how those commands and views show up in Bike's interface — which bar a button lives in, what symbol it uses, which inspector tabs exist, and what order your sidebar items appear in. Bike's own built-in interface items are organized here too.
 
+Why bother rearranging? Because the buttons and panels *I* think you'll reach for aren't always the ones *you* reach for. Maybe you live in the status bar and never touch the toolbar, or you want a command you run constantly sitting one click away. Rather than guess for everyone, Bike lets you put the things you use where you want them and tuck the rest out of sight.
+
 #### To open the Interface Explorer
 
 * Bike > Interface Explorer…
@@ -41,4 +43,3 @@ This division of labor is the point: an extension suggests sensible defaults, an
 * [Using Extensions](using-extensions.md)
 * [Using Toolbar](using-toolbar.md)
 * [Using Status Bar](using-status-bar.md)
-* [Using Inspector](using-inspector.md)

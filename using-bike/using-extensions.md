@@ -1,6 +1,10 @@
 # Extensions Explorer
 
-Extend and customize Bike with extensions. They introduce new commands, keybindings, views, styles, and more. Sensitive features are safeguarded by a permission system.
+Extend and customize Bike with extensions. They introduce new commands, keybindings, views, styles, and more. This is how Bike grows beyond what ships in the box: an extension can add a command you wish existed, bind it to a key, draw a new view, or restyle the editor.
+
+I keep Bike's core small on purpose. When you want more, an extension is usually the right tool — it adds a real feature instead of a one-off automation you have to run by hand. You can find extensions other people have written on Bike's [extension wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810), and you can write your own.
+
+Extensions run real code, so I'd be honest with you: that's powerful, and it's also why sensitive features are safeguarded by a permission system. An extension only gets the capabilities it asks for and you allow, so installing one doesn't hand it the keys to everything.
 
 Open **Bike > Extensions Explorer** to browse available extensions, install them, and manage which extensions are enabled.
 

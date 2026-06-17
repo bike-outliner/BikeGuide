@@ -16,15 +16,34 @@ This combination gives you full ownership of your data. Your notes and thoughts 
 
 ![Format Options](/assets/formats.png)
 
-The three main formats, `.bike`, `.md`, and `.opml`, are equivalent: each can represent all of your Bike outline state, including row types, text formatting, attributes, and hierarchy. The format you choose depends on how you want to work with the file outside Bike. 
+Bike's two main formats, `.bike` and `.md`, are equivalent: each can represent all of your Bike outline state, including row types, text formatting, attributes, and hierarchy. The format you choose depends on how you want to work with the file outside Bike.
 
 [Bike HTML Format](bike-html-format.md) `.bike`: Uses a subset of standard HTML. It's also a valid HTML document you can open in a web browser.
 
 [Bike Markdown Format](bike-markdown-format.md) `.md`: Uses a subset of standard markdown. Good for interoperability with other text-based tools.
 
-[Bike OPML Format](bike-opml-format.md) `.opml`: Uses the standard outline format for exchanging outlines with other outliners.
+Bike also works with several [other formats](other-bike-formats.md) — OPML, JSON, HTML, plain text, and rich text — for moving outlines between apps, processing them with tools, or copying into other documents.
 
-`.txt`: plain text, with hierarchy from leading tab indentation. It can't store metadata, so features like row links break when you reopen a `.txt` outline.
+#### Which format should I use?
+
+If you're not sure, here's what I'd do:
+
+- **Just using Bike?** Use `.bike`. It's the native format, the default, and the one I recommend for everyday work.
+- **Sharing, version control, or editing in other text tools?** Use `.md`. It's a plain markdown file that reads fine anywhere markdown does, and it preserves every Bike feature. See [Bike Compatible Apps](../bike-compatible-apps.md) for more on interoperability.
+- **Moving an outline to or from another outliner?** Use `.opml`. It's the long-standing interchange format for outlines — just know that a round trip through another app may drop Bike-specific details that app doesn't understand. See [Other Bike Formats](other-bike-formats.md).
+- **Need something dead simple with no metadata?** Use `.txt`, and accept that links and other metadata won't survive a reopen. See [Other Bike Formats](other-bike-formats.md).
+
+`.bike`, `.md`, `.opml`, and `.json` are all loss-free in Bike, so you can switch between them any time with File > Save As.
+
+### Document Options
+
+Each document carries a few settings of its own, separate from Bike's global Settings > Document. Open them with File > Document Options…
+
+* **Spelling and Grammar** — set the [spell-check](outline-checking.md) language for this document, or leave it on "Automatic by Language" to let macOS detect it. The choice is saved with the document, so an outline you write in another language keeps checking against that language wherever you open it.
+* **File Type** — shows the document's current format. Click **Save As…** to change it; this hands off to the normal save panel where you pick a different [format](#format-options).
+* **Save row created & modified attributes** — when this is on, Bike records each row's created and modified timestamps in the file. It's only available for formats that can store row attributes, so it's disabled for formats like plain text that can't.
+
+Click **Apply** to keep your changes, or **Cancel** to discard them.
 
 ### Open Options
 
@@ -57,6 +76,6 @@ These same steps are followed when reading text from the pasteboard.
 
 * [Bike HTML Format](bike-html-format.md)
 * [Bike Markdown Format](bike-markdown-format.md)
-* [Bike OPML Format](bike-opml-format.md)
+* [Other Bike Formats](other-bike-formats.md)
 * [Using Windows](using-windows.md)
 * [Bike Compatible Apps](../bike-compatible-apps.md)

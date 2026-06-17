@@ -1,8 +1,12 @@
 # Using Inspector
 
-The inspector is an optional panel on the right side of the Bike window. Extensions use the inspector to display custom interactive content such as word explorers, calendars, and other tools.
+The inspector is an optional panel on the right side of the Bike window. It's a place to show interactive content next to your outline without crowding the outline itself.
 
-When no extensions have added items to the inspector it will display "No Inspector Items".
+I built the inspector mostly for extensions. Some tools want screen space that doesn't belong inline in your text — a date grid, a word explorer, a custom panel. The inspector gives them a home on the right side of the window, where you can glance at them and reach for them when you need them, and tuck them away when you don't.
+
+The best example that ships with Bike is the [Calendar](using-calendar.md). Its month grid lives in the inspector — click a date and Bike jumps to that day's row. That's the kind of thing the inspector is for.
+
+So in practice the inspector is something extensions fill, not something you populate yourself. When no extensions have added items to it, the inspector will display "No Inspector Items".
 
 #### To show the inspector
 
@@ -24,4 +28,3 @@ For more on creating extensions that use the inspector, see the [DOM Context Tut
 
 * [Using Calendar](using-calendar.md)
 * [Interface Explorer](using-interface-explorer.md)
-* [Using Sidebar](using-sidebar.md)

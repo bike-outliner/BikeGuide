@@ -4,7 +4,7 @@ export default defineConfig({
   title: 'Bike Guide',
   description: 'User guide for the Bike outliner',
 
-  srcExclude: ['SUMMARY.md', 'CLAUDE.md'],
+  srcExclude: ['SUMMARY.md', 'CLAUDE.md', 'fact-check-report.md'],
 
   themeConfig: {
     sidebar: [
@@ -18,37 +18,29 @@ export default defineConfig({
         ]
       },
       {
-        text: 'Editing Outlines',
+        text: 'Using Outlines',
         items: [
           { text: 'Outline Viewing', link: '/using-bike/outline-viewing' },
+          { text: 'Outline Navigation', link: '/using-bike/outline-navigation' },
           { text: 'Outline Editing', link: '/using-bike/outline-editing' },
-          { text: 'Using Selection', link: '/using-bike/using-selection' },
-          { text: 'Row Types', link: '/using-bike/row-types' },
+          { text: 'Outline Checking', link: '/using-bike/outline-checking' },
+          { text: 'Outline Links', link: '/using-bike/outline-links' },
+          { text: 'Row Formatting', link: '/using-bike/row-formatting' },
           { text: 'Text Formatting', link: '/using-bike/text-formatting' },
-          { text: 'Using Text Checking', link: '/using-bike/text-checking' },
-          { text: 'Using Links', link: '/using-bike/using-links' },
+          { text: 'Using Accessibility', link: '/using-bike/using-accessibility' },
         ]
       },
       {
         text: 'Finding & Filtering',
         items: [
           { text: 'Using Find Panel', link: '/using-bike/using-find-panel' },
-          { text: 'Using the Choice Palette', link: '/using-bike/using-the-choice-palette' },
+          { text: 'Using the Choice Box', link: '/using-bike/using-the-choice-box' },
           { text: 'Using Outline Filtering', link: '/using-bike/using-outline-filtering' },
           { text: 'Using Outline Paths', link: '/using-bike/using-outline-paths' },
         ]
       },
       {
-        text: 'Focus & Display',
-        items: [
-          { text: 'Using Text Wrap', link: '/using-bike/using-text-wrap' },
-          { text: 'Writing Focus Mode', link: '/using-bike/using-focus-mode' },
-          { text: 'Using Typewriter Mode', link: '/using-bike/using-typewriter-mode' },
-          { text: 'Using Full Screen Mode', link: '/using-bike/using-full-screen-mode' },
-        ]
-      },
-      {
-        text: 'Window & Interface',
+        text: 'Windows',
         items: [
           { text: 'Using Windows', link: '/using-bike/using-windows' },
           { text: 'Using Sidebar', link: '/using-bike/using-sidebar' },
@@ -59,12 +51,20 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Settings',
+        items: [
+          { text: 'Settings Window', link: '/using-bike/settings-window' },
+          { text: 'Editor View Settings', link: '/using-bike/editor-view-settings' },
+        ]
+      },
+      {
         text: 'Files',
         items: [
           { text: 'Using Documents', link: '/using-bike/using-documents' },
+          { text: 'Printing Documents', link: '/using-bike/printing-documents' },
           { text: 'Bike HTML Format', link: '/using-bike/bike-html-format' },
           { text: 'Bike Markdown Format', link: '/using-bike/bike-markdown-format' },
-          { text: 'Bike OPML Format', link: '/using-bike/bike-opml-format' },
+          { text: 'Other Bike Formats', link: '/using-bike/other-bike-formats' },
         ]
       },
       {
@@ -73,17 +73,11 @@ export default defineConfig({
           { text: 'Using Themes', link: '/using-bike/using-themes' },
           { text: 'Using Scripts', link: '/using-bike/using-scripts' },
           { text: 'Using Shortcuts', link: '/using-bike/using-shortcuts' },
+          { text: 'Using Extensions', link: '/using-bike/using-extensions' },
+          { text: 'Using CLI Interface', link: '/using-bike-advanced/using-cli-interface' },
           { text: 'Using MCP Server', link: '/using-bike/using-mcp-server' },
-        ]
-      },
-      {
-        text: 'Explorers',
-        items: [
           { text: 'Commands Explorer', link: '/using-bike/using-commands' },
-          { text: 'Extensions Explorer', link: '/using-bike/using-extensions' },
           { text: 'Interface Explorer', link: '/using-bike/using-interface-explorer' },
-          { text: 'Outline Path Explorer', link: '/using-bike/using-outline-path-explorer' },
-          { text: 'Logs Explorer', link: '/using-bike/using-logs' },
         ]
       },
       {
@@ -93,7 +87,7 @@ export default defineConfig({
           { text: 'Creating Themes', link: '/using-bike-advanced/creating-themes' },
           { text: 'Creating Shortcuts', link: '/using-bike-advanced/creating-shortcuts' },
           { text: 'Creating Extensions', link: '/using-bike-advanced/creating-extensions' },
-          { text: 'Command Line Tool', link: '/using-bike-advanced/command-line-tool' },
+          { text: 'Logs Explorer', link: '/using-bike/using-logs' },
         ]
       },
       {

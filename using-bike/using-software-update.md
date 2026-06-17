@@ -6,15 +6,15 @@ For the direct download version of Bike:
 
 #### To check for updates:
 
-* Use Bike > Check for Updates
+* Use Bike > Check for Update…
 
 #### To check for updates automatically:
 
-* Use Bike > Settings > Check for Updates: Automatically
+* Use Bike > Settings and turn on "Check for Updates automatically"
 
 #### To include preview release updates:
 
-* Use Bike > Settings > Check for Updates: Include Preview Releases
+* Use Bike > Settings and turn on the "Include "Preview" releases in updates" checkbox
 
 Preview releases work in cycles. I will post a series of preview releases and then once things are working well I will mark the last preview release as final.
 

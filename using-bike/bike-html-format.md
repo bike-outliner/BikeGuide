@@ -34,8 +34,8 @@ A `.bike` file is an HTML document. The outline lives in a nested list inside th
 
 Each `<li>` carries the row's identity and metadata as attributes:
 
-- **`id`** — the row's persistent id, stable across edits and used by [row links](using-links.md).
-- **`data-type`** — the [row type](row-types.md), written only when it isn't the default `body`. For example `data-type="heading"` or `data-type="task"`. Type values are `heading`, `quote`, `code`, `note`, `task`, `ordered`, `unordered`, and `hr`.
+- **`id`** — the row's persistent id, stable across edits and used by [row links](outline-links.md).
+- **`data-type`** — the [row type](row-formatting.md), written only when it isn't the default `body`. For example `data-type="heading"` or `data-type="task"`. Type values are `heading`, `quote`, `code`, `note`, `task`, `ordered`, `unordered`, and `hr`.
 - **`data-created` / `data-modified`** — ISO 8601 timestamps, written when the document is set to keep row dates.
 
 ### Row attributes
@@ -121,4 +121,3 @@ Here's a complete `.bike` document showing several features together:
 
 * [Using Documents](using-documents.md)
 * [Bike Markdown Format](bike-markdown-format.md)
-* [Bike Compatible Apps](../bike-compatible-apps.md)

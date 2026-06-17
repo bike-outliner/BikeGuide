@@ -4,10 +4,10 @@ Bike can run as an MCP server, letting AI assistants like Claude read and edit y
 
 MCP (the [Model Context Protocol](https://modelcontextprotocol.io)) is a standard way for AI assistants to talk to the apps on your computer. When you connect an assistant to Bike's MCP server it can open your outlines, read what's there, and make changes for you — adding rows, moving things around, checking off tasks, and more.
 
-The server is part of the [`bike` command line tool](../using-bike-advanced/command-line-tool.md). Like the rest of that tool, it drives the running Bike app, so **Bike needs to be open** for the server to do anything.
+The server is part of the [`bike` command line tool](../using-bike-advanced/using-cli-interface.md). Like the rest of that tool, it drives the running Bike app, so **Bike needs to be open** for the server to do anything.
 
 ::: tip
-The MCP server isn't your only option. Some agents — coding assistants like Claude Code, for example — can already run shell commands on their own. For those you can skip the MCP setup entirely and just tell the agent to use the [`bike` command line tool](../using-bike-advanced/command-line-tool.md) directly.
+The MCP server isn't your only option. Some agents — coding assistants like Claude Code, for example — can already run shell commands on their own. For those you can skip the MCP setup entirely and just tell the agent to use the [`bike` command line tool](../using-bike-advanced/using-cli-interface.md) directly.
 :::
 
 ### Starting the server
@@ -51,6 +51,4 @@ Once connected, an assistant can:
 
 ### See also
 
-- [Command Line Tool](../using-bike-advanced/command-line-tool.md) — the rest of what the `bike` command can do
-- [Using Scripts](using-scripts.md) — automate Bike with AppleScript
-- [Using Shortcuts](using-shortcuts.md) — automate Bike with macOS Shortcuts
+- [Using CLI Interface](../using-bike-advanced/using-cli-interface.md) — the rest of what the `bike` command can do

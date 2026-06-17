@@ -30,6 +30,10 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Outdent Row: <kbd>Shift-Tab</kbd> or <kbd>Control-Command-Left</kbd>
 * Move Row Up: <kbd>Control-Command-Up</kbd>
 * Move Row Down: <kbd>Control-Command-Down</kbd>
+* Move Up (Text): <kbd>Control-Option-Up</kbd>
+* Move Down (Text): <kbd>Control-Option-Down</kbd>
+* Indent (Text): <kbd>Control-Option-Right</kbd>
+* Outdent (Text): <kbd>Control-Option-Left</kbd>
 * Delete Rows: <kbd>Escape</kbd> to block mode, then <kbd>Delete</kbd> or <kbd>Command-Shift-K</kbd>
 
 ### Expand / Collapse

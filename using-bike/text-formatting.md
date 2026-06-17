@@ -4,13 +4,20 @@ Bike supports bold, italic, code, highlight, strikethrough, superscript, and sub
 
 Bike's rich text editing should be familiar, but also has a few innovations. My goal is to make Bike formatting precise like Markdown, but without all the syntax characters.
 
-#### Link Buttons
+#### To format text
 
-There is often an overlap between commands that activate links and commands that edit links. This can make both tasks more difficult.
+* Use the formatting commands in the Format menu, or their keyboard shortcuts
+* Or press <kbd>Command-E</kbd> to open the Formatting Popover and apply formatting with single keys
 
-Bike solves this problem with link buttons. After each link a button is added. Click the button to activate the link. Click and edit the text normally without fear of activating the link.
+The Formatting Popover is the one I reach for most. It's described below.
 
-To edit the URL associated with a link right click on the link text or link button and choose "Edit Link" from the popup menu.
+#### To add a link
+
+Links work like other formatting, with one twist that makes them easier to live with.
+
+There's often an overlap between commands that activate a link and commands that edit it. That overlap makes both tasks harder. Bike solves this problem with _link buttons_: after each link a small button is added. Click the button to activate the link. Click and edit the link text normally, without fear of triggering it.
+
+A quick trick: copy a URL, select some text, and paste — Bike applies the URL to the selected text as a link instead of replacing it. For this and everything else about links, including how to create them and edit their URLs, see [Outline Links](outline-links.md).
 
 #### Typing Affinity
 
@@ -32,7 +39,5 @@ Bike indicates this hidden formatting state by showing the hidden attributes as 
 
 ### See also
 
-* [Using Links](using-links.md)
-* [Row Types](row-types.md)
-* [Bike Markdown Format](bike-markdown-format.md)
-* [Keyboard Shortcuts](../keyboard-shortcuts.md)
+* [Outline Links](outline-links.md)
+* [Row Formatting](row-formatting.md)

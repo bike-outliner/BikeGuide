@@ -39,4 +39,3 @@ Each Bike shortcut action comes with documentation describing the input paramete
 ### See also
 
 * [Using Shortcuts](../using-bike/using-shortcuts.md)
-* [Creating Extensions](creating-extensions.md)

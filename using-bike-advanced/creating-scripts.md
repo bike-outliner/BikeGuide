@@ -81,19 +81,19 @@ tell application "Bike"
     -- You can also just make an empty row
     make row
     
-    -- Or you can make a row with an id, so its easy to find later, even if it's name has been edited.
-    -- If the given id is already in use then the row will still be made, but will get assigned a different id.
-    make row with properties {id:"boom", name:"My id is boom"}
+    -- Or you can make a row with a persistent id, so it's easy to find later, even if its name has been edited.
+    -- A row's `id` is a read-only number that isn't stable across saves, so use the writable `persistent id` for this.
+    make row with properties {persistent id:"boom", name:"My id is boom"}
     
-    -- Change the name of an existing row
-    set name of row id "boom" to "You've been renamed"
+    -- Change the name of an existing row. Look it up by persistent id using the `get row` command.
+    set name of (get row persistent id "boom") to "You've been renamed"
     
     -- Check to see if a row exists
-    if exists row id "boom" then
-      log "Yes! row id boom exists"
+    if (get row persistent id "boom") is not missing value then
+      log "Yes! row with persistent id boom exists"
     end if
     
-    tell row id "boom"
+    tell (get row persistent id "boom")
       -- Read/Write row level attributes
       exists (attribute named "test") -- false
       make attribute with properties {name:"test", value:"value"}
@@ -104,12 +104,12 @@ tell application "Bike"
     end tell
     
     -- When "Hello World" moves it brings all containing rows with it.
-    move row named "Hello World" to row id "boom"
+    move row named "Hello World" to (get row persistent id "boom")
     move row named "one" to before row named "two"
     
     collapse row named "Hello World" with all
     expand row named "Hello World"
-    select at row id "boom"
+    select at (get row persistent id "boom")
     
     -- Now just show "Hello World" and contained rows
     set focused row to row named "Hello World"
@@ -157,7 +157,7 @@ end tell
 
 #### Today Script
 
-This script create a simple calendar structure in your outline and adds a new line to "today" where you can start taking notes. It's interesting because it uses row `id`'s to track rows. Once the calendar is created you can move it to any place in your outline and the script will keep working.
+This script creates a simple calendar structure in your outline and adds a new line to "today" where you can start taking notes. It's interesting because it uses each row's `persistent id` to track rows. Once the calendar is created you can move it to any place in your outline and the script will keep working.
 
 ```applescript
 set yearName to do shell script "date +'%Y'"
@@ -180,11 +180,12 @@ end tell
 to getOrMake(getId, getName, rowContainer)
   using terms from application "Bike"
     tell container document of rowContainer
-      if exists row id getId then
-        return row id getId
+      set existing to get row persistent id getId
+      if existing is not missing value then
+        return existing
       else
         tell rowContainer
-          return make row at front with properties {id:getId, name:getName}
+          return make row at front with properties {persistent id:getId, name:getName}
         end tell
       end if
     end tell
@@ -237,5 +238,4 @@ Application("Bike").evaluate({ input: "hello", script: "(input) => { return inpu
 
 * [Using Scripts](../using-bike/using-scripts.md)
 * [Creating Extensions](creating-extensions.md)
-* [Command Line Tool](command-line-tool.md)
 

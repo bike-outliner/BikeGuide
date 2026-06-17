@@ -2,7 +2,16 @@
 
 ![Find Panel](/assets/Finding.png)
 
-Use the find panel to find text in your outline.
+Use the find panel to find text in your outline. It works the way Find works in most Mac apps: it highlights matches in place and steps you through them one at a time, without changing which rows are visible.
+
+::: tip Find, filter, or jump?
+Bike gives you a few different ways to track something down. Reach for the one that fits what you're doing:
+
+- **[Find panel](using-find-panel.md)** — search the current view and highlight matches in place. Best when you want to read or edit a match in context.
+- **[Outline filtering](using-outline-filtering.md)** — *hide* the rows that don't match so only the matches (and their ancestors) remain. Best when you want to see your matches as a group, act on them at once, or save the query.
+- **[Choice box](using-the-choice-box.md)** — a fuzzy jump-to list for commands like Go To and Add Link. Best when you already know the row you want and just want to land on it fast.
+- **[Outline paths](using-outline-paths.md)** — the query language underneath filtering, styles, and scripts. Learn this when text search isn't precise enough (e.g. "every unfinished task").
+:::
 
 #### To show the find panel
 
@@ -51,4 +60,3 @@ Find options show to the left of the search text field:
 ### See also
 
 * [Using Outline Filtering](using-outline-filtering.md)
-* [Using Text Checking](text-checking.md)

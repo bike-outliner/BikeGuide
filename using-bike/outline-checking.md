@@ -1,4 +1,4 @@
-# Using Text Checking
+# Outline Checking
 
 ![Checking Panel](/assets/CheckingPanel.png)
 
@@ -8,7 +8,7 @@ Bike supports autocorrect, substitutions, user replacements, and spell checking.
 
 ## Spelling and grammar check
 
-Bike will highlight spelling errors in your outline with a red zigzag underline. To fix a spelling error move the text caret to the end of the word. After a half second the text caret will bounce and a popup will show with a suggestion.
+Bike will highlight spelling errors in your outline with a solid red underline. To fix a spelling error move the text caret to the end of the word. After a half second the text caret will bounce and a popup will show with a suggestion.
 
 ![Word suggestions](/assets/word-suggestions%20(1).png)
 
@@ -45,7 +45,7 @@ In Bike just type. If a bad autocorrection happens use the Delete key to reverse
 
 Autocorrect replaces what you've typed with something else. Often this is helpful, but sometimes it is wrong. Bike makes each autocorrection easy to spot so you won't be surprised later.
 
-In Bike all autocorrected text is underlined with a blue zigzag line. This underline remains visible until you start typing a new word. If you move back into the original word the autocorrections will show again.
+In Bike all autocorrected text is underlined with a solid blue line. This underline remains visible until you start typing a new word. If you move back into the original word the autocorrections will show again.
 
 ### Reversible
 

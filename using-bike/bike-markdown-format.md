@@ -1,6 +1,8 @@
 # Bike Markdown Format
 
-Bike Markdown is Bike's text-based file format, saved with a `.md` extension. It's a subset of standard markdown — open a `.md` file in any markdown viewer and it will render reasonably well. Because it's a subset, Bike will warn you when you open a `.md` file that uses markdown features Bike can't represent.
+Bike Markdown is Bike's text-based file format, saved with a `.md` extension. I chose a markdown subset so that your outlines stay plain, portable text you can read, diff, and edit anywhere — open a `.md` file in any markdown viewer and it will render reasonably well. The tradeoff of sticking to a subset is that some markdown features fall outside what Bike can represent, so Bike will warn you when you open a `.md` file that uses them.
+
+I reach for this format when I want my outline to live as friendly plain text — in a Git repo, alongside other notes, or anywhere a `.bike` file would feel out of place. If you'd rather keep every Bike feature with full fidelity, see [Bike HTML Format](bike-html-format.md).
 
 ### Markdown Subset
 
@@ -44,7 +46,7 @@ Inline formatting uses standard markdown syntax:
 | _Italic_          | `*text*`      |
 | ~~Strikethrough~~ | `~~text~~`    |
 | `Code`            | `` `text` ``  |
-| Highlight         | `[text]{highlight}` |
+| Highlight         | `==text==`    |
 | Link              | `[text](url)` |
 
 ### Pandoc Attributes
@@ -66,20 +68,14 @@ Pandoc attributes are only written when a row or span actually uses features tha
 - Styled row {.highlight}
 ```
 
-**Row IDs** are encoded in the markdown only when they are referenced by a link within the document, or when the ID appears to have been set explicitly (i.e. it doesn't look auto-generated). Auto-generated IDs are omitted to keep the file clean:
+**Row IDs** are encoded in the markdown only when they are referenced by a [link](outline-links.md) within the document, or when the ID appears to have been set explicitly (i.e. it doesn't look auto-generated). Auto-generated IDs are omitted to keep the file clean:
 
 ```
 - # Section {#intro}
 - See the [intro section](#intro)
 ```
 
-**Inline attributes** use Pandoc's bracketed span syntax `[text]{attrs}` for formatting that has no standard markdown equivalent. For example, highlighted text:
-
-```
-- This has [highlighted text]{highlight} in it
-```
-
-Or custom attributes on a span of text:
+**Inline attributes** use Pandoc's bracketed span syntax `[text]{attrs}` for formatting that has no standard markdown equivalent. For example, custom attributes on a span of text:
 
 ```
 - Price is [lo]{pizza}
@@ -124,10 +120,10 @@ Here's a complete example showing several features together:
 
 - # Project Notes {#notes}
 	- This has **bold** and *italic* text
-	- A row with [highlighted words]{highlight}
+	- A row with ==highlighted words==
 	- > An important quote
 	- [ ] Review the [documentation](https://example.com)
-	- [x] Write initial draft {done}
+	- [x] Write initial draft
 	1. First step
 	2. Second step
 	+ A bullet point
@@ -140,5 +136,5 @@ Here's a complete example showing several features together:
 ### See also
 
 * [Using Documents](using-documents.md)
-* [Row Types](row-types.md)
+* [Row Formatting](row-formatting.md)
 * [Text Formatting](text-formatting.md)

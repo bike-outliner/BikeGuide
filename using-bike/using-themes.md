@@ -1,6 +1,8 @@
 # Using Themes
 
-Use themes to customize Bike's colors, materials, and typography. You can quickly switch themes in Bike's "Appearance" settings panel. You can share themes with other users.
+Use themes to customize Bike's colors, materials, and typography. Themes are easy to switch and easy to share. You can quickly switch themes in Bike's "Appearance" settings panel, and you can hand a theme file to another user.
+
+One thing I like here: you can set a separate theme for light mode and for dark mode, so Bike can look one way during the day and another at night. You'll find themes other people have made on Bike's [extension wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810).
 
 **To choose a theme:**
 

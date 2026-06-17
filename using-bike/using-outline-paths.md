@@ -1,5 +1,15 @@
 # Using Outline Paths
 
+Outline paths are Bike's query language for locating rows. You write a short path, and Bike hands back every row that matches. They're the engine behind filtering, editor styles, scripts, and Shortcuts.
+
+You can get a long way with just a handful of patterns. Here's the one I reach for most — type it in the [filter](using-outline-filtering.md) bar to see every unfinished task anywhere in your outline:
+
+```
+//task not @done
+```
+
+The rest of this page builds up the full syntax from the ground up. It goes deep, so feel free to skim — the [Basic Paths](#basic-paths) and [Step Predicate](#step-predicate) sections cover most of what you'll use day to day.
+
 ## What is an outline path?
 
 On your computer you use file paths to locate files.
@@ -22,9 +32,9 @@ Outline paths don't do much on their own, but they are an important building blo
 
 1. Search UI uses outline paths to filter your outline
 2. Editor styles use relative outline paths to select which rules apply
-3. (Not yet ported to Bike 2) AppleScript dictionary's `query` command takes an outline path and returns the path result.
-4. (Not yet ported to Bike 2) Shortcuts "Query Rows" action takes an outline path and returns matching rows.
-5. Choice Palette settings use an outline path to specify the initial set of rows to be displayed in the choice palette before filtering is performed.
+3. AppleScript dictionary's `query` command takes an outline path and returns the path result.
+4. Shortcuts "Query Rows" action takes an outline path and returns matching rows.
+5. Choice Box settings use an outline path to specify the initial set of rows to be displayed in the choice box before filtering is performed.
 
 ### Outline Path Explorer
 
@@ -104,7 +114,7 @@ To solve this we can use the "descendant" axis. It selects all descendants of th
 
 <summary>Advanced step axes </summary>
 
-Another useful axis is "parent". This uses the same `..` sytax that file paths use to go to the parent directory.
+Another useful axis is "parent". This uses the same `..` syntax that file paths use to go to the parent directory.
 
 *   `//pizza/..box`
 
@@ -169,10 +179,11 @@ Each step can include a row type test at the start.
 
 <summary>List of row types</summary>
 
+* `row`
 * `body`
 * `heading`
-* `quote`
-* `code`
+* `blockquote`
+* `codeblock`
 * `note`
 * `unordered`
 * `ordered`
@@ -307,7 +318,7 @@ Outline path functions serve a variety of purposes:
 
 These functions provide easy and efficient access to outline structure.
 
-In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `level()` you could use `count(.ancestor::*)`, but you should expect `level()` to have better performance.
+In some cases you might accomplish similar results with more complex outline path queries. For example instead of using `level()` you could use `count(ancestor::*)`, but you should expect `level()` to have better performance.
 
 *   parent() -> boolean
 
@@ -420,6 +431,4 @@ These functions all provide access to editor state. They are only available when
 
 ### See also
 
-* [Outline Path Explorer](using-outline-path-explorer.md)
 * [Using Outline Filtering](using-outline-filtering.md)
-* [Using the Choice Palette](using-the-choice-palette.md)
