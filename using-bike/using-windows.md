@@ -76,7 +76,7 @@ Bike solves this with **window layouts**, configured in Settings > Document unde
 
 Bike captures that arrangement as your saved layout and opens new documents with it.
 
-#### Match the current window's layout
+#### Match the Current Window's Layout
 
 A checkbox, **Match the current window's layout**, decides which layout new documents actually use:
 

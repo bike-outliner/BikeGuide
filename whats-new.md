@@ -29,7 +29,8 @@ The new features are out of your way when you don't need them. But when you do n
 - **[Themes](using-bike/using-themes.md)** — Themes set fonts, colors, and more. Backed by a programable style system that you can also plug into with extensions.
 - **[Markdown](using-bike/bike-markdown-format.md)** — Bike Markdown stores your outline as a nested Markdown list. Easily round trip your outlines through markdown tools.
 - **[Keybindings](using-bike/using-commands.md)** — Set custom keybindings using the  Commands Explorer. Get fancy with multi-stroke chords, or just set a few keys to your favorite commands.
-- **[Accessibility](using-bike/using-accessibility.md)** — Navigate and edit your outlines with assistive technologies. Bike is fully accessible and works well with VoiceOver.
+- **[Accessibility](using-bike/using-accessibility.md)** — Navigate and edit your outlines with assistive technologies. Bike now works with VoiceOver.
+- **[Writing Tools](using-bike/using-writing-tools.md)** — Bike's editor now works with the macOS Edit > Writing Tools system.
 - **[Interface Explorer](using-bike/using-interface-explorer.md)** — Customize Bike's interface. Add commands to the toolbar and statusbar. Organize views in the inspector.
 - **[Calendar System](using-bike/using-calendar.md)** — Open the inspector and click a day. Bike takes you to that day's row, creating it if needed. The calendar is an extension that ships with Bike.
 - **[Command Line Interface](using-bike-advanced/using-cli-interface.md)** — Access Bike from the command line. Run commands, automate tasks, observe queries, and integrate with other tools.

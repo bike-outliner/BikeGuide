@@ -8,7 +8,7 @@ Outline filtering hides rows that don't match your filter, letting you focus on 
 
 The filter field lives in the editor [toolbar](using-toolbar.md). Start typing there to filter your outline.
 
-### What you see while filtering
+### What You See While Filtering
 
 Filtering generates a set of matching rows, then reshapes the outline around them:
 
@@ -29,7 +29,7 @@ Filtering generates a set of matching rows, then reshapes the outline around the
 
 When you clear a filter Bike restores the scroll position and folded rows you had before you started, so filtering never loses your place. <kbd>Command-Return</kbd> is the exception — it keeps the folds the filter set, so you can carry that pruned view back into normal editing.
 
-### Working with matches
+### Working with Matches
 
 Right-click the filter field for commands that act on the whole set of matches at once:
 

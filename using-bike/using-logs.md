@@ -6,7 +6,7 @@ Open **Bike > Logs Explorer** to view Bike's log output. It's mainly a tool for 
 
 * Bike > Logs Explorer
 
-### What you'll find
+### What You'll Find
 
 * A list of loggers along the side — toggle which ones are shown to focus on just the output you care about.
 * A searchable table of log entries — type in the search field to narrow them down.

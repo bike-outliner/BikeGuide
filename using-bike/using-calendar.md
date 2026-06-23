@@ -4,13 +4,13 @@ The calendar gives Bike a notes-by-date workflow. Pick a date and Bike generates
 
 The calendar shows up in two places: a **Today** button in the [sidebar](using-sidebar.md) and a month-grid **Calendar** panel in the [inspector](using-inspector.md).
 
-### Jumping to today
+### Jumping to Today
 
 * Click the **Today** button in the sidebar.
 
 This jumps to today's row, creating it first if it doesn't exist yet.
 
-### The calendar inspector
+### The Calendar Inspector
 
 The inspector shows a month grid you can click around in.
 
@@ -20,7 +20,7 @@ The inspector shows a month grid you can click around in.
 
 Click any date in the grid to jump to that day's row. When you hover over the calendar's header you'll find three controls: ‹ for the previous month, ◆ for today, and › for the next month. Selecting any row inside the date hierarchy highlights its matching day back in the grid.
 
-### How dated rows are created
+### How Dated Rows Are Created
 
 Rows are created only as you need them. Picking a date creates just the rows above it that don't already exist, and inserts them in chronological order among their siblings. Existing rows are reused, so you can edit the text of any year, month, or day row without breaking the link back to the calendar.
 
@@ -72,7 +72,7 @@ Markdown outside the span formats the row. A leading `#` or `##` makes it a head
 
 </details>
 
-### The calendar is an extension
+### The Calendar Is an Extension
 
 The calendar isn't built into Bike — it's one of Bike's [open core extensions](https://github.com/bike-outliner/core-extensions/tree/main/src/calendar.bkext). The whole thing is just an extension, so you can read its source, change how it behaves, or use it as a starting point for something of your own.
 

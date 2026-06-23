@@ -37,7 +37,7 @@ The starting point for lesser people, such as myself, is to find example scripts
 
 * [Bike Support Forum – Extensions Wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810)
 
-### Example scripts
+### Example Scripts
 
 You'll get the most out of these scripts by using [Script Debugger](https://latenightsw.com) instead of Script Editor that comes with your Mac. Among other things Script Debugger allows you to step through the script line by line so you can see the effect of each command on you document.
 
@@ -193,7 +193,7 @@ to getOrMake(getId, getName, rowContainer)
 end getOrMake
 ```
 
-#### Run app context script
+#### Run App Context Script
 
 You can call from AppleScript into Bike's app [extension](https://github.com/bike-outliner/extension-kit/blob/main/docs/app-context-tutorial.md) API using the `evaluate` command.
 

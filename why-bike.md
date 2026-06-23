@@ -6,7 +6,7 @@ That is, it's a text editor, where you indent to create a hierarchy. Once you ha
 
 I think outliners are the best way to write and think on a computer. I've spent my career building and refining outliners. Bike is the latest, and greatest, of those efforts.
 
-## Why Bike Specifically?
+## Why Bike specifically?
 
 Steve Jobs likened the computer to a bicycle for the mind.
 
@@ -23,9 +23,7 @@ Bike's core is small, but designed for real work. It's a fast macOS native app. 
 
 Bike is powerful. Sophisticated query system. Customizable sidebar. Powerful navigation. Calendar system. All efficient, and out of your way when you don't need them.
 
-Bike is uniquely flexible.
-
-It's built to be shaped with themes, scripts, extensions, and more. It uses well known file formats (Markdown, HTML), keeping your work open and accessible. Bike provides a simple and efficient outlining core that you can customize to fit your needs.
+Bike is uniquely flexible — built to be shaped with themes, scripts, extensions, and more. It uses well known file formats (Markdown, HTML), keeping your work open and accessible. Bike provides a simple and efficient outlining core that you can customize to fit your needs.
 
 ### See also
 

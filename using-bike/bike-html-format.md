@@ -6,7 +6,7 @@ Because the file is well-formed XML as well as HTML, you can also process `.bike
 
 If you want a plain-text format instead, see [Bike Markdown Format](bike-markdown-format.md). For an overview of all of Bike's formats, see [Using Documents](using-documents.md).
 
-### Document structure
+### Document Structure
 
 A `.bike` file is an HTML document. The outline lives in a nested list inside the `<body>`:
 
@@ -38,7 +38,7 @@ Each `<li>` carries the row's identity and metadata as attributes:
 - **`data-type`** — the [row type](row-formatting.md), written only when it isn't the default `body`. For example `data-type="heading"` or `data-type="task"`. Type values are `heading`, `quote`, `code`, `note`, `task`, `ordered`, `unordered`, and `hr`.
 - **`data-created` / `data-modified`** — ISO 8601 timestamps, written when the document is set to keep row dates.
 
-### Row attributes
+### Row Attributes
 
 Rows can carry extra attributes. Standard HTML attributes (`class`, `title`, `style`, `lang`, `dir`, `xml:lang`) are written as-is. Every other attribute is prefixed with `data-` so the file stays valid HTML. For example, when you check off a task, Bike records it as `data-done` with a timestamp:
 
@@ -48,7 +48,7 @@ Rows can carry extra attributes. Standard HTML attributes (`class`, `title`, `st
 </li>
 ```
 
-### Text formatting
+### Text Formatting
 
 Inline formatting inside a row's `<p>` uses standard HTML tags:
 
@@ -71,7 +71,7 @@ So a row with mixed formatting looks like this:
 </li>
 ```
 
-### Document metadata
+### Document Metadata
 
 The `<head>` always includes `<meta charset="utf-8">`. When the document has metadata to store — such as the root id or your spell-checker's ignored words — Bike writes it as a JSON block in a script element:
 

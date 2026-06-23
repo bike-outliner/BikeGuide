@@ -24,7 +24,7 @@ Filtering is really fast, even in big outlines!
 
 Results are a flat list. Each one shows its containing path as a breadcrumb, so you can tell matching rows apart even when they share the same text.
 
-### What you can search
+### What You Can Search
 
 By default the choice box lists your **sidebar items** — the same things you can jump to from the [sidebar](using-sidebar.md):
 
@@ -44,7 +44,7 @@ If you'd rather open straight into one of these, Bike has a separate command for
 * Go > Go to Row… — opens already searching every row (the same as typing `-`).
 * Go > Go to Command… (<kbd>Shift-Command-P</kbd>) — opens already searching every command (the same as typing `>`).
 
-### Where the choice box appears
+### Where the Choice Box Appears
 
 Bike also uses the choice box for Format > Add Link to Row… (<kbd>Command-Option-K</kbd>), which lists every row in the current outline so you can pick the one to link to. See [Outline Links](outline-links.md).
 

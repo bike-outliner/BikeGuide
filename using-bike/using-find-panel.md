@@ -43,7 +43,7 @@ The current match is highlighted brighter than other matches.
 * Click the `Done` button in the find panel
 * Or press the <kbd>Escape</kbd> key
 
-### What is Searched?
+### What is searched?
 
 Find will search the focused rows of your outline including collapsed rows. Find Next will expand collapsed rows to reveal and select the text that matches.
 

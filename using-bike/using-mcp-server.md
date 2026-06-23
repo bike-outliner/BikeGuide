@@ -10,7 +10,7 @@ The server is part of the [`bike` command line tool](../using-bike-advanced/usin
 The MCP server isn't your only option. Some agents — coding assistants like Claude Code, for example — can already run shell commands on their own. For those you can skip the MCP setup entirely and just tell the agent to use the [`bike` command line tool](../using-bike-advanced/using-cli-interface.md) directly.
 :::
 
-### Starting the server
+### Starting the Server
 
 The server runs over stdio, which means you don't usually start it yourself. Instead you tell your AI assistant how to launch it, and the assistant runs it for you in the background. The command is:
 
@@ -39,7 +39,7 @@ After you add the server, restart your assistant so it picks up the change. It s
 Bike's MCP server can change your real outlines, and an assistant won't always do exactly what you expect. When you're trying things out, open a fresh outline first so an experiment can't disturb your real work.
 :::
 
-### What the server can do
+### What the Server Can Do
 
 Once connected, an assistant can:
 

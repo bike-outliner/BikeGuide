@@ -18,15 +18,15 @@ Bike's native `.bike` format is already HTML — a `.bike` file is a valid HTML 
 
 Bike can also read and write your outline as JSON (`.json`). The JSON mirrors your outline's full structure — every row, its type and attributes, and the hierarchy — which makes it the easiest format to crunch with scripts and other tools. Reach for it when you want to process your outline programmatically rather than read it by hand.
 
-### Plain text
+### Plain Text
 
 Plain text (`.txt`) represents your outline as plain lines, using tab indentation to show the hierarchy. It's about as universal as a format gets, but it can't store any metadata: row types, row attributes, and text formatting are all dropped, and so are the row ids that [row links](outline-links.md) depend on. Use it when you just want the words and the shape, and don't mind losing everything else.
 
-### Rich text
+### Rich Text
 
 Rich text keeps your *formatting* — bold, italic, and links — but not Bike's structure: row types, attributes, and ids are dropped. It's mainly handy for copying nicely formatted text out of Bike and pasting it into another app like Mail or a word processor.
 
-### Copying in any format
+### Copying in Any Format
 
 The quickest way to produce one of these formats is the Edit > Copy submenu. Each command copies your current selection — rows and their children — in a particular format, ready to paste elsewhere:
 

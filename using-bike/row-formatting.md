@@ -10,7 +10,7 @@ A row's type isn't just decoration. It carries meaning: a heading is a heading, 
 
 There's more than one way to set a row's type. I recommend the smart row types below for most people, but the Formatting Popover and the Format > Row menu are there too.
 
-#### Smart row types
+#### Smart Row Types
 
 The easiest way is through Bike's "smart row types" feature. In an empty row, type one of these markdown inspired shortcuts followed by a space:
 
@@ -31,7 +31,7 @@ The shortcut text is replaced and the row type is set. If smart row types aren't
 
 Use the same Formatting Popover (<kbd>Command-E</kbd>) that you use for text formatting to also set row types. Open the popover, and then press the down arrow to get a list of available row types to choose from. This is fast, and you don't have to remember any of the row type completions described above.
 
-#### Use the Format > Row menu
+#### Use the Format > Row Menu
 
 This is slower than the above methods. I've added this option mostly so that you can assign a keyboard shortcut for a specific row type. I think learning the smart row type completions described above is better for most people.
 

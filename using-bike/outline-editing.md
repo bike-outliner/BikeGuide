@@ -4,12 +4,11 @@ Press <kbd>Return</kbd> to create a new row.
 
 Press <kbd>Tab</kbd> to indent a row, and <kbd>Shift-Tab</kbd> to unindent. Drag and drop rows by their triangle handle to move them around. Cut, copy, and paste. Outline editing should feel familar and work as you expect.
 
-These commands act on rows and come in two flavors:
+These commands act on rows and come in two flavors — outline commands that move rows as whole units, and text editor commands that move rows on their own, leaving their children behind.
 
-1. *Outliner commands* move rows constrained by outline structure. Children always move with their parent, even if not directly selected.
-2. *Text-editor commands* move rows unconstrained by outline structure, leaving their children behind when not selected as part of the move.
+## Outline Commands
 
-## Outline commands
+These commands move rows within the outline structure. Children always move with their parent, even if not directly selected.
 
 * Outline > New Row (<kbd>Command-Return</kbd>)  
   A new empty row is created as a sibling below the current row.
@@ -53,9 +52,9 @@ These commands act on rows and come in two flavors:
 * Outline > Move To… (<kbd>Command-&#92;</kbd>)  
   A search box opens to move the selected rows beneath any other row in the outline.
 
-## Text Editor commands
+## Text Editor Commands
 
-Text commands all act on the selected rows only. If you have only selected a parent row, then children are left behind. On the other hand if the parent is collapsed, then the children are consided selected and move along with the parent.
+These commands move rows unconstrained by outline structure, leaving their children behind when not selected as part of the move. They appear in the Outline menu when you hold <kbd>Option</kbd>.
 
 * Outline > Indent (Text) (<kbd>Control-Option-Right</kbd>)  
   The row is indented on its own, leaving its children behind.
@@ -93,26 +92,6 @@ I think of <kbd>Escape</kbd> as stepping back from the words to look at the stru
 Block mode is where you reshape your outline. Once you have whole rows selected, the [outline commands](#text-editing) — move, indent, duplicate, delete, and so on — act on exactly those rows. It's the natural mode for reorganizing: select a few sibling rows and move them as a group, or grab a branch and indent it under a new parent.
 
 Many of those commands work the same way in text mode too, always operating on whole rows. So you don't have to switch to block mode for everything — but when you're doing real structural work, selecting the rows first makes your intent clear and lets you operate on several at once.
-
-## Text Editing
-
-![Text Editing](/assets/TextEditing.png)
-
-Text editing should work as you expect. This is a nice feature of Bike. Often outliner applications constrain text editing in various ways. Bike doesn't do that.
-
-## Row: Outline Moves
-
-
-## Row: Text Moves
-
-Bike also has commands that move a row like a line of text. Rather than carrying its whole branch, the row moves on its own — hop it up or down past a neighbor, or shift its indent — and its children stay where they are. These are the text-mode counterparts to the structural commands above, using <kbd>Control-Option</kbd> with the arrow keys instead of <kbd>Control-Command</kbd>:
-
-* Outline > Move Up (Text) (<kbd>Control-Option-Up</kbd>)
-* Outline > Move Down (Text) (<kbd>Control-Option-Down</kbd>)
-* Outline > Indent (Text) (<kbd>Control-Option-Right</kbd>)
-* Outline > Outdent (Text) (<kbd>Control-Option-Left</kbd>)
-
-These appear in the Outline menu when you hold <kbd>Option</kbd>, alongside their structural versions.
 
 ### See also
 

@@ -6,7 +6,7 @@ Bike supports autocorrect, substitutions, user replacements, and spell checking.
 
 * [Bike: Improved macOS text checking](https://www.hogbaysoftware.com/posts/bike-improved-text-checking)
 
-## Spelling and grammar check
+## Spelling and Grammar Check
 
 Bike will highlight spelling errors in your outline with a solid red underline. To fix a spelling error move the text caret to the end of the word. After a half second the text caret will bounce and a popup will show with a suggestion.
 
@@ -55,7 +55,7 @@ Press the Delete key and the autocorrect is reversed. You can also use undo (<kb
 
 You can also reverse an autocorrections by placing the text caret at the end of the corrected text. A popup will show allowing you to reverse that correction.
 
-## Text checking panel
+## Text Checking Panel
 
 To show the text checking panel use Edit > Checking > Show Checking or use the Check Next or Check Previous commands. They also show the text checking panel.
 
@@ -78,11 +78,11 @@ To show the text checking panel use Edit > Checking > Show Checking or use the C
 * Click the `Done` button in the checking panel
 * Or press the <kbd>Escape</kbd> key
 
-### Checking panel options
+### Checking Panel Options
 
 * _Show spelling_: Use macOS spell checker to perform spell checking, highlighting problems in your outline.
 * _Show grammar with spelling_: Use the macOS spell checker to perform grammar checking, highlighting problems in your outline.
 
-### Autocorrect options
+### Autocorrect Options
 
 Autocorrect options are accessible in the Bike > Settings > Autocorrect settings panel. Autocorrect options all apply only as you are typing. For example if you paste text into an outline that text is not autocorrected.

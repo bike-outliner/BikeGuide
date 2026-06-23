@@ -36,7 +36,7 @@ The index section shows headings in your outline by default. Click any heading t
 
 Query shortcuts are saved [outline filters](using-outline-filtering.md). Once a filter is active you can right-click the filter field and choose **Save in Sidebar** to keep it here. After that, clicking the query shortcut reapplies that filter in one step — so a view you reach for often, like "all my incomplete tasks", is always a click away.
 
-### Focusing an item
+### Focusing an Item
 
 Clicking a row in the sidebar — a heading in the index, or a pinned row — focuses that row so you see just its contents.
 

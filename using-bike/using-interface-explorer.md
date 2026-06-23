@@ -8,7 +8,7 @@ Why bother rearranging? Because the buttons and panels *I* think you'll reach fo
 
 * Bike > Interface Explorer…
 
-### What you can organize
+### What You Can Organize
 
 The Interface Explorer lists the editable surfaces of the Bike window, each as a section you can expand:
 
@@ -18,7 +18,7 @@ The Interface Explorer lists the editable surfaces of the Bike window, each as a
 * **Editor Toolbar Buttons** — buttons on the editor [toolbar](using-toolbar.md).
 * **Editor Statusbar Buttons** — buttons on the editor [status bar](using-status-bar.md).
 
-### Arranging items
+### Arranging Items
 
 Each section's items can be rearranged in place:
 
@@ -30,7 +30,7 @@ Each section's items can be rearranged in place:
 
 Bike remembers your changes, so the way you arrange things sticks from one launch to the next.
 
-### How extension items appear
+### How Extension Items Appear
 
 When an extension adds a command, that command can suggest where its button should go — the title bar, toolbar, or status bar — along with a symbol to use. The first time Bike sees the command it places the button in the suggested spot. From then on the item is yours.
 

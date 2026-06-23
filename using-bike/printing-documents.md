@@ -2,7 +2,7 @@
 
 Print an outline with File > Print…. The thing that makes printing in Bike a little different is simple: **it prints what you see.**
 
-### Print what you see
+### Print What You See
 
 Bike prints your outline exactly as you've shaped it on screen, so the easiest way to print just part of an outline is to set up that view first and then print:
 
@@ -12,7 +12,7 @@ Bike prints your outline exactly as you've shaped it on screen, so the easiest w
 
 Combine these to print precisely the slice you want: focus a section, fold the parts you don't need, then print.
 
-### Print theme and style
+### Print Theme and Style
 
 When you print, the macOS print dialog includes a couple of Bike-specific options:
 
