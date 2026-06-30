@@ -246,14 +246,10 @@ Use the following relations in your comparision predicates:
 
 Use relation modifiers in brackets after the relation to change how it is evaluated. For example `beginswith[s]` will perform a case sensitive test instead of the default case insensitive test. The available modifiers are:
 
-* `i` Case insensitive compare (default)
+* `i` Case insensitive (also ignores diacritics) compare (default)
 * `s` Case sensitive compare
-*   `n` Numeric compare
-
-    Values are converted to numbers before comparing. This means `"01"` will equal `"1.0"`, which is not true when doing the default string compare.
-*   `d` Date compare
-
-    Values are converted to dates before comparing.
+* `n` Numeric compare ("01"` will equal `"1.0")
+* `d` Date compare
 
 </details>
 
@@ -329,24 +325,27 @@ In some cases you might accomplish similar results with more complex outline pat
 *   leaf() -> boolean
 
     True if has no children
+*   root() -> boolean
+
+    True if the element is the outline's root.
 *   first-child() -> boolean
 
     True if is first child of parent
 *   last-child() -> boolean
 
     True if is last child of parent
-*   nth-child() -> boolean
+*   nth-child(n) -> boolean
 
-    True if is nth child of parent
+    True if is the nth child of its parent, counting from 1.
 *   first-of-type() -> boolean
 
     True if is first of type in siblings
 *   last-of-type() -> boolean
 
     True if is last of type in siblings
-*   nth-of-type() -> boolean
+*   nth-of-type(n) -> boolean
 
-    True if is nth of type in siblings
+    True if is the nth sibling of its type, counting from 1.
 *   only-child() -> boolean
 
     True if has no siblings
