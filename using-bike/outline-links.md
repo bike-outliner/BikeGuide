@@ -83,9 +83,7 @@ Most broken links come down to one of two everyday causes:
 
 If the link target still exists and the link *still* won't open, it's usually a Spotlight or sandbox-permission issue. The details below explain why — most people won't need them.
 
-<details>
-
-<summary>Advanced: why Bike links break, and Sandbox requirements</summary>
+::: details Advanced: why Bike links break, and Sandbox requirements
 
 Bike uses Spotlight searches to resolve links. It associates the outline id with the document file and then searches for that id using Spotlight. So if something is wrong with Spotlight, your links won't work. This is temporary — they'll work again once the document id is re-indexed.
 
@@ -106,7 +104,7 @@ Because link resolution relies on a Spotlight search, and that search only retur
 
 Sandbox behavior can be confusing. When you open a file, Bike gets read/write access to it. After you close the document, Bike keeps that access as long as the document stays in your recent documents list. Once it drops off that list, Bike can no longer read or write the file.
 
-</details>
+:::
 
 ### See also
 

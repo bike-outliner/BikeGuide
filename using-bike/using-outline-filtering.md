@@ -46,7 +46,7 @@ The filter bar accepts two types of input:
 
 **Text search:** Type any text to filter rows that contain that text.
 
-**Outline path expressions:** Start your filter with `/` for a global search or `.` for a focused branch search. This gives you access to the full [outline path](using-outline-paths.md) query syntax.
+**Outline path expressions:** Start your filter with `/` for a global search or `.` for a focused branch search. This gives you access to the full [outline path](../using-bike-advanced/creating-outline-paths.md) query syntax.
 
 Examples:
 
@@ -64,5 +64,5 @@ You can save frequently used filters as query shortcuts in the [sidebar](using-s
 ### See also
 
 * [Using Find Panel](using-find-panel.md)
-* [Using Outline Paths](using-outline-paths.md)
+* [Creating Outline Paths](../using-bike-advanced/creating-outline-paths.md)
 * [Using Sidebar](using-sidebar.md)

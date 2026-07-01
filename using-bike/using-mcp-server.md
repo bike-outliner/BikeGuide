@@ -47,7 +47,7 @@ Once connected, an assistant can:
 - **Edit rows** — create new outlines and rows, change row text, type, and attributes, and move or delete rows along with their children.
 - **Drive the editor** — change the focused row, selection, and which rows are expanded or collapsed.
 - **Run commands and scripts** — run any named Bike command, or evaluate JavaScript in Bike's [extension](using-extensions.md) context for anything the other tools don't cover.
-- **Query with outline paths** — test [outline paths](using-outline-paths.md) to find exactly the rows you mean.
+- **Query with outline paths** — test [outline paths](../using-bike-advanced/creating-outline-paths.md) to find exactly the rows you mean.
 
 ### See also
 

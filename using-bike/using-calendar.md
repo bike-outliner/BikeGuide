@@ -59,9 +59,7 @@ The defaults look like this:
 | Month | `{"year":"numeric","month":"long"}` | April 2026             |
 | Day   | `{"dateStyle":"long"}`              | Monday, April 27, 2026 |
 
-<details>
-
-<summary>How the date formats work</summary>
+::: details How the date formats work
 
 The contents of the `{ … }` span control how the date is written:
 
@@ -70,7 +68,7 @@ The contents of the `{ … }` span control how the date is written:
 
 Markdown outside the span formats the row. A leading `#` or `##` makes it a heading, and `**…**` makes it bold. So `# { yyyy }` renders the year as a heading, and `**{"dateStyle":"long"}**` renders the day in bold.
 
-</details>
+:::
 
 ### The Calendar Is an Extension
 

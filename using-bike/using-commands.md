@@ -30,8 +30,7 @@ Commands in the Commands Explorer come from several sources:
 
 When you edit a keybinding you'll type its key sequence. Most of the time you don't need to think about the format — you just press the keys. The full reference is here if you want it:
 
-<details>
-<summary>Key sequence format reference</summary>
+::: details Key sequence format reference
 
 A key sequence is one or more keys separated by spaces. Each key is a combination of modifiers and a key name joined by hyphens. The format is case-insensitive.
 
@@ -61,7 +60,7 @@ Any single typed character (a–z, 0–9, punctuation) is also a valid key.
 | `ctrl-x ctrl-s` | Chord: Control-X followed by Control-S |
 | `m d`           | Chord: M followed by D (no modifiers)  |
 
-</details>
+:::
 
 ### Full API Reference
 

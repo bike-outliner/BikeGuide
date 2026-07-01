@@ -1,30 +1,33 @@
-# Using Outline Paths
+# Creating Outline Paths
 
-Outline paths are Bike's query language for locating rows. You write a short path, and Bike hands back every row that matches. They're the engine behind filtering, editor styles, scripts, and Shortcuts.
+Outline paths are Bike's query language.
 
-You can get a long way with just a handful of patterns. Here's the one I reach for most — type it in the [filter](using-outline-filtering.md) bar to see every unfinished task anywhere in your outline:
+Use them to match rows and compute values from your outline. Outline paths are an advanced feature, you don't need to understand them to use Bike. Places they are used include the filter bar, editor styles, scripts, and extensions APIs.
+
+Examples:
 
 ```
+//pizza
+/inbox//task
 //task not @done
+//task @due <[d] today()
+//@classes matches "\burgent\b"
+//heading union //task
 ```
-
-The rest of this page builds up the full syntax from the ground up. It goes deep, so feel free to skim — the [Basic Paths](#basic-paths) and [Step Predicate](#step-predicate) sections cover most of what you'll use day to day.
 
 ## What is an outline path?
 
 On your computer you use file paths to locate files.
 
-Outline paths are similar, but used to locate rows in your outline. Simple outline paths look just like file paths. More powerful outline paths that work more like database queries are also possible.
+Outline paths are similar, but used to locate rows and compute values in your outline. Simple outline paths look just like file paths. More powerful outline paths that work more like database queries are also possible.
 
 One important difference between outline paths and file paths is that outline paths often locate many rows, while file paths locate individual files.
 
-<details>
+::: details Outline paths are similar to XPath
 
-<summary>Outline paths are similar to XPath</summary>
+If you already know what [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath) is then you are well on your way to understanding Bike outline paths. Outline paths have a different syntax, but the underlying concetps are very similar.
 
-If you already know what [XPath](https://developer.mozilla.org/en-US/docs/Web/XPath) is then you are well on your way to understanding Bike outline paths. Outline paths have a different syntax, but the underlying query model is almost exactly the same.
-
-</details>
+:::
 
 ### Where are outline paths used?
 
@@ -32,9 +35,10 @@ Outline paths don't do much on their own, but they are an important building blo
 
 1. Search UI uses outline paths to filter your outline
 2. Editor styles use relative outline paths to select which rules apply
-3. AppleScript dictionary's `query` command takes an outline path and returns the path result.
-4. Shortcuts "Query Rows" action takes an outline path and returns matching rows.
-5. Choice Box settings use an outline path to specify the initial set of rows to be displayed in the choice box before filtering is performed.
+3. Sidebar index uses outline paths to select which rows are included in the index
+4. AppleScript dictionary's `query` command takes an outline path and returns result
+5. Shortcuts "Query Rows" action takes an outline path and returns matching rows.
+6. Extensions API's `Outline.queryRows()` method takes an outline path.
 
 ### Outline Path Explorer
 
@@ -82,7 +86,7 @@ Use `union`, `except`, and `intersect` to combine the results of multiple outlin
 
 ### Path Steps
 
-Paths are divided into steps. For example the path `/a/b` has two steps. Each step contains filtering logic. You don’t have to include all filtering options in each step. For example the following steps have the same  behavior.
+Paths are divided into steps. For example the path `/a/b` has two steps. Each step contains filtering logic. You don’t have to include all filtering options in each step. For example the following steps have the same behavior.
 
 *   `/a`
 
@@ -110,9 +114,7 @@ To solve this we can use the "descendant" axis. It selects all descendants of th
 
     Descendant axis, selects all descendants of the outline root. They are then filtered to only the ones that contain pizza.
 
-<details>
-
-<summary>Advanced step axes </summary>
+::: details Advanced step axes
 
 Another useful axis is "parent". This uses the same `..` syntax that file paths use to go to the parent directory.
 
@@ -159,7 +161,7 @@ The above examples use the shortcut form of the descendant and parent axes. Ther
 
     All rows (in outline) before the rows passed into the step
 
-</details>
+:::
 
 #### Step Type
 
@@ -175,9 +177,7 @@ Each step can include a row type test at the start.
 
     Match all rows that contain the text "task". When you want to search for text that in some way conflicts with outline path syntax put that text in quotes to make it a value.
 
-<details>
-
-<summary>List of row types</summary>
+::: details List of row types
 
 * `row`
 * `body`
@@ -191,7 +191,7 @@ Each step can include a row type test at the start.
 * `hr`
 * `*` Matches any type
 
-</details>
+:::
 
 #### Step Predicate
 
@@ -210,9 +210,7 @@ Each step can include a predicate test. You can then combine predicates with `an
 
     Combine predicates. Use it to find all rows that will make you rich and are unfinished!
 
-<details>
-
-<summary>More on row attributes</summary>
+::: details More on row attributes
 
 Each row in your outline has associated attributes that you can use in outline path predicate tests.
 
@@ -225,11 +223,9 @@ Open Bike > Outline Path Explorer and notice that the outline view showns each r
 * `@level`
 * `@text`
 
-</details>
+:::
 
-<details>
-
-<summary>More on comparison relations</summary>
+::: details More on comparison relations
 
 Use the following relations in your comparision predicates:
 
@@ -246,12 +242,29 @@ Use the following relations in your comparision predicates:
 
 Use relation modifiers in brackets after the relation to change how it is evaluated. For example `beginswith[s]` will perform a case sensitive test instead of the default case insensitive test. The available modifiers are:
 
-* `i` Case insensitive (also ignores diacritics) compare (default)
+* `i` Case insensitive (also ignores diacritics, default)
 * `s` Case sensitive compare
-* `n` Numeric compare ("01"` will equal `"1.0")
-* `d` Date compare
+* `n` Numeric compare
 
-</details>
+    Both sides of the compare are converted to numbers before comparing. Shorthand for wrapping both sides in `number(side)` functions; see [util functions](#functions-reference).
+
+*   `d` Date compare
+
+    Compares both sides as dates: `@done <[d] "2026-07-01"`. Shorthand for wrapping both sides in `date(side)` functions; see [date functions](#functions-reference).
+
+##### Match comparisons
+
+The `matches` relation treats the right side as a regular expression:
+
+*   `//@text matches "\bsum\b"` — the whole word "sum"
+*   `//@text matches "^Q[1-4]\b"` — starts with Q1, Q2, Q3, or Q4
+*   `//@text matches "cats?"` — "cat" or "cats"
+*   `//@tags matches "\bdone\b"` — matches item in a space-delimited list
+*   `//@cities matches "(^|,)\s*New York\s*(,|$)"` - matches item in a comma-delimited list
+
+Regex patterns use backslashes, so in an editor style write them with `String.raw` — see [Paths in editor styles](#paths-in-editor-styles).
+
+:::
 
 #### Step Slice
 
@@ -285,20 +298,30 @@ You have already seen many value expressions such as `a`, `"a"`, and `@attribute
     Unquoted text value expression that evaluates to `hello world`.
 *   `"hello world"`
 
-    Quoted text value expression that evaluates to `hello world`. Quoting is need when your text conflicts with other outline path syntax.
+    Quoted text value evaluating to `hello world`. Quote text that would conflict with path syntax. Contents are literal — no backslash escaping — so `"\bsum\b"` is exactly those characters. A doubled `""` is one literal `"` (`"she said ""hi"""` → `she said "hi"`).
 *   `@attribute`
 
     Attribute value expression that returns the value of the attribute named "attribute" for the current row (or current run when using the `run::` axis). This value expression will always return `nil` if it's not used within a path step.
 *   `functionName(params?)`
 
-    Functions are composed of a name followed by `()` with optional params. See the [Functions Reference](using-outline-paths.md#functions-reference) for a list of available functions.
+    Functions are composed of a name followed by `()` with optional params. See the [Functions Reference](#functions-reference) for a list of available functions.
 *   `1` or `(1 + 1) / 2`
 
-    Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is invalid. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number. You aren't likely to need math expressions in your path with Bike's current features, but I think they will become more useful as outline paths evolve.
+    Math value expression that evaluates to `1`. Math operators (`+`, `-`, `*`, `/`) require single whitespace on either side. This is so `/` doesn't conflict with path step separator. It doesn't make sense to use Math operators with text. `1 + "1"` is invalid. `1 + @attribute` is ok, but will return `nan` if the attribute can't be converted to a number.
 
 If you don't start your outline path with a `/` or a `.` then it is treated as a value expression. For example try typing `1 + 2` in the Outline Path Explorer and note how no rows are matched, but the result of the value expression is displayed trailing the text field.
 
-Using value expressions in this way isn't terribly useful right now... but it's a fun trick! :)
+#### Paths in editor styles
+
+An editor style path is *also* a JavaScript string, and JavaScript strips backslashes before Bike sees the path — so a plain `"\b"` becomes a backspace and a pattern like `matches "\bdone\b"` fails. Use `String.raw` so the path reads the same as in the filter bar:
+
+```js
+row(String.raw`.@tags matches "\bdone\b"`, (_, row) => {
+  row.text.color = Color.systemRed()
+})
+```
+
+Or double each backslash for JavaScript's sake (`"\\bdone\\b"`), which collapses to `\bdone\b` by the time Bike parses it.
 
 ### Functions Reference
 
@@ -306,11 +329,9 @@ Outline path functions serve a variety of purposes:
 
 1. Easy and efficient access to outline structure.
 2. Access to external editor state such as selection and folding.
-3. Access to math utilities and other behavior that isn't otherwise available.
+3. Access to date & math utilities and other behavior that isn't otherwise available.
 
-<details>
-
-<summary>Outline Functions</summary>
+::: details Outline Functions
 
 These functions provide easy and efficient access to outline structure.
 
@@ -359,13 +380,11 @@ In some cases you might accomplish similar results with more complex outline pat
 
     True if element matches relative path and next sibling does not. Useful when styling attribute runs and you want to special case the last match in a sequence of matching runs. You can implement the same logic using the following-sibling axis, but this function shorter and faster.
 
-</details>
+:::
 
-<details>
+::: details Editor Functions
 
-<summary>Editor Functions</summary>
-
-These functions all provide access to editor state. They are only available when evaluating your outline path in the context of an outline editor.
+These functions all provide access to editor state. They are only available when evaluating your outline path in the context of an outline editor, and generally used in editor styles. For example you can use `focused-root()` to style the focused root row differently than other rows.
 
 *   focused-root() -> boolean
 
@@ -401,11 +420,9 @@ These functions all provide access to editor state. They are only available when
 
     Drop indicator state for this row
 
-</details>
+:::
 
-<details>
-
-<summary>Context Functions</summary>
+::: details Context Functions
 
 *   last() -> number
 
@@ -414,20 +431,89 @@ These functions all provide access to editor state. They are only available when
 
     Current position in evaluation context
 
-</details>
+:::
 
-<details>
+::: details Date Functions
 
-<summary>Util Functions</summary>
+A date is a number, so you compare dates with the normal relations and add or subtract with `+` and `-` (which need a single space on each side).
+
+*   date(value) -> number
+
+    Interprets its argument as a date — `date("2026-07-01")` for a literal, `date(@due)` for an attribute. Accepts a year (`2026`), year-month (`2026-07`), full date (`2026-07-01`), or full timestamp (`2026-07-01T13:53:00Z`). A bare date resolves to midnight in your local time zone; a timestamp keeps its own zone. The `[d]` modifier is shorthand for wrapping both sides of a compare in `date()`.
+*   now() -> number
+
+    The current date and time.
+*   today() -> number
+
+    The start of today, in local time.
+
+The duration functions return a length of time to add or subtract. They're fixed lengths, so `days(1)` is always 24 hours, even across a daylight-saving change.
+
+*   seconds(number) -> number
+*   minutes(number) -> number
+*   hours(number) -> number
+*   days(number) -> number
+*   weeks(number) -> number
+
+The start-of functions return a calendar boundary, offset by a whole number of periods: `0` (the default) is the current period, `1` the next, `-1` the previous. They're calendar aware, so `start-of-month(1)` is always the first of next month. The week starts on your calendar's first day of the week.
+
+*   start-of-day(offset?) -> number
+*   start-of-week(offset?) -> number
+*   start-of-month(offset?) -> number
+*   start-of-year(offset?) -> number
+
+The component functions pull a single field out of a date, in local time. `weekday` is `1` (Sunday) through `7` (Saturday).
+
+*   year(date) -> number
+*   month(date) -> number
+*   day(date) -> number
+*   weekday(date) -> number
+*   hour(date) -> number
+*   minute(date) -> number
+*   second(date) -> number
+
+Some examples:
+
+*   `@due <[d] today()`
+
+    Rows due before the start of today.
+*   `@due <[d] today() + days(7)`
+
+    Rows due within the next seven days.
+*   `@due >=[d] start-of-week(0) and @due <[d] start-of-week(1)`
+
+    Rows due this week.
+*   `@due <[d] start-of-month(1)`
+
+    Rows due before next month starts.
+*   `@done >=[d] start-of-year(0)`
+
+    Rows finished this year.
+*   `month(@due) = 6`
+
+    Rows due in June, in any year.
+*   `weekday(@due) = 1 or weekday(@due) = 7`
+
+    Rows due on a weekend.
+*   `date(@due) < now() - weeks(1)`
+
+    Same idea using `date()` instead of the `[d]` shorthand.
+
+:::
+
+::: details Util Functions
 
 * floor(number) -> number
 * ceil(number) -> number
 * round(number) -> number
 * count(expression) -> number
 * boolean(expression) -> boolean
+* number(value) -> number
 
-</details>
+    Interprets its argument as a number (non-numbers become `nan`). This is the function twin of the `[n]` modifier: `x OP[n] y` is the same as `number(x) OP number(y)`.
+
+:::
 
 ### See also
 
-* [Using Outline Filtering](using-outline-filtering.md)
+* [Using Outline Filtering](../using-bike/using-outline-filtering.md)

@@ -32,9 +32,9 @@ BikeGuide/
 │   ├── outline-editing.md
 │   ├── using-selection.md
 │   ├── using-scripts.md
-│   ├── using-outline-paths.md
 │   └── ...
 ├── using-bike-advanced/         # Developer/power-user documentation
+│   ├── creating-outline-paths.md # Outline path query language reference
 │   ├── creating-scripts.md      # AppleScript examples
 │   ├── creating-themes.md       # Theme creation
 │   ├── creating-shortcuts.md    # macOS Shortcuts integration
@@ -60,7 +60,7 @@ BikeGuide/
 Helpful tip here
 :::
 ```
-Available types: `info`, `tip`, `warning`, `danger`, `details`. See the Voice & Style section for when to reach for these vs. `<details>` blocks.
+Available types: `info`, `tip`, `warning`, `danger`, `details`. Use the `::: details` container (not a raw `<details>` block) for collapsible deep-dives — it renders as a bordered card so expanded blocks stay visually grouped. See the Voice & Style section for when to reach for these.
 
 ## Voice & Style
 
@@ -104,7 +104,7 @@ Available types: `info`, `tip`, `warning`, `danger`, `details`. See the Voice & 
 ### Markdown / VitePress features to use
 
 - Use `::: tip` / `::: info` / `::: warning` containers for asides and tips (not the old GitBook `{% hint %}` syntax).
-- Use `<details><summary>…</summary>…</details>` for advanced or optional deep-dives that would otherwise clutter the main flow (see `using-outline-paths.md`).
+- Use a `::: details Summary` container for advanced or optional deep-dives that would otherwise clutter the main flow (see `creating-outline-paths.md`). Prefer it over a raw `<details>` block — it renders as a bordered card, so expanded sections stay visually distinct.
 - Cross-reference other pages liberally with relative markdown links.
 
 ## Cross-Repository Sync

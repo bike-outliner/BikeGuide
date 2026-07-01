@@ -36,7 +36,6 @@ export default defineConfig({
           { text: 'Using Find Panel', link: '/using-bike/using-find-panel' },
           { text: 'Using the Choice Box', link: '/using-bike/using-the-choice-box' },
           { text: 'Using Outline Filtering', link: '/using-bike/using-outline-filtering' },
-          { text: 'Using Outline Paths', link: '/using-bike/using-outline-paths' },
         ]
       },
       {
@@ -87,6 +86,7 @@ export default defineConfig({
           { text: 'Creating Themes', link: '/using-bike-advanced/creating-themes' },
           { text: 'Creating Shortcuts', link: '/using-bike-advanced/creating-shortcuts' },
           { text: 'Creating Extensions', link: '/using-bike-advanced/creating-extensions' },
+          { text: 'Creating Outline Paths', link: '/using-bike-advanced/creating-outline-paths' },
           { text: 'Logs Explorer', link: '/using-bike/using-logs' },
         ]
       },
