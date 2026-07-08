@@ -83,6 +83,22 @@ Pandoc attributes are only written when a row or span actually uses features tha
 
 Bike uses standard markdown syntax when it can (`**bold**`, `*italic*`, etc.) and falls back to `[text]{attrs}` only when there's no markdown equivalent.
 
+### Attachments
+
+Attachments use standard markdown image syntax, whatever the file type. The destination points into the document's `assets` folder:
+
+```
+- Vacation ![photo](assets/photo.png)
+- Budget ![report.csv](assets/report.csv)
+```
+
+An attachment's display width, when set, is written as a Pandoc-style attribute: percentages are a fraction of the text column, bare numbers are points:
+
+```
+- ![photo](assets/photo.png){width=50%}
+- ![photo](assets/photo.png){width=320}
+```
+
 ### Frontmatter
 
 Files can optionally begin with a JSON metadata block between `---` delimiters:
