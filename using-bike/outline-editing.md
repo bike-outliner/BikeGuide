@@ -4,7 +4,7 @@ Press <kbd>Return</kbd> to create a new row.
 
 Press <kbd>Tab</kbd> to indent a row, and <kbd>Shift-Tab</kbd> to unindent. Drag and drop rows by their triangle handle to move them around. Cut, copy, and paste. Outline editing should feel familar and work as you expect.
 
-These commands act on rows and come in two flavors — outline commands that move rows as whole units, and text editor commands that move rows on their own, leaving their children behind.
+There are two flavors of outline editing commands: those that move rows as whole units, and those that move rows on their own, leaving their children behind. The first is the natural way to work in an outliner, while the second is more like a text editor.
 
 ## Outline Commands
 
@@ -73,25 +73,18 @@ These commands move rows unconstrained by outline structure, leaving their child
 
 ## Selection Modes
 
-In an outliner you're really doing two different jobs. Sometimes you're writing — editing the words inside a row. Other times you're organizing — moving, indenting, and rearranging whole rows. These two jobs want different kinds of selection, and trying to serve both with one selection makes a mess of either.
+Bike has two selection modes: text mode and block mode. In text mode your selection is a caret or a range of text inside a single row. In block mode your selection is one or more whole rows.
 
-Bike solves this with two selection modes: **text mode** and **block mode**.
+- You can switch between the two modes with <kbd>Escape</kbd>.
+- You can also exit block mode by pressing <kbd>Left</kbd> or <kbd>Right</kbd> arrows.
 
-**Text mode** is for editing within a row. Your selection is a caret or a range of text inside a single row. This is where you spend most of your time writing.
+### Why block mode?
 
-**Block mode** is for working with whole rows. When you extend a selection beyond a single row Bike switches to block mode and selects entire rows. This is similar to how most outliners work, but different than how Bike 1 worked, where a text selection could span rows.
+Block mode makes it easier to move the selection through a list of rows. It also makes it easy to delete whole rows. The unit of selection is a row, not a single character.
 
-#### To switch between text and block mode
+Another major difference is you can't type to insert text in block mode. So, for instance, typing `a` won't do anything. This means you can assign keybindings to all the normal text entry keys for other commands.
 
-* Press <kbd>Escape</kbd> to toggle between text mode and block mode.
-
-I think of <kbd>Escape</kbd> as stepping back from the words to look at the structure. Press it once and you're holding the whole row rather than a point inside it. Press it again to drop back into the text.
-
-### What is block mode good for?
-
-Block mode is where you reshape your outline. Once you have whole rows selected, the [outline commands](#text-editing) — move, indent, duplicate, delete, and so on — act on exactly those rows. It's the natural mode for reorganizing: select a few sibling rows and move them as a group, or grab a branch and indent it under a new parent.
-
-Many of those commands work the same way in text mode too, always operating on whole rows. So you don't have to switch to block mode for everything — but when you're doing real structural work, selecting the rows first makes your intent clear and lets you operate on several at once.
+Bike doesn't yet take good advantage of this ability, but pressing <kbd>Space</kbd> will toggle the done state of selected rows. And you can assign your own block mode keybindings in the [Commands Explorer](using-commands.md). More to come in a future release!
 
 ### See also
 

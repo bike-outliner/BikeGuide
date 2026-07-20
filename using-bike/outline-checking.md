@@ -2,7 +2,7 @@
 
 ![Checking Panel](/assets/CheckingPanel.png)
 
-Bike supports autocorrect, substitutions, user replacements, and spell checking. Bike's text checking interface is custom built, adopting and then improving upon macOS standard behavior.
+Bike supports autocorrect, substitutions, user replacements, spell checking, and writing tools. Bike's text checking interface is custom built, adopting and then improving upon macOS standard behavior.
 
 * [Bike: Improved macOS text checking](https://www.hogbaysoftware.com/posts/bike-improved-text-checking)
 
@@ -29,31 +29,12 @@ Checking will check the focused rows of your outline including collapsed rows. C
 
 Autocorrect is a collection of features that replace text that you've typed with something else. For example autocorrect will capitalize the first word in a sentence, fix a spelling, or expand a user replacement.
 
-Autocorrect is a challenging feature. While useful, it will always be wrong or unwanted some of the time. Bike accounts for this by making autocorrect predictable, visible, and reversible.
+- Use <kbd>Delete</kbd> (or <kbd>Command-Z</kbd>) immediately after an autocorrection to reverse it.
+- Alternatively place text caret at end of autocorrected text and a popup will show allowing you to reverse that correction. This behavior ends after a few seconds, so if you want to reverse an autocorrection after that time you'll have to use Undo.
 
-### Predictable
+### Autocorrect Options
 
-In Bike autocorrect always happens when you end a word by typing a character such as a space, a period, or a question mark.
-
-Bike's autocorrect depends on current text caret position and the surrounding text. It doesn't take previous text caret positions into consideration.
-
-You might be used to avoiding autocorrect by typing the sequence Right Arrow followed by Left Arrow. That won't work in Bike since autocorrect doesn't depend on previous caret positions.
-
-In Bike just type. If a bad autocorrection happens use the Delete key to reverse it. Bike's approach requires fewer keystrokes and is more predictable.
-
-### Visible
-
-Autocorrect replaces what you've typed with something else. Often this is helpful, but sometimes it is wrong. Bike makes each autocorrection easy to spot so you won't be surprised later.
-
-In Bike all autocorrected text is underlined with a solid blue line. This underline remains visible until you start typing a new word. If you move back into the original word the autocorrections will show again.
-
-### Reversible
-
-Bike makes undoing the previous autocorrect easy.
-
-Press the Delete key and the autocorrect is reversed. You can also use undo (<kbd>Command-z</kbd>), but I find Delete to be faster. There is a preference to disable this special Delete behavior if you don't like it.
-
-You can also reverse an autocorrections by placing the text caret at the end of the corrected text. A popup will show allowing you to reverse that correction.
+Options are available in the Bike > Settings > Autocorrect settings panel. Autocorrect options all apply only as you are typing. For example if you paste text into an outline that text is not autocorrected.
 
 ## Text Checking Panel
 
@@ -83,6 +64,14 @@ To show the text checking panel use Edit > Checking > Show Checking or use the C
 * _Show spelling_: Use macOS spell checker to perform spell checking, highlighting problems in your outline.
 * _Show grammar with spelling_: Use the macOS spell checker to perform grammar checking, highlighting problems in your outline.
 
-### Autocorrect Options
+## Writing Tools
 
-Autocorrect options are accessible in the Bike > Settings > Autocorrect settings panel. Autocorrect options all apply only as you are typing. For example if you paste text into an outline that text is not autocorrected.
+Bike's editor works with macOS Writing Tools. Use them to proofread, rewrite, or summarize text in your outline.
+
+#### To use Writing Tools
+
+* Select the text that you want to work with
+* Edit > Writing Tools > Show Writing Tools
+* Or Control-click the selection and choose Writing Tools
+
+Writing Tools require Apple Intelligence, so they are only available on Macs and macOS versions that support it. Bike provides the editor integration; the tools themselves are Apple's.

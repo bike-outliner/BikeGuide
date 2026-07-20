@@ -27,6 +27,8 @@ export default defineConfig({
           { text: 'Outline Links', link: '/using-bike/outline-links' },
           { text: 'Row Formatting', link: '/using-bike/row-formatting' },
           { text: 'Text Formatting', link: '/using-bike/text-formatting' },
+          { text: 'Using Attributes', link: '/using-bike/using-attributes' },
+          { text: 'Using Attachments', link: '/using-bike/using-attachments' },
           { text: 'Using Accessibility', link: '/using-bike/using-accessibility' },
         ]
       },

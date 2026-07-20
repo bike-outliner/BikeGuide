@@ -19,11 +19,13 @@ That's why I'm building Bike, specifically.
 
 I want an outliner that is also a bicycle for the mind. Small enough to fully understand. Once understood it's flexible enough to be used for many purposes.
 
-Bike's core is small, but designed for real work. It's a fast macOS native app. It easily handles large outlines that break other outliners. It's also fast at the basics–opening files, scrolling views, and resizing windows. Bike is a pleasure to use.
+Bike's core is small, but designed for real work. It's a fast macOS native app. It easily handles large outlines that break other outliners. It's also fast at the basics–opening files, scrolling views, and resizing windows.
 
-Bike is powerful. Sophisticated query system. Customizable sidebar. Powerful navigation. Calendar system. All efficient, and out of your way when you don't need them.
+Bike is a pleasure to use.
 
-Bike is uniquely flexible — built to be shaped with themes, scripts, extensions, and more. It uses well known file formats (Markdown, HTML), keeping your work open and accessible. Bike provides a simple and efficient outlining core that you can customize to fit your needs.
+Bike is also uniquely flexible — built to be shaped with themes, scripts, shortcuts, extensions, and a command line interface. It uses well known file formats (Markdown, HTML), keeping your work open and accessible. 
+
+Bike is a simple and efficient outlining core that you can customize to fit your needs.
 
 ### See also
 

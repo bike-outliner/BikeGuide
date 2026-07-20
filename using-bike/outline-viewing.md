@@ -1,10 +1,9 @@
 # Outline Viewing
 
-Bike gives you three ways to navigate and stay focused in a large outline:
+Bike gives you two ways to navigate and stay focused in a large outline:
 
 1. Fold rows to see the big picture
 2. Focus into rows to work on the details
-3. Filter your outline to show just what you need (see [Using Outline Filtering](using-outline-filtering.md))
 
 ## To fold rows in your outline
 
@@ -40,12 +39,11 @@ Include <kbd>Option</kbd> the above shortcuts to fold rows one level at a time. 
 
 Those are just the direct ways to focus. You can also focus by selecting a row from the [sidebar](using-sidebar.md) or by using Go > Go To… (<kbd>Command-P</kbd>) to search for a row using the [choice box](using-the-choice-box.md). Clicking a day in your calendar will also focus that day's row.
 
-Also, When you focus a row, Bike automatically expands the row to show what's inside. This allows a tidy outline. Focus into a row and it expands to show you its children. Focus out and it collapses back up. Tidy!
+Also, when you focus a row, Bike automatically expands the row to show what's inside. This allows a tidy outline. Focus into a row and it expands to show you its children. Focus out and it collapses back up. Tidy!
 
-Focus changes form the basis of Bike's [navigation system](outline-navigation.md).
+Focus and filter changes form the basis of Bike's [navigation system](outline-navigation.md).
 
 ### See also
 
 * [Outline Navigation](outline-navigation.md)
 * [Using Outline Filtering](using-outline-filtering.md)
-* [Using Calendar](using-calendar.md)

@@ -10,10 +10,10 @@ IMAGE
 
 It looks exactly the same as Bike 1.0!
 
-I hope you'll find that it works and feels like the original too. Animations are smoother. Details are polished. But the experience is the same. At it's core Bike remains a simple, clean, and fast mac native outliner.
+I hope you'll find that it generally works and feels like the original too. Animations are smoother. Details are polished. But the experience is the same. At its core Bike remains a simple, clean, and fast macOS native outliner.
 
-::: info
-In Bike 2 the move commands don't change behavior when you switch modes like they did in Bike 1.0. Instead, either flavor of the move command is always availible:
+::: tip
+In Bike 2 the move commands don't change behavior when you switch modes like they did in Bike 1.0. Instead, either flavor of the move command is always available:
 
 * Move rows like an outliner (<kbd>Control-Command-Arrows</kbd>)
 * Move rows like a text editor (<kbd>Control-Option-Arrows</kbd>)
@@ -24,10 +24,12 @@ In Bike 2 the move commands don't change behavior when you switch modes like the
 The new features are out of your way when you don't need them. But when you do need them, I hope you'll find useful.
 
 - **[Sidebar](using-bike/using-sidebar.md)** — Use the sidebar to navigate. You can also pin rows and save filter queries to the sidebar for quick access.
-- **[Inspector](using-bike/using-inspector.md)** — Use the inspector for details and specialized views. By default it shows a calendar, but it can do more with extensions.
-- **[Filtering](using-bike/using-outline-filtering.md)** — Instanly filter your outline to show matching rows. Want to see only unfinished todos? Bike can do that.
+- **[Inspector](using-bike/using-inspector.md)** — Use the inspector for details and specialized views. By default it shows a calendar, but extensions can add their own views.
+- **[Filtering](using-bike/using-outline-filtering.md)** — Instantly filter your outline to show matching rows. Want to see only unfinished todos? Bike can do that and much more.
+- **[Attributes](using-bike/using-attributes.md)** - Add attributes to your rows, such as `@priority : 1`. Filter by attribute and display in badges at the end of the row.
+- **[Attachments](using-bike/using-attachments.md)** - Drag and drop file attachments into your outline. They are embedded, traveling with your outline document.
 - **[Themes](using-bike/using-themes.md)** — Themes set fonts, colors, and more. Backed by a programable style system that you can also plug into with extensions.
-- **[Markdown](using-bike/bike-markdown-format.md)** — Bike Markdown stores your outline as a nested Markdown list. Easily round trip your outlines through markdown tools.
+- **[Markdown](using-bike/bike-markdown-format.md)** — Bike Markdown stores your outline as a native nested Markdown list. Easily round trip your outlines through markdown tools.
 - **[Keybindings](using-bike/using-commands.md)** — Set custom keybindings using the  Commands Explorer. Get fancy with multi-stroke chords, or just set a few keys to your favorite commands.
 - **[Accessibility](using-bike/using-accessibility.md)** — Navigate and edit your outlines with assistive technologies. Bike now works with VoiceOver.
 - **Writing Tools** — Bike's editor now works with the macOS Edit > Writing Tools system.
