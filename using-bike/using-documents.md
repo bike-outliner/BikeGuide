@@ -35,9 +35,9 @@ If you're not sure, here's what I'd do:
 
 `.bike`, `.md`, `.opml`, and `.json` are all loss-free in Bike, so you can switch between them any time with File > Save As.
 
-### Document Options
+### Document Info
 
-Each document carries a few settings of its own, separate from Bike's global Settings > Document. Open them with File > Document Options…
+Each document carries a few settings of its own, separate from Bike's global Settings > Document. Open them with File > Document Info…
 
 * **Spelling and Grammar** — set the [spell-check](outline-checking.md) language for this document, or leave it on "Automatic by Language" to let macOS detect it. The choice is saved with the document, so an outline you write in another language keeps checking against that language wherever you open it.
 * **File Type** — shows the document's current format. Click **Save As…** to change it; this hands off to the normal save panel where you pick a different [format](#format-options).

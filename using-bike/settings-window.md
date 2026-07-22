@@ -2,7 +2,7 @@
 
 Open Bike's settings with Bike > Settings… (<kbd>Command-,</kbd>). The window is split into panes along the top — **General**, **Typography**, **Appearance**, **Autocorrect**, **Links**, **Document**, **Extensions**, **Sandbox**, and **License** — and almost everything about how Bike looks and behaves is configured here.
 
-These settings are global: they apply to every document. For settings that belong to a single document — its spell-check language, file type, and whether it stores row dates — see [Document Options](using-documents.md#document-options) instead.
+These settings are global: they apply to every document. For settings that belong to a single document — its spell-check language, file type, and whether it stores row dates — see [Document Info](using-documents.md#document-info) instead.
 
 ### General
 
@@ -50,7 +50,7 @@ Decide what happens when you activate a [row link](outline-links.md). Each of pl
 Defaults for new documents and windows:
 
 * **New Document** — the [file format](other-bike-formats.md) new documents use by default.
-* **Save row created & modified attributes** — whether new documents record row dates (only available for formats that can store row attributes). This mirrors the per-document option in [Document Options](using-documents.md#document-options).
+* **Save row created & modified attributes** — whether new documents record row dates (only available for formats that can store row attributes). This mirrors the per-document option in [Document Info](using-documents.md#document-info).
 * **Show welcome text** — whether new outlines start with welcome content.
 * **New Window** — *Match the current window's layout*, or use a layout you capture with **Save Window Layout**. See [Window Layout](using-windows.md#window-layout).
 * **When Open** — for documents you open while Bike is already running, expand no rows, all rows, or just level-one rows. See [Open Options](using-documents.md#open-options).
