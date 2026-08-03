@@ -1,21 +1,5 @@
 ---
-layout: home
 description: Structured Focused Writing
-
-hero:
-  name: "Bike Guide"
-  text: "Think, write, organize."
-  tagline: The user guide for Bike — an unusually fast and flexible outliner for your Mac.
-  actions:
-    - theme: brand
-      text: Getting Started
-      link: /getting-started
-    - theme: alt
-      text: Why Bike?
-      link: /why-bike
-    - theme: alt
-      text: Download Bike
-      link: https://www.hogbaysoftware.com/bike/
 ---
 
 <script setup>
@@ -41,7 +25,9 @@ const contents = computed(() =>
 )
 </script>
 
-Welcome to the Bike User Guide!
+# Welcome
+
+This is the user guide for [Bike](https://www.hogbaysoftware.com/bike/), an unusually fast and flexible outliner for your Mac.
 
 Please let me know if you have questions, suggestions, or if you find errors. I'd like to make this guide as useful to you as possible.
 
@@ -52,7 +38,7 @@ jesse@hogbaysoftware.com
 
 <hr class="toc-separator" />
 
-<div class="vp-doc toc-columns">
+<div class="toc-columns">
   <div class="toc-group" v-for="group in contents" :key="group.text">
     <h3>{{ group.text }}</h3>
     <ul>
@@ -72,7 +58,7 @@ jesse@hogbaysoftware.com
 }
 
 .toc-columns {
-  /* Up to 3 columns, but never narrower than 14rem — the browser
+  /* Up to 3 columns, but never narrower than 14rem, so the browser
      drops to 2 then 1 column on its own as the viewport shrinks. */
   column-width: 14rem;
   column-count: 3;
@@ -94,28 +80,9 @@ jesse@hogbaysoftware.com
 
 .toc-columns .toc-group h3 {
   margin-top: 0;
-}
-</style>
-
-<style>
-/* The hero's default bottom padding leaves too much space above the
-   "Welcome…" text. Match it to the space *above* the action buttons
-   (the hero actions' top padding: 24px, then 32px at >= 640px). */
-.VPHome .VPHero {
-  padding-bottom: 24px !important;
-}
-
-@media (min-width: 640px) {
-  .VPHome .VPHero {
-    padding-bottom: 32px !important;
-  }
-}
-
-/* Constrain the home page's text content to the same max width as a normal
-   doc page's text column. VitePress caps that column with
-   `.content-container { max-width: 688px }`; the home layout otherwise lets
-   this content run to 1152px. (Hero and features stay full width.) */
-.VPHome .vp-doc.container {
-  max-width: 688px;
+  /* Match the border-less spacing of the surrounding list, not the
+     top-bordered h3 rule vp-doc applies to page headings. */
+  border-top: none;
+  padding-top: 0;
 }
 </style>

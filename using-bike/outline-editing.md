@@ -50,7 +50,14 @@ These commands move rows within the outline structure. Children always move with
   The selected rows are moved down past the next sibling.
 
 * Outline > Move To… (<kbd>Command-&#92;</kbd>)  
+  A search box opens to move the selected rows to one of your [sidebar](using-sidebar.md) locations.
+
+* Outline > Move To Row… (<kbd>Option-Command-&#92;</kbd>)  
   A search box opens to move the selected rows beneath any other row in the outline.
+
+::: tip
+Both "Move To" commands open the same [choice box](using-choice-box.md). Move To Row… just pre-inserts a `-` in the search field, which switches the list from your sidebar locations to every row in the outline. Delete the `-` to see only sidebar items again, or type it yourself to see all rows.
+:::
 
 ## Text Editor Commands
 
@@ -84,11 +91,11 @@ Block mode makes it easier to move the selection through a list of rows. It also
 
 Another major difference is you can't type to insert text in block mode. So, for instance, typing `a` won't do anything. This means you can assign keybindings to all the normal text entry keys for other commands.
 
-Bike doesn't yet take good advantage of this ability, but pressing <kbd>Space</kbd> will toggle the done state of selected rows. And you can assign your own block mode keybindings in the [Commands Explorer](using-commands.md). More to come in a future release!
+Bike doesn't yet take good advantage of this ability, but pressing <kbd>Space</kbd> will toggle the done state of selected rows. And you can assign your own block mode keybindings in the [Commands Explorer](commands-explorer.md). More to come in a future release!
 
-### See also
+## See also
 
 * [Row Formatting](row-formatting.md)
 * [Text Formatting](text-formatting.md)
-* [Using Commands](using-commands.md)
+* [Using Commands](commands-explorer.md)
 * [Keyboard Shortcuts](../keyboard-shortcuts.md)

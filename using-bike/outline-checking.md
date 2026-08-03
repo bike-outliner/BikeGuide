@@ -14,7 +14,7 @@ Bike will highlight spelling errors in your outline with a solid red underline. 
 
 Sometimes text checking can't guess a word. In that case the text caret still bounce when it tries, but no popup will show. Then you'll have to fix the spelling manually. This happens to me quite often because I really can't spell, or even come close sometimes!
 
-#### To find a text checking error
+### To find a text checking error
 
 * Edit > Checking > Check Next (<kbd>Command-;</kbd>)
 * Edit > Checking > Check Previous (<kbd>Command-:</kbd>)
@@ -40,21 +40,21 @@ Options are available in the Bike > Settings > Autocorrect settings panel. Autoc
 
 To show the text checking panel use Edit > Checking > Show Checking or use the Check Next or Check Previous commands. They also show the text checking panel.
 
-#### To select a correction
+### To select a correction
 
 * Press the <kbd>Down</kbd> arrow to select any suggestion
 * Or type your own correction into the text field
 
-#### To apply a correction and find the next
+### To apply a correction and find the next
 
 * Click the `Replace` button in the checking panel
 * Or press <kbd>Return</kbd> to apply the correction
 
-#### To apply a correction and return to work
+### To apply a correction and return to work
 
 * Press <kbd>Option-Return</kbd> to apply the correction and return to work
 
-#### To hide the checking panel
+### To hide the checking panel
 
 * Click the `Done` button in the checking panel
 * Or press the <kbd>Escape</kbd> key
@@ -68,7 +68,7 @@ To show the text checking panel use Edit > Checking > Show Checking or use the C
 
 Bike's editor works with macOS Writing Tools. Use them to proofread, rewrite, or summarize text in your outline.
 
-#### To use Writing Tools
+### To use Writing Tools
 
 * Select the text that you want to work with
 * Edit > Writing Tools > Show Writing Tools

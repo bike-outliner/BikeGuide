@@ -4,7 +4,7 @@ Lots!
 
 Bike version 2 has been in development for way too long. I think it's 100% new code compared to Bike 1.0. And then I managed to rewrite all that new code at least a few times. Phew! I think it's finally ready.
 
-This is 2.0...
+This is 2.0…
 
 IMAGE
 
@@ -23,20 +23,20 @@ In Bike 2 the move commands don't change behavior when you switch modes like the
 
 The new features are out of your way when you don't need them. But when you do need them, I hope you'll find useful.
 
-- **[Sidebar](using-bike/using-sidebar.md)** — Use the sidebar to navigate. You can also pin rows and save filter queries to the sidebar for quick access.
-- **[Inspector](using-bike/using-inspector.md)** — Use the inspector for details and specialized views. By default it shows a calendar, but extensions can add their own views.
-- **[Filtering](using-bike/using-outline-filtering.md)** — Instantly filter your outline to show matching rows. Want to see only unfinished todos? Bike can do that and much more.
-- **[Attributes](using-bike/using-attributes.md)** - Add attributes to your rows, such as `@priority : 1`. Filter by attribute and display in badges at the end of the row.
-- **[Attachments](using-bike/using-attachments.md)** - Drag and drop file attachments into your outline. They are embedded, traveling with your outline document.
-- **[Themes](using-bike/using-themes.md)** — Themes set fonts, colors, and more. Backed by a programable style system that you can also plug into with extensions.
-- **[Markdown](using-bike/bike-markdown-format.md)** — Bike Markdown stores your outline as a native nested Markdown list. Easily round trip your outlines through markdown tools.
-- **[Keybindings](using-bike/using-commands.md)** — Set custom keybindings using the  Commands Explorer. Get fancy with multi-stroke chords, or just set a few keys to your favorite commands.
-- **[Accessibility](using-bike/using-accessibility.md)** — Navigate and edit your outlines with assistive technologies. Bike now works with VoiceOver.
-- **Writing Tools** — Bike's editor now works with the macOS Edit > Writing Tools system.
-- **[Interface Explorer](using-bike/using-interface-explorer.md)** — Customize Bike's interface. Add commands to the toolbar and statusbar. Organize views in the inspector.
-- **[Calendar System](using-bike/using-calendar.md)** — Open the inspector and click a day. Bike takes you to that day's row, creating it if needed. The calendar is an extension that ships with Bike.
-- **[Command Line Interface](using-bike-advanced/using-cli-interface.md)** — Access Bike from the command line. Run commands, automate tasks, observe queries, and integrate with other tools.
-- **[MCP Server for AI agents](using-bike/using-mcp-server.md)** — Connect AI agents to Bike for advanced automation and assistance.
+- **[Sidebar](using-bike/using-sidebar.md)**: Use the sidebar to navigate. You can also pin rows and save filter queries to the sidebar for quick access.
+- **[Inspector](using-bike/using-inspector.md)**: Use the inspector for details and specialized views. By default it shows a calendar, but extensions can add their own views.
+- **[Filtering](using-bike/outline-filtering.md)**: Instantly filter your outline to show matching rows. Want to see only unfinished todos? Bike can do that and much more.
+- **[Row Attributes](using-bike/row-attributes.md)** - Add attributes to your rows, such as `@priority : 1`. Filter by attribute and display in badges at the end of the row.
+- **[Attachments](using-bike/attachments.md)** - Drag and drop file attachments into your outline. They are embedded, traveling with your outline document.
+- **[Themes](using-bike/using-themes.md)**: Themes set fonts, colors, and more. Backed by a programable style system that you can also plug into with extensions.
+- **[Markdown](using-bike/bike-markdown-format.md)**: Bike Markdown stores your outline as a native nested Markdown list. Easily round trip your outlines through markdown tools.
+- **[Keybindings](using-bike/commands-explorer.md)**: Set custom keybindings using the  Commands Explorer. Get fancy with multi-stroke chords, or just set a few keys to your favorite commands.
+- **[Accessibility](using-bike/accessibility.md)**: Navigate and edit your outlines with assistive technologies. Bike now works with VoiceOver.
+- **Writing Tools**: Bike's editor now works with the macOS Edit > Writing Tools system.
+- **[Interface Explorer](using-bike/interface-explorer.md)**: Customize Bike's interface. Add commands to the toolbar and statusbar. Organize views in the inspector.
+- **[Calendar System](using-bike/using-calendar.md)**: Open the inspector and double-click a day. Bike takes you to that day's row, creating it if needed. The calendar is an extension that ships with Bike.
+- **[Command Line Interface](using-bike/command-line-interface.md)**: Access Bike from the command line. Run commands, automate tasks, observe queries, and integrate with other tools.
+- **[MCP Server for AI agents](using-bike/using-mcp-server.md)**: Connect AI agents to Bike for advanced automation and assistance.
 
 ## Extensions
 
@@ -54,11 +54,11 @@ AI agents are very good at building Bike extensions.
 
 I've had multiple users who know very little about coding, but are still able to create useful extensions with the help of an AI assistant. Give it a try.
 
-## One more thing...
+## One more thing…
 
 Each new feature adds both power and complexity. Each new feature has a cost and there are times when you'll want them out of the way.
 
-- View > Enter full Window (<kbd>Command-.</kbd>)
+- View > Enter Full Window (<kbd>Command-.</kbd>)
 
 And it's just you, your thoughts, and your outline. No title bar, no toolbars, no sidebar, no inspector. Move your mouse to reveal a minimal UI. Start typing again and it fades away until you need it again.
 

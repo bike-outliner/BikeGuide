@@ -2,14 +2,14 @@
 
 This page lists important Bike specific keyboard shortcuts. Other shortcuts that are not listed here can be found when browsing Bike's application menus. Bike also support many standard [macOS shortcuts](https://support.apple.com/en-us/HT201236).
 
-### Edit
+## Edit
 
 * Check Next: <kbd>Command-;</kbd>
 * Find: <kbd>Command-F</kbd>
 * Filter: <kbd>Command-Shift-F</kbd>
 * Clear Filter, Keep Folds: <kbd>Command-Return</kbd>
 
-### Format
+## Format
 
 * Bold: <kbd>Command-B</kbd>
 * Italic: <kbd>Command-I</kbd>
@@ -23,7 +23,7 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Edit Formatting: <kbd>Command-E</kbd>
 * Clear Formatting: <kbd>Option-Command-Delete</kbd>
 
-### Outline
+## Outline
 
 * New Row: <kbd>Return</kbd>
 * Indent Row: <kbd>Tab</kbd> or <kbd>Control-Command-Right</kbd>
@@ -36,14 +36,14 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Outdent (Text): <kbd>Control-Option-Left</kbd>
 * Delete Rows: <kbd>Escape</kbd> to block mode, then <kbd>Delete</kbd> or <kbd>Command-Shift-K</kbd>
 
-### Expand / Collapse
+## Expand / Collapse
 
 * Expand Row: <kbd>Command-0</kbd>
 * Collapse Row: <kbd>Command-9</kbd>
 * Expand All: <kbd>Control-Command-0</kbd>
 * Collapse All: <kbd>Control-Command-9</kbd>
 
-### Go
+## Go
 
 * Focus In: <kbd>Option-Command-Right</kbd>
 * Focus Out: <kbd>Option-Command-Left</kbd>
@@ -51,7 +51,7 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Go to Command…: <kbd>Shift-Command-P</kbd>
 * Pin / Unpin: <kbd>Command-Y</kbd>
 
-### View
+## View
 
 * Toggle Sidebar: <kbd>Control-Command-S</kbd>
 * Toggle Writing Focus Mode: <kbd>Option-Command-F</kbd>
@@ -61,12 +61,12 @@ This page lists important Bike specific keyboard shortcuts. Other shortcuts that
 * Toggle Full Window: <kbd>Command-.</kbd>
 * Toggle Auto-Hide Toolbar: <kbd>Option-Command-/</kbd>
 
-### More
+## More
 
 * Toggle text/block mode: <kbd>Escape</kbd>
 * Close Find Panel: <kbd>Escape</kbd>
 * Close Check Panel: <kbd>Escape</kbd>
 
-### See also
+## See also
 
-* [Commands Explorer](using-bike/using-commands.md) — customize Bike's keybindings
+* [Commands Explorer](using-bike/commands-explorer.md): customize Bike's keybindings

@@ -29,7 +29,7 @@ If you already know what [XPath](https://developer.mozilla.org/en-US/docs/Web/XP
 
 :::
 
-### Where are outline paths used?
+## Where are outline paths used?
 
 Outline paths don't do much on their own, but they are an important building block for other features. Here are some places where they are being used today:
 
@@ -40,11 +40,11 @@ Outline paths don't do much on their own, but they are an important building blo
 5. Shortcuts "Query Rows" action takes an outline path and returns matching rows.
 6. Extensions API's `Outline.queryRows()` method takes an outline path.
 
-### Outline Path Explorer
+## Outline Path Explorer
 
 Use the Bike > Outline Path Explorer to play with outline paths and learn how they work.
 
-#### To open the Outline Path Explorer:
+### To open the Outline Path Explorer:
 
 1. Open the outline that you would like to query
 2. Open menu Bike > Outline Path Explorer
@@ -53,7 +53,7 @@ Type an outline path in the top text field in the Outline Path Explorer window. 
 
 The outline shown in the Outline Path Explorer shows outline text and all outline attributes. For example above each row you will see `@id`, `@level`, and `@type` because every row has those attributes. You might also see other attributes, for example a checked off task will include a `@done` attribute. There are the attributes you can use in your outline paths.
 
-### Basic Paths
+## Basic Paths
 
 Unlike file paths the default test is "contains text" instead of "equals file name". Outline paths often have multiple matching rows.
 
@@ -67,7 +67,7 @@ Unlike file paths the default test is "contains text" instead of "equals file na
 
     A relative path that selects the current row if it contains "a". Generally you won't need to use relative paths. But it's good to know that they exist, and good to know that paths need to start with `/` or `.` to match rows. Otherwise see "Value Expressions".
 
-### Path Expressions
+## Path Expressions
 
 Use `union`, `except`, and `intersect` to combine the results of multiple outline paths.
 
@@ -84,7 +84,7 @@ Use `union`, `except`, and `intersect` to combine the results of multiple outlin
 
     Top level rows that contain "a" or "b", but not "c"
 
-### Path Steps
+## Path Steps
 
 Paths are divided into steps. For example the path `/a/b` has two steps. Each step contains filtering logic. You don’t have to include all filtering options in each step. For example the following steps have the same behavior.
 
@@ -98,7 +98,7 @@ Paths are divided into steps. For example the path `/a/b` has two steps. Each st
 
     Same behavior as above, but makes the predicate test explicit. See "Step Predicate" below to learn how predicates work.
 
-#### Step Axes
+### Step Axes
 
 By default each step passes the children of the matched rows to the next step. This is because "child" is the default axis. Other axes are also possible.
 
@@ -163,7 +163,7 @@ The above examples use the shortcut form of the descendant and parent axes. Ther
 
 :::
 
-#### Step Type
+### Step Type
 
 Each step can include a row type test at the start.
 
@@ -193,7 +193,7 @@ Each step can include a row type test at the start.
 
 :::
 
-#### Step Predicate
+### Step Predicate
 
 Each step can include a predicate test. You can then combine predicates with `and`, `or`, and `not`. Use `@` to name the row attribute to testing against.
 
@@ -252,21 +252,21 @@ Use relation modifiers in brackets after the relation to change how it is evalua
 
     Compares both sides as dates: `@done <[d] "2026-07-01"`. Shorthand for wrapping both sides in `date(side)` functions; see [date functions](#functions-reference).
 
-##### Match comparisons
+#### Match comparisons
 
 The `matches` relation treats the right side as a regular expression:
 
-*   `//@text matches "\bsum\b"` — the whole word "sum"
-*   `//@text matches "^Q[1-4]\b"` — starts with Q1, Q2, Q3, or Q4
-*   `//@text matches "cats?"` — "cat" or "cats"
-*   `//@tags matches "\bdone\b"` — matches item in a space-delimited list
+*   `//@text matches "\bsum\b"`: the whole word "sum"
+*   `//@text matches "^Q[1-4]\b"`: starts with Q1, Q2, Q3, or Q4
+*   `//@text matches "cats?"`: "cat" or "cats"
+*   `//@tags matches "\bdone\b"`: matches item in a space-delimited list
 *   `//@cities matches "(^|,)\s*New York\s*(,|$)"` - matches item in a comma-delimited list
 
-Regex patterns use backslashes, so in an editor style write them with `String.raw` — see [Paths in editor styles](#paths-in-editor-styles).
+Regex patterns use backslashes, so in an editor style write them with `String.raw`. See [Paths in editor styles](#paths-in-editor-styles).
 
 :::
 
-#### Step Slice
+### Step Slice
 
 Each step produces a list of ordered matches. Use position based slicing if you want to limit the step results by position.
 
@@ -289,7 +289,7 @@ Each step produces a list of ordered matches. Use position based slicing if you 
 
     Match second, third, and fourth rows that contain "a".
 
-### Value Expressions
+## Value Expressions
 
 You have already seen many value expressions such as `a`, `"a"`, and `@attribute`. They all generate a value that can be used in your outline path logic. Here are all the value expressions supported in outline paths:
 
@@ -298,7 +298,7 @@ You have already seen many value expressions such as `a`, `"a"`, and `@attribute
     Unquoted text value expression that evaluates to `hello world`.
 *   `"hello world"`
 
-    Quoted text value evaluating to `hello world`. Quote text that would conflict with path syntax. Contents are literal — no backslash escaping — so `"\bsum\b"` is exactly those characters. A doubled `""` is one literal `"` (`"she said ""hi"""` → `she said "hi"`).
+    Quoted text value evaluating to `hello world`. Quote text that would conflict with path syntax. Contents are literal (no backslash escaping), so `"\bsum\b"` is exactly those characters. A doubled `""` is one literal `"` (`"she said ""hi"""` → `she said "hi"`).
 *   `@attribute`
 
     Attribute value expression that returns the value of the attribute named "attribute" for the current row (or current run when using the `run::` axis). This value expression will always return `nil` if it's not used within a path step.
@@ -311,9 +311,9 @@ You have already seen many value expressions such as `a`, `"a"`, and `@attribute
 
 If you don't start your outline path with a `/` or a `.` then it is treated as a value expression. For example try typing `1 + 2` in the Outline Path Explorer and note how no rows are matched, but the result of the value expression is displayed trailing the text field.
 
-#### Paths in editor styles
+### Paths in editor styles
 
-An editor style path is *also* a JavaScript string, and JavaScript strips backslashes before Bike sees the path — so a plain `"\b"` becomes a backspace and a pattern like `matches "\bdone\b"` fails. Use `String.raw` so the path reads the same as in the filter bar:
+An editor style path is *also* a JavaScript string, and JavaScript strips backslashes before Bike sees the path, so a plain `"\b"` becomes a backspace and a pattern like `matches "\bdone\b"` fails. Use `String.raw` so the path reads the same as in the filter bar:
 
 ```js
 row(String.raw`.@tags matches "\bdone\b"`, (_, row) => {
@@ -323,7 +323,7 @@ row(String.raw`.@tags matches "\bdone\b"`, (_, row) => {
 
 Or double each backslash for JavaScript's sake (`"\\bdone\\b"`), which collapses to `\bdone\b` by the time Bike parses it.
 
-### Functions Reference
+## Functions Reference
 
 Outline path functions serve a variety of purposes:
 
@@ -439,7 +439,7 @@ A date is a number, so you compare dates with the normal relations and add or su
 
 *   date(value) -> number
 
-    Interprets its argument as a date — `date("2026-07-01")` for a literal, `date(@due)` for an attribute. Accepts a year (`2026`), year-month (`2026-07`), full date (`2026-07-01`), or full timestamp (`2026-07-01T13:53:00Z`). A bare date resolves to midnight in your local time zone; a timestamp keeps its own zone. The `[d]` modifier is shorthand for wrapping both sides of a compare in `date()`.
+    Interprets its argument as a date: `date("2026-07-01")` for a literal, `date(@due)` for an attribute. Accepts a year (`2026`), year-month (`2026-07`), full date (`2026-07-01`), or full timestamp (`2026-07-01T13:53:00Z`). A bare date resolves to midnight in your local time zone; a timestamp keeps its own zone. The `[d]` modifier is shorthand for wrapping both sides of a compare in `date()`.
 *   now() -> number
 
     The current date and time.
@@ -514,6 +514,6 @@ Some examples:
 
 :::
 
-### See also
+## See also
 
-* [Using Outline Filtering](../using-bike/using-outline-filtering.md)
+* [Outline Filtering](../using-bike/outline-filtering.md)

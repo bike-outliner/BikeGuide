@@ -11,7 +11,7 @@ export default defineConfig({
       {
         text: 'Introduction',
         items: [
-          { text: 'Bike Guide', link: '/' },
+          { text: 'Welcome', link: '/' },
           { text: 'Why Bike?', link: '/why-bike' },
           { text: 'What\'s New?', link: '/whats-new' },
           { text: 'Getting Started', link: '/getting-started' },
@@ -24,20 +24,28 @@ export default defineConfig({
           { text: 'Outline Navigation', link: '/using-bike/outline-navigation' },
           { text: 'Outline Editing', link: '/using-bike/outline-editing' },
           { text: 'Outline Checking', link: '/using-bike/outline-checking' },
-          { text: 'Outline Links', link: '/using-bike/outline-links' },
           { text: 'Row Formatting', link: '/using-bike/row-formatting' },
           { text: 'Text Formatting', link: '/using-bike/text-formatting' },
-          { text: 'Using Attributes', link: '/using-bike/using-attributes' },
-          { text: 'Using Attachments', link: '/using-bike/using-attachments' },
-          { text: 'Using Accessibility', link: '/using-bike/using-accessibility' },
+          { text: 'Outline Links', link: '/using-bike/outline-links' },
+          { text: 'Row Attributes', link: '/using-bike/row-attributes' },
+          { text: 'Row Badges', link: '/using-bike/row-badges' },
+          { text: 'Attachments', link: '/using-bike/attachments' },
+          { text: 'Accessibility', link: '/using-bike/accessibility' },
         ]
       },
       {
         text: 'Finding & Filtering',
         items: [
           { text: 'Using Find Panel', link: '/using-bike/using-find-panel' },
-          { text: 'Using the Choice Box', link: '/using-bike/using-the-choice-box' },
-          { text: 'Using Outline Filtering', link: '/using-bike/using-outline-filtering' },
+          { text: 'Using Choice Box', link: '/using-bike/using-choice-box' },
+          { text: 'Outline Filtering', link: '/using-bike/outline-filtering' },
+        ]
+      },
+      {
+        text: 'Productivity',
+        items: [
+          { text: 'Tasks', link: '/using-bike/tasks' },
+          { text: 'Using Calendar', link: '/using-bike/using-calendar' },
         ]
       },
       {
@@ -46,7 +54,6 @@ export default defineConfig({
           { text: 'Using Windows', link: '/using-bike/using-windows' },
           { text: 'Using Sidebar', link: '/using-bike/using-sidebar' },
           { text: 'Using Inspector', link: '/using-bike/using-inspector' },
-          { text: 'Using Calendar', link: '/using-bike/using-calendar' },
           { text: 'Using Toolbar', link: '/using-bike/using-toolbar' },
           { text: 'Using Status Bar', link: '/using-bike/using-status-bar' },
         ]
@@ -75,10 +82,10 @@ export default defineConfig({
           { text: 'Using Scripts', link: '/using-bike/using-scripts' },
           { text: 'Using Shortcuts', link: '/using-bike/using-shortcuts' },
           { text: 'Using Extensions', link: '/using-bike/using-extensions' },
-          { text: 'Using CLI Interface', link: '/using-bike-advanced/using-cli-interface' },
+          { text: 'Command Line Interface', link: '/using-bike/command-line-interface' },
           { text: 'Using MCP Server', link: '/using-bike/using-mcp-server' },
-          { text: 'Commands Explorer', link: '/using-bike/using-commands' },
-          { text: 'Interface Explorer', link: '/using-bike/using-interface-explorer' },
+          { text: 'Commands Explorer', link: '/using-bike/commands-explorer' },
+          { text: 'Interface Explorer', link: '/using-bike/interface-explorer' },
         ]
       },
       {
@@ -89,14 +96,15 @@ export default defineConfig({
           { text: 'Creating Shortcuts', link: '/using-bike-advanced/creating-shortcuts' },
           { text: 'Creating Extensions', link: '/using-bike-advanced/creating-extensions' },
           { text: 'Creating Outline Paths', link: '/using-bike-advanced/creating-outline-paths' },
-          { text: 'Logs Explorer', link: '/using-bike/using-logs' },
+          { text: 'Bike URL Syntax', link: '/using-bike-advanced/bike-url-syntax' },
+          { text: 'Logs Explorer', link: '/using-bike-advanced/logs-explorer' },
         ]
       },
       {
         text: 'Reference',
         items: [
           { text: 'Keyboard Shortcuts', link: '/keyboard-shortcuts' },
-          { text: 'Using Software Update', link: '/using-bike/using-software-update' },
+          { text: 'Software Update', link: '/using-bike/software-update' },
           { text: 'Bike Compatible Apps', link: '/bike-compatible-apps' },
           { text: 'Software Credits', link: '/software' },
           { text: 'Glossary', link: '/glossary' },

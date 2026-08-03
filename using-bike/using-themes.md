@@ -12,12 +12,12 @@ One thing I like here: you can set a separate theme for light mode and for dark 
 **To install a theme:**
 
 1. Choose Bike > Settings > Appearance
-2. Click the "Open Themes Folder..." button
+2. Click the "Open Themes Folder…" button
 3. Drag or modify any top level `.bktheme` file in that folder
 4. New themes should immediately appear in the popup menus in the Appearance settings panel.
 5. If it doesn't appear in popup, there may be a syntax error in the theme. Use Bike > Logs Explorer to see problem.
 
-### See also
+## See also
 
 * [Creating Themes](../using-bike-advanced/creating-themes.md)
-* [Logs Explorer](using-logs.md)
+* [Logs Explorer](../using-bike-advanced/logs-explorer.md)

@@ -1,10 +1,10 @@
 # Bike Markdown Format
 
-Bike Markdown is Bike's text-based file format, saved with a `.md` extension. I chose a markdown subset so that your outlines stay plain, portable text you can read, diff, and edit anywhere — open a `.md` file in any markdown viewer and it will render reasonably well. The tradeoff of sticking to a subset is that some markdown features fall outside what Bike can represent, so Bike will warn you when you open a `.md` file that uses them.
+Bike Markdown is Bike's text-based file format, saved with a `.md` extension. I chose a markdown subset so that your outlines stay plain, portable text you can read, diff, and edit anywhere. Open a `.md` file in any markdown viewer and it will render reasonably well. The tradeoff of sticking to a subset is that some markdown features fall outside what Bike can represent, so Bike will warn you when you open a `.md` file that uses them.
 
-I reach for this format when I want my outline to live as friendly plain text — in a Git repo, alongside other notes, or anywhere a `.bike` file would feel out of place. If you'd rather keep every Bike feature with full fidelity, see [Bike HTML Format](bike-html-format.md).
+I reach for this format when I want my outline to live as friendly plain text: in a Git repo, alongside other notes, or anywhere a `.bike` file would feel out of place. If you'd rather keep every Bike feature with full fidelity, see [Bike HTML Format](bike-html-format.md).
 
-### Markdown Subset
+## Markdown Subset
 
 Bike Markdown uses standard markdown unordered lists to encode outline hierarchy. Each row is a list item (`- `), and indentation creates nesting:
 
@@ -15,9 +15,9 @@ Bike Markdown uses standard markdown unordered lists to encode outline hierarchy
 	- Another child
 ```
 
-This is valid markdown — any markdown renderer will display it as a nested list.
+This is valid markdown. Any markdown renderer will display it as a nested list.
 
-### Row Types
+## Row Types
 
 Within that list structure, Bike uses standard markdown syntax to represent different row types:
 
@@ -34,9 +34,9 @@ Within that list structure, Bike uses standard markdown syntax to represent diff
 | Note            | `- ` with `{type=note}` | `- A note {type=note}` |
 | Horizontal rule | `- ---`       | `- ---`                 |
 
-Most of these — headings, blockquotes, task checkboxes, ordered lists — are standard markdown or widely supported extensions (like GFM task lists).
+Most of these (headings, blockquotes, task checkboxes, ordered lists) are standard markdown or widely supported extensions like GFM task lists.
 
-### Text Formatting
+## Text Formatting
 
 Inline formatting uses standard markdown syntax:
 
@@ -49,9 +49,9 @@ Inline formatting uses standard markdown syntax:
 | Highlight         | `==text==`    |
 | Link              | `[text](url)` |
 
-### Pandoc Attributes
+## Pandoc Attributes
 
-Standard markdown has no way to attach metadata to rows or text spans. Bike rows and text _can_ carry attributes — persistent IDs, classes, timestamps, custom data — that need to be preserved in the file.
+Standard markdown has no way to attach metadata to rows or text spans. Bike rows and text _can_ carry attributes (persistent IDs, classes, timestamps, custom data) that need to be preserved in the file.
 
 Bike Markdown uses [Pandoc's attribute syntax](https://pandoc.org/MANUAL.html#heading-identifiers) to fill this gap. Attributes are written in curly braces and support IDs, classes, and key-value pairs:
 
@@ -83,7 +83,7 @@ Pandoc attributes are only written when a row or span actually uses features tha
 
 Bike uses standard markdown syntax when it can (`**bold**`, `*italic*`, etc.) and falls back to `[text]{attrs}` only when there's no markdown equivalent.
 
-### Attachments
+## Attachments
 
 Attachments use standard markdown image syntax, whatever the file type. The destination points into the document's `assets` folder:
 
@@ -99,7 +99,7 @@ An attachment's display width, when set, is written as a Pandoc-style attribute:
 - ![photo](assets/photo.png){width=320}
 ```
 
-### Frontmatter
+## Frontmatter
 
 Files can optionally begin with a JSON metadata block between `---` delimiters:
 
@@ -111,9 +111,9 @@ Files can optionally begin with a JSON metadata block between `---` delimiters:
 - First row
 ```
 
-The frontmatter preserves document metadata like the root ID and spell-checker ignore words. Bike manages this automatically — you don't need to edit it by hand.
+The frontmatter preserves document metadata like the root ID and spell-checker ignore words. Bike manages this automatically. You don't need to edit it by hand.
 
-### Escaping
+## Escaping
 
 Characters that would normally be interpreted as row type prefixes are escaped with a backslash:
 
@@ -125,7 +125,7 @@ Characters that would normally be interpreted as row type prefixes are escaped w
 
 Standard markdown escaping also applies for inline formatting characters like `*`, `` ` ``, `[`, `]`, etc.
 
-### Example
+## Example
 
 Here's a complete example showing several features together:
 
@@ -149,7 +149,7 @@ Here's a complete example showing several features together:
 	- Regular body text {created="2024-02-26"}
 ```
 
-### See also
+## See also
 
 * [Using Documents](using-documents.md)
 * [Row Formatting](row-formatting.md)

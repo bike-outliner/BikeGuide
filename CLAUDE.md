@@ -30,8 +30,8 @@ BikeGuide/
 ├── glossary.md
 ├── using-bike/                  # End-user documentation
 │   ├── outline-editing.md
-│   ├── using-selection.md
 │   ├── using-scripts.md
+│   ├── command-line-interface.md # `bike` CLI overview
 │   └── ...
 ├── using-bike-advanced/         # Developer/power-user documentation
 │   ├── creating-outline-paths.md # Outline path query language reference
@@ -39,7 +39,7 @@ BikeGuide/
 │   ├── creating-themes.md       # Theme creation
 │   ├── creating-shortcuts.md    # macOS Shortcuts integration
 │   ├── creating-extensions.md   # Links to extension-kit docs
-│   └── command-line-tool.md     # `bike` CLI overview
+│   └── logs-explorer.md         # Logs Explorer
 ├── public/assets/               # Screenshots and images (served from /assets/)
 ├── .vitepress/
 │   └── config.mjs               # Site config + sidebar navigation
@@ -114,6 +114,6 @@ When Bike app features or APIs change, this documentation must be updated:
 - **Extension API changes** (`extension-kit/api/`): Update tutorials in `extension-kit/docs/`
 - **New app features** (`Bike/`): Update relevant `using-bike/` pages
 - **Theme/style changes**: Update `using-bike-advanced/creating-themes.md`
-- **Keybinding changes** (`Bike/OutlineEditor/.../Keymaps/`): Update `keyboard-shortcuts.md` and `using-bike/using-commands.md` (Commands Explorer)
+- **Keybinding changes** (`Bike/OutlineEditor/.../Keymaps/`): Update `keyboard-shortcuts.md` and `using-bike/commands-explorer.md`
 
 Extension development documentation now lives in the [extension-kit](https://github.com/bike-outliner/extension-kit/tree/main/docs) repository. The BikeGuide page links there.

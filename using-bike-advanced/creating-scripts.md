@@ -4,7 +4,7 @@ Create scripts to automate Bike and integrate with other apps. If you just want 
 
 Also consider using Bike's more powerful [extension system](creating-extensions.md).
 
-### Overview
+## Overview
 
 When scripting Bike you are dealing with `documents`, `windows`, and `rows`. Documents and windows are common scripting objects with a few Bike extensions–rows are specific to Bike.
 
@@ -16,18 +16,18 @@ You gain access to rows in a few ways:
 2. From the `rows` collection belonging to each document. This collection contains all rows in the document (except for the root). This collection is a good place to quickly find existing rows.
 3. From the `rows` collection belonging to each `row.` This collection contains only the rows that are directly contained by the row (the children). This collection is a good place for making new rows and to use as a target to moving existing rows into.
 
-### Dictionary
+## Dictionary
 
 Use Bike's scripting dictionary to learn what parts of Bike are scriptable.
 
-#### To open Bike's scripting dictionary:
+### To open Bike's scripting dictionary:
 
 * Drag and drop Bike onto Script Editor's application icon.
 * Or from Script Editor use File > Open Dictionary and choose Bike's dictionary.
 
 ![Scripting Dictionary](/assets/Screen%20Shot%202022-05-05%20at%2012.20.00%20PM.png)
 
-### Getting Started
+## Getting Started
 
 Here's the official starting point for learning AppleScript:
 
@@ -37,11 +37,11 @@ The starting point for lesser people, such as myself, is to find example scripts
 
 * [Bike Support Forum – Extensions Wiki](https://support.hogbaysoftware.com/t/bike-extensions-wiki/4810)
 
-### Example Scripts
+## Example Scripts
 
 You'll get the most out of these scripts by using [Script Debugger](https://latenightsw.com) instead of Script Editor that comes with your Mac. Among other things Script Debugger allows you to step through the script line by line so you can see the effect of each command on you document.
 
-#### Kitchen Sink
+### Kitchen Sink
 
 This is a nonsense script that demonstrates many of Bike's scripting abilities. It's a good place to learn how basic things are done like making and moving rows.
 
@@ -130,7 +130,7 @@ tell application "Bike"
 end tell
 ```
 
-#### Home Script
+### Home Script
 
 This script resets your view state to "Home"
 
@@ -143,7 +143,7 @@ tell front document of application "Bike"
 end tell
 ```
 
-#### Cleanup Script
+### Cleanup Script
 
 This script saves the current selected row. Collapses all rows. Then restores your selection, which also expands any rows needed to show the selection. Use it to cleanup when you have too many rows expanded, but you still want to keep working where you are.
 
@@ -155,7 +155,7 @@ tell front document of application "Bike"
 end tell
 ```
 
-#### Today Script
+### Today Script
 
 This script creates a simple calendar structure in your outline and adds a new line to "today" where you can start taking notes. It's interesting because it uses each row's `persistent id` to track rows. Once the calendar is created you can move it to any place in your outline and the script will keep working.
 
@@ -193,7 +193,7 @@ to getOrMake(getId, getName, rowContainer)
 end getOrMake
 ```
 
-#### Run App Context Script
+### Run App Context Script
 
 You can call from AppleScript into Bike's app [extension](https://github.com/bike-outliner/extension-kit/blob/main/docs/app-context-tutorial.md) API using the `evaluate` command.
 
@@ -234,7 +234,7 @@ Application("Bike").evaluate({ input: "hello", script: "(input) => { return inpu
 
 :::
 
-### See also
+## See also
 
 * [Using Scripts](../using-bike/using-scripts.md)
 * [Creating Extensions](creating-extensions.md)

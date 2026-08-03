@@ -37,13 +37,13 @@ Include <kbd>Option</kbd> the above shortcuts to fold rows one level at a time. 
 * Go > Focus Out (<kbd>Option-Command-Left</kbd>)
 * Click the focus button to the right of a row's text
 
-Those are just the direct ways to focus. You can also focus by selecting a row from the [sidebar](using-sidebar.md) or by using Go > Go To… (<kbd>Command-P</kbd>) to search for a row using the [choice box](using-the-choice-box.md). Clicking a day in your calendar will also focus that day's row.
+Those are just the direct ways to focus. You can also focus by selecting a row from the [sidebar](using-sidebar.md) or by using Go > Go To… (<kbd>Command-P</kbd>) to search for a row using the [choice box](using-choice-box.md). Clicking a day in your calendar will also focus that day's row.
 
 Also, when you focus a row, Bike automatically expands the row to show what's inside. This allows a tidy outline. Focus into a row and it expands to show you its children. Focus out and it collapses back up. Tidy!
 
 Focus and filter changes form the basis of Bike's [navigation system](outline-navigation.md).
 
-### See also
+## See also
 
 * [Outline Navigation](outline-navigation.md)
-* [Using Outline Filtering](using-outline-filtering.md)
+* [Outline Filtering](outline-filtering.md)

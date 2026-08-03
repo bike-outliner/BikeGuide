@@ -1,91 +1,50 @@
 # Outline Links
 
-![Links](/assets/Links.png)
+A Bike link points at a whole outline, a single row, or a specific view. They're ordinary URLs, so they work inside Bike and from any other app on your Mac. Paste one into Apple's Notes and clicking it opens Bike and takes you to the linked location.
 
-Bike allows you to insert links into your outline.
+## Document Links
 
-Bike also automatically detects URLs that you type.
+A document link points at the outline as a whole. Activating it just opens the document, leaving you wherever you last were in it.
 
-Anytime there is a link in your document Bike will insert a "link button" after that link.
+* Use Edit > Copy > Copy Document Link (<kbd>Shift-Command-Option-L</kbd>).
 
-* Click the link button to activate the link.
-* Or use Go > Open Link (<kbd>Command-Shift-O</kbd>) to activate links.
-* <kbd>Command-Click</kbd> a link to open it in a new tab.
-* <kbd>Command-Option-Click</kbd> a link to open it in a new window.
-* Click and edit the link text without fear that you'll activate the link.
-* To edit the URL associated with a link right click on the link text or link button and choose "Edit Link" from the popup menu.
+## View Links
 
-#### To link existing text
+A view link points at a focus row and active filter, a location in your outline. Activating it opens the outline and restores both the focus row and filter.
 
-If you've already copied a URL — from your web browser, say — you can apply it to text you already have, instead of retyping anything:
+* Use Edit > Copy > Copy View Link (<kbd>Command-Option-L</kbd>).
 
-* Select the text you want to turn into a link.
-* Paste (<kbd>Command-V</kbd>).
+## Row Links
 
-Bike notices that the clipboard holds a URL and applies it to your selection rather than replacing it, so the selected text becomes a link to that URL. (Paste a URL with nothing selected and Bike inserts it as a clickable link instead.)
+A row link points at one specific row in the outline. Activating it opens the document, reveals that row, and selects it.
 
-This relies on link detection — the "Use smart links" option in [Settings > Autocorrect](settings-window.md#autocorrect) — which is on by default.
+* Use Edit > Copy > Copy Row Link (<kbd>Command-L</kbd>) to copy a link to the selected row, then paste it wherever you want it.
+* Use Format > Add Link to Row… (<kbd>Command-Option-K</kbd>) to pick a row from the [choice box](using-choice-box.md) and insert a link to it right where you're typing.
+* Or drag a row by its triangle handle and hold <kbd>Control</kbd> before releasing the mouse. A link to the dragged row is inserted where you drop it.
 
-More information on formatting and activating links can be found in the [Text Formatting](text-formatting.md) section.
+## How Bike resolves links
 
-### Bike Row Links
+Bike links don't use a file path.
 
-Bike includes its own link type that allows you to link directly to a row in your outline. When activating a Bike link you can:
+Instead, they contain the id of the outline. When Bike resolves a link, it asks Spotlight to find the file that carries that id. This means you can rename the outline, move it to another folder, or reorganize your Documents directory, and the link still resolves.
 
-* <kbd>Command-Click</kbd> to open a Bike link in a new tab
-* <kbd>Command-Option-Click</kbd> to open a Bike link in a new window
+It also means if Spotlight isn't indexing the file, or Bike doesn't have permission to read the file, the link won't work. See the next section for details.
 
-Bike links are normal URLs. You can paste them into other apps and they'll continue to work as long as Bike is installed on your computer. For example you can paste a Bike link into Apple's Notes app and when you click that link it will open Bike and select the linked row.
+Bike links are plain URLs, and you can read or write them by hand. See [Bike URL Syntax](../using-bike-advanced/bike-url-syntax.md) for the pattern and its parts.
 
-Bike links have this pattern:
-
-```
-bike://<rootid>/<focusid>#<selectid>
-```
-
-* `<rootid>` The id of the root node of the document that you are linking too.
-* `<focusid>` The id of the row that should be focused after activating the link. This is optional.
-* `<selectedid>` The id of the row that should be selected after activating the link. This is optional.
-
-Here's what an actual Bike link looks like:
-
-```
-bike://KOcw9x9N/ch#zf
-```
-
-#### To create a Bike link:
-
-* Use Format > Add Link to Row… <kbd>Command-Option-K</kbd> to quickly select a row and insert a link to that row.
-* Use Edit > Copy > Copy Row Link (<kbd>Shift-Command-Option-L</kbd>) to copy a link to the selected row. If your view is focused when you copy then the link will also include the focused row id.
-
-Alternatively you can drag a row by its triangle handle and then hold down the <kbd>Control</kbd> key before releasing the mouse. A link to the dragged row will be inserted into your outline.
-
-### Bike Path Row Links
-
-Bike links also have an alternative form. Bike path row links use a file path to locate the associated outline file instead of using the outline's id.
-
-This is a Bike path link:
-
-```
-bike:///Users/jessegrosjean/Documents/todo.bike#aF
-```
-
-Path row links are more likely to break than standard Bike links. If you move or rename the linked to outline then the link will break. I generally recommend using normal Bike links.
-
-There's no menu command to copy a path row link. If you need one you can write or edit the URL by hand to use the file path form shown above.
-
-### What if a link stops working?
+## What if a link stops working?
 
 Most broken links come down to one of two everyday causes:
 
-* You linked to a document and then deleted that document. When you activate the link the document won't be found. This is probably not surprising!
-* You linked to a row and then deleted that row. The document still opens, but you'll get a warning that the linked row could not be found.
+* You linked to a document and then deleted that document. When you activate the link the document won't be found. This is not surprising!
+* You linked to a row and then deleted that row. The document still opens, but you'll get a warning naming the row reference that could not be found.
+* You hand-wrote a link using a session id or a row number instead of a row id. Those forms aren't durable — see [Row references](../using-bike-advanced/bike-url-syntax.md#row-references). Only row ids survive closing the document or copying rows into another outline.
 
-If the link target still exists and the link *still* won't open, it's usually a Spotlight or sandbox-permission issue. The details below explain why — most people won't need them.
+If the link target still exists and the link *still* won't open, it's usually a Spotlight or sandbox-permission issue. The details below explain why. Most people won't need them.
 
 ::: details Advanced: why Bike links break, and Sandbox requirements
 
-Bike uses Spotlight searches to resolve links. It associates the outline id with the document file and then searches for that id using Spotlight. So if something is wrong with Spotlight, your links won't work. This is temporary — they'll work again once the document id is re-indexed.
+Bike uses Spotlight searches to resolve links. It associates the outline id with the document file and then searches for that id using Spotlight. So if something is wrong with Spotlight, your links won't work. This is temporary. They'll work again once the document id is re-indexed.
 
 A second catch: Spotlight only finds documents Bike already has Sandbox permission to open. If Bike doesn't have permission, the document won't be in the results and the link won't resolve (see Sandbox requirements below).
 
@@ -95,7 +54,7 @@ And if two documents share the same outline id (for example because you duplicat
 
 **Sandbox requirements**
 
-Bike is a sandboxed app, so it can only read files you've given it permission to read. The most common way to grant permission is to open the file in Bike — File > Open has that side effect. Another is to store the file in Bike's iCloud folder, which Bike can always read.
+Bike is a sandboxed app, so it can only read files you've given it permission to read. The most common way to grant permission is to open the file in Bike. File > Open has that side effect. Another is to store the file in Bike's iCloud folder, which Bike can always read.
 
 Because link resolution relies on a Spotlight search, and that search only returns files Bike can read, a link that seems broken may just be a permission problem. Two fixes:
 
@@ -106,6 +65,8 @@ Sandbox behavior can be confusing. When you open a file, Bike gets read/write ac
 
 :::
 
-### See also
+## See also
 
-* [Text Formatting](text-formatting.md)
+* [Bike URL Syntax](../using-bike-advanced/bike-url-syntax.md)
+* [Text Formatting](text-formatting.md#links)
+* [Using Documents](using-documents.md)

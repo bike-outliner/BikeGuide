@@ -23,10 +23,10 @@ Bike's core is small, but designed for real work. It's a fast macOS native app. 
 
 Bike is a pleasure to use.
 
-Bike is also uniquely flexible — built to be shaped with themes, scripts, shortcuts, extensions, and a command line interface. It uses well known file formats (Markdown, HTML), keeping your work open and accessible. 
+Bike is also uniquely flexible. Built to be shaped with themes, scripts, shortcuts, extensions, and a command line interface. It uses well known file formats (Markdown, HTML), keeping your work open and accessible. 
 
 Bike is a simple and efficient outlining core that you can customize to fit your needs.
 
-### See also
+## See also
 
 * [Getting Started](getting-started.md)

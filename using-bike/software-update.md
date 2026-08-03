@@ -1,18 +1,18 @@
-# Using Software Update
+# Software Update
 
 If you are using the direct download version of Bike then you can control when to check for updates and what kinds of updates to check for. If you are using the Mac App Store version of Bike then updates are handled by the Mac App Store.
 
 For the direct download version of Bike:
 
-#### To check for updates:
+## To check for updates:
 
 * Use Bike > Check for Update…
 
-#### To check for updates automatically:
+## To check for updates automatically:
 
 * Use Bike > Settings and turn on "Check for Updates automatically"
 
-#### To include preview release updates:
+## To include preview release updates:
 
 * Use Bike > Settings and turn on the "Include "Preview" releases in updates" checkbox
 
