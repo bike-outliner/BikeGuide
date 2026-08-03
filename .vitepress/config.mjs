@@ -4,9 +4,23 @@ export default defineConfig({
   title: 'Bike Guide',
   description: 'User guide for the Bike outliner',
 
+  // Published into hogbaysoftware.com at /bike/guide/ — see "publish-guide" in
+  // package.json. Every emitted asset URL and link needs this prefix.
+  base: '/bike/guide/',
+  cleanUrls: true,
+
+  // Bike 2.0 is still in preview: the guide should be reachable but not indexed.
+  // Remove this at launch.
+  head: [['meta', { name: 'robots', content: 'noindex, nofollow' }]],
+
   srcExclude: ['SUMMARY.md', 'CLAUDE.md', 'fact-check-report.md'],
 
   themeConfig: {
+    nav: [
+      { text: 'Bike', link: 'https://www.hogbaysoftware.com/bike/' },
+      { text: 'Support', link: 'https://support.hogbaysoftware.com/c/bike/22' },
+    ],
+
     sidebar: [
       {
         text: 'Introduction',

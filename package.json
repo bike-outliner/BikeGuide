@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
-    "preview": "vitepress preview"
+    "preview": "vitepress preview",
+    "publish-guide": "vitepress build && rsync -a --delete .vitepress/dist/ \"${HBS_SITE:-../../hogbaysoftware.com}/guide/\""
   },
   "devDependencies": {
     "vitepress": "^1.6.4"

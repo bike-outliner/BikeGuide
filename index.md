@@ -3,24 +3,21 @@ description: Structured Focused Writing
 ---
 
 <script setup>
-import { useData } from 'vitepress'
+import { useData, withBase } from 'vitepress'
 import { computed } from 'vue'
 
 const { theme } = useData()
 
 // Build the contents list straight from the sidebar in .vitepress/config.mjs,
 // so this page stays in sync automatically. Drop any self-link to the home page.
-// Match VitePress's default link rewriting (cleanUrls off → ".html"),
-// since dynamic :href values aren't transformed the way static links are.
-const withExt = (link) =>
-  link.startsWith('/') && !link.endsWith('.html') ? `${link}.html` : link
-
+// Apply withBase() by hand: the site is served under a base path, and dynamic
+// :href values aren't rewritten the way static markdown links are.
 const contents = computed(() =>
   (theme.value.sidebar || []).map(group => ({
     text: group.text,
     items: (group.items || [])
       .filter(item => item.link && item.link !== '/')
-      .map(item => ({ text: item.text, link: withExt(item.link) })),
+      .map(item => ({ text: item.text, link: withBase(item.link) })),
   })).filter(group => group.items.length)
 )
 </script>

@@ -19,6 +19,26 @@ npm run preview  # preview the built site
 
 `npm run build` is a useful sanity check — it fails on broken Vue/markdown syntax (e.g. an unclosed inline `<kbd>` tag) and on dead internal links.
 
+Note the dev server serves the guide at `http://localhost:5173/bike/guide/`, not at `/` — the site is configured with `base: '/bike/guide/'` (see Publishing below).
+
+## Publishing
+
+The guide is published as part of the hogbaysoftware.com website at `https://www.hogbaysoftware.com/bike/guide/`. The two repos stay separate: the guide is built here and its output is committed into the website repo, which copies it through verbatim.
+
+```sh
+npm run publish-guide   # vitepress build + rsync into ../../hogbaysoftware.com/guide/
+```
+
+Then commit in **both** repos and push. The website's normal Netlify build picks it up — editing a page here does not reach the web until you run `publish-guide` and commit the website repo.
+
+Set `HBS_SITE` if your hogbaysoftware.com checkout isn't at `../../hogbaysoftware.com`.
+
+The moving parts:
+
+- `base: '/bike/guide/'` in `.vitepress/config.mjs`. Because of this, any **dynamic** `:href` in a `<script setup>` block must be wrapped in `withBase()` — VitePress rewrites static markdown links automatically, but not dynamic bindings. `index.md` does this for its generated table of contents.
+- `eleventyConfig.addPassthroughCopy({ "guide": "bike/guide" })` in the website's `.eleventy.js`. The output lives outside the website's `src/` so Eleventy never runs the HTML through Nunjucks.
+- A `noindex, nofollow` meta tag in `head`, because Bike 2.0 is still in preview — the guide is reachable but deliberately not advertised or indexed. **Remove it at launch**, along with adding a link from the website's Bike page. The old GitBook site at `bikeguide.hogbaysoftware.com` is still live and untouched.
+
 ## Repository Structure
 
 ```
