@@ -8,7 +8,7 @@ These settings are global: they apply to every document. For settings that belon
 
 The catch-all pane for editor behavior and app-wide options.
 
-* **Editor**: toggles for the editing surface, including *Show caret line*, *Show row guide lines*, *Show row focus arrows*, *Hide outline controls when typing* (so nothing competes with your writing), and *Sort completed tasks to end of list*.
+* **Tasks**: *Sort completed to end of list* moves a task to the bottom of its group as soon as you check it off. The editor's visual toggles live under [Appearance](#appearance).
 * **Menus**: *Show action images* turns the small icons in menus on or off.
 * **Animations**: *Enable editor animations* and *Enable editor typing animations*, plus *Disable animations in macOS Low Power Mode* and an animation-rate slider (0.5x–2.0x) if you like Bike's motion faster or slower.
 * **Updates & Reports**: *Check for Updates automatically*, *Include "Preview" releases in updates* (see [Software Update](software-update.md)), and *Prompt to send crash reports*. The update options are hidden in the Mac App Store and Setapp versions, which update through their stores.
@@ -26,9 +26,11 @@ Controls the font and spacing of your outline:
 
 ## Appearance
 
-Choose how Bike looks in light and dark mode:
+Choose how Bike looks in light and dark mode, and turn the editor's visual extras on and off:
 
 * **Auto / Light / Dark**: follow the system appearance or pin Bike to one.
+* **Editor**: toggles for the editing surface — *Show caret line*, *Show row guide lines*, and *Show row focus arrows*.
+* **Hide outline controls when typing**: check any of *Handles* (the grip at the start of each row), *Guides* (the vertical lines under a parent row), or *Badges* (which also covers the focus arrow, since it sits at the same trailing edge) and that chrome fades away while you type, so nothing competes with your writing. It all comes back the moment you move the mouse. Everything starts unchecked — check only what distracts you.
 * **Light Theme** and **Dark Theme**: pick a separate [theme](using-themes.md) for each mode. Themes specify colors and fonts. **Open Themes Folder…** reveals where themes live so you can add your own.
 * **Editor Style**: the ruleset that defines your outline's layout and styling, similar to CSS; themes are inputs to it. You can create your own, but unlike a theme it requires some programming. See [Using Themes](using-themes.md) and [Creating Themes](../using-bike-advanced/creating-themes.md).
 
