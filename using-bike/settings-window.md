@@ -62,6 +62,11 @@ Defaults for new documents and windows:
 
 A home for settings that [extensions](using-extensions.md) add. When you have no extensions with settings it shows "No Extension Settings". Use Bike > Extensions Explorer to install and remove extensions, and the [Interface Explorer](interface-explorer.md) to arrange the UI they add.
 
+Bike's own features add sections here too:
+
+* **Default Badge Exclusions**: attributes that should never show a [badge](row-badges.md), separated by commas. Useful when another tool writes bookkeeping attributes into your files that you'd rather not read as content.
+* **Progress**: whether the progress badge draws as a pie chart or a `done/total` fraction.
+
 ## Sandbox
 
 Grant Bike access to folders of outlines. This is only needed so Bike can resolve [row links](outline-links.md) to documents that aren't already open. Without access to the containing folder, Bike can't find the document and the link fails. Use **Add** to grant a folder and **Remove** to revoke it. Reopen Bike for the change to take full effect. There's more on why this matters in [Outline Links](outline-links.md).

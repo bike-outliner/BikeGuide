@@ -42,8 +42,9 @@ Each document carries a few settings of its own, separate from Bike's global Set
 * **Spelling and Grammar**: set the [spell-check](outline-checking.md) language for this document, or leave it on "Automatic by Language" to let macOS detect it. The choice is saved with the document, so an outline you write in another language keeps checking against that language wherever you open it.
 * **File Type**: shows the document's current format. Click **Save As…** to change it; this hands off to the normal save panel where you pick a different [format](#format-options).
 * **Save row created & modified attributes**: when this is on, Bike records each row's created and modified timestamps in the file. It's only available for formats that can store row attributes, so it's disabled for formats like plain text that can't.
+* **Attachments**: the document's [file attachments](attachments.md), each with its size and how many rows reference it. Click a reference count to filter the outline down to the rows using that attachment, or drag a row out into your outline to reference it again.
 
-Click **Apply** to keep your changes, or **Cancel** to discard them.
+Changes apply as you make them; click **OK** when you're done.
 
 ## Open Options
 
