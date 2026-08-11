@@ -58,7 +58,7 @@ export default defineConfig({
       {
         text: 'Productivity',
         items: [
-          { text: 'Tasks', link: '/using-bike/tasks' },
+          { text: 'Tasks & More', link: '/using-bike/tasks-and-more' },
           { text: 'Using Calendar', link: '/using-bike/using-calendar' },
         ]
       },

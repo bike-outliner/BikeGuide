@@ -1,4 +1,4 @@
-# Tasks
+# Tasks & More
 
 Bike is an outliner first, but outlines are where most of my todo lists start. So Bike ships with a small set of built-in [row attributes](row-attributes.md) for the things a list tends to need: a due date, a priority, an estimate, a flag.
 
@@ -11,6 +11,8 @@ The hinge for all of it is `@done`.
 Make a row a task by typing `[]` followed by a space, then check it off. Checking the box sets `@done` on the row, and the value it stores is the completion time. In [block mode](outline-editing.md#selection-modes) you can also press <kbd>Space</kbd> to toggle done on every selected row.
 
 `@done` is what the other features watch. A done row's badges fade back, its due date stops being urgent, and its estimate drops out of the totals below. Finishing something is what makes it quiet down.
+
+By default a checked row also slides to the bottom of its group, so what's left stays together at the top. If you'd rather rows stayed where you put them, turn off *Sort completed to end of list* in [Settings > Extensions > Tasks](settings-window.md#extensions).
 
 ## Due Dates
 
@@ -44,7 +46,7 @@ A flag doesn't mean anything in particular, which is the point. Use it for "look
 
 ## Progress
 
-Any row with tasks beneath it gets a progress badge, showing how many of those tasks are done. It draws as a small pie by default, or as a fraction like `3/7` if you prefer. Set which in Settings > Progress.
+Any row with tasks beneath it gets a progress badge, showing how many of those tasks are done. It draws as a fraction like `3/7` by default, or as a small pie if you prefer. Set which in [Settings > Extensions > Tasks](settings-window.md#extensions), where you can also turn the badge off entirely.
 
 Click the badge for a menu that acts on that branch:
 

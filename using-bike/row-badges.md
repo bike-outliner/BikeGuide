@@ -1,41 +1,23 @@
 # Row Badges
 
-A badge is a small label that follows a row's text. Badges are how [row attributes](row-attributes.md) become visible in your outline, and how you edit them without opening the attribute editor.
+A badge is a small label that follows a row's text. Badges are how [row attributes](row-attributes.md) are made visible in your outline. For example, a row with a `@priority : 1` will show the badge `P1`. Click on a badge to see a related menu.
 
-For example, a row with a `@priority : 1` attribute shows a `P1` badge at the end of its text.
+## Custom & Catch-All Badges
 
-## Built-in and Custom Badges
+Badges are drawn by the extension system. They can be custom drawn by an extension, or drawn by the catch-all badge.
 
-Every attribute Bike doesn't recognize gets a badge automatically. Add `@estimate : 2h` to a row and a badge for it appears. You don't have to set anything up.
+Bike's built-in extension draws custom badges for well known attributes, such as those described in [Tasks & More](tasks-and-more.md). 
+These custom badges incorporate color, icons, and other styling based on the attribute and value. Other extensions can do the same.
 
-Bike's built-in attributes get badges too, some with custom styling:
+There is also a catch-all badge that is used for any attribute that doesn't have a custom badge. The catch-all badge simply shows the attribute's name and value.
 
-* `@priority` is shortened to just `P1`, rather than spelling out `@priority : 1`.
-* `@due` turns red once the due date has passed.
+## Hiding Unwanted Badges
 
-If you want that kind of custom presentation for your own attributes, you can define your own badges with the extension API. See [Creating Extensions](../using-bike-advanced/creating-extensions.md).
+Sometimes attributes are not meant to be seen in your outline. You might use an attribute to store a hash, a timestamp, or some other data that you don't want to see mixed in with outline content. In that case, you can tell the catch-all badge to ignore it.
 
-## Hiding Badges You Didn't Ask For
+* Choose Bike > Settings > Extensions. Go to the **Badges** section, and add the attribute's name so that the catch-all badge will ignore it.
 
-Sometimes attributes arrive from somewhere other than you. A syncing tool stamps rows with an id, a script leaves a hash behind. Those aren't notes to yourself, and a badge for each one is just noise.
-
-You can tell the automatic badge to leave them alone.
-
-#### To stop an attribute from showing a badge
-
-* Choose Bike > Settings > Extensions, open **Default Badge Exclusions**, and add the attribute's name to the list. Separate names with commas.
-
-The attribute itself is untouched — it stays in your outline, it still saves to your file, and you can still see and edit it in the attribute palette. It just stops drawing a badge.
-
-This applies to every document you open, not just the current one. Attributes with their own custom badge, like `@due` and `@priority`, aren't affected — the extension that draws them decides how they look.
-
-## To edit an attribute from its badge
-
-* Click the badge and edit the value.
-
-## To remove an attribute from its badge
-
-* Right-click the badge and choose to remove it.
+The attribute itself is untouched, it stays in your outline, and you can still see and edit it in the attribute palette. It just stops drawing a badge.
 
 ## See also
 
