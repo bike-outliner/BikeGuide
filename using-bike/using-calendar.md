@@ -25,7 +25,7 @@ It shows a month grid with the current date highlighted. Days with associated ro
 
 ## Commands
 
-Four commands let you work with the calendar from the command palette, or you can bind them to keyboard shortcuts in [Bike's keybindings](commands-explorer.md):
+Four commands let you work with the calendar from the [choice box](using-choice-box.md), or you can bind them to keyboard shortcuts in [Bike's keybindings](commands-explorer.md):
 
 * **`calendar:today`**: jump to today, creating the day row if needed.
 * **`calendar:week`**: pre-create every day in the current week.

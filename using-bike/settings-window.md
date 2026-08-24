@@ -58,6 +58,17 @@ Defaults for new documents and windows:
 
 A home for settings that [extensions](using-extensions.md) add. Use Bike > Extensions Explorer to install and remove extensions.
 
+Bike's own built-in extension contributes two sections here:
+
+### Attributes
+
+One table listing every [row attribute](row-attributes.md) that Bike and your extensions declare, and the ones your open documents simply happen to use. Configure how Bike handles each attribute using the provided checkbox table.
+
+### Tasks
+
+* **Sort completed to end of list**: whether closing a task slides it to the bottom of its group. Off by default, so a checked row stays where you put it.
+* **Show task progress badges**: whether a row with tasks beneath it gets a progress badge, and whether that badge draws as a **Fraction** or a **Pie chart**.
+
 ## Sandbox
 
 Grant Bike access to folders of outlines. This is only needed so Bike can resolve [row links](outline-links.md) to documents that aren't already open. Without access to the containing folder, Bike can't find the document and the link fails.

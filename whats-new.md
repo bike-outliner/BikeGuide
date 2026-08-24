@@ -27,6 +27,8 @@ The new features are out of your way when you don't need them. But when you do n
 - **[Inspector](using-bike/using-inspector.md)**: Use the inspector for details and specialized views. By default it shows a calendar, but extensions can add their own views.
 - **[Filtering](using-bike/outline-filtering.md)**: Instantly filter your outline to show matching rows. Want to see only unfinished todos? Bike can do that and much more.
 - **[Row Attributes](using-bike/row-attributes.md)** - Add attributes to your rows, such as `@priority : 1`. Filter by attribute and display in badges at the end of the row.
+- **[Row Log](using-bike/row-log.md)**: Give a row a Log and Bike records changes to its attributes as ordinary rows you can read and annotate.
+- **[Tasks & More](using-bike/tasks-and-more.md)**: Check off a row like before, or give it a more granular status such as "started". Also due dates, priorities, estimates, and more.
 - **[Attachments](using-bike/attachments.md)** - Drag and drop file attachments into your outline. They are embedded, traveling with your outline document.
 - **[Themes](using-bike/using-themes.md)**: Themes set fonts, colors, and more. Backed by a programable style system that you can also plug into with extensions.
 - **[Markdown](using-bike/bike-markdown-format.md)**: Bike Markdown stores your outline as a native nested Markdown list. Easily round trip your outlines through markdown tools.
@@ -37,6 +39,12 @@ The new features are out of your way when you don't need them. But when you do n
 - **[Calendar System](using-bike/using-calendar.md)**: Open the inspector and double-click a day. Bike takes you to that day's row, creating it if needed. The calendar is an extension that ships with Bike.
 - **[Command Line Interface](using-bike/command-line-interface.md)**: Access Bike from the command line. Run commands, automate tasks, observe queries, and integrate with other tools.
 - **[MCP Server for AI agents](using-bike/using-mcp-server.md)**: Connect AI agents to Bike for advanced automation and assistance.
+
+::: warning Coming from an earlier preview?
+Completed tasks used to be marked with a `@done` attribute. They now use `@status`, which holds one of four states. Bike offers to convert a document the first time you open it, and nothing is written until you save.
+
+Saved filters and custom stylesheets that mention `@done` need updating — use `@status`, or better, the new `open()` and `closed()` functions. Custom keybindings on `row:toggle-done` or any `tasks:` command need the new ids. See [Updating Older Documents](using-bike/tasks-and-more.md#updating-older-documents).
+:::
 
 ## Extensions
 

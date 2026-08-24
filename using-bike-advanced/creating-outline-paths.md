@@ -9,7 +9,7 @@ Examples:
 ```
 //pizza
 /inbox//task
-//task not @done
+//task open()
 //task @due <[d] today()
 //@classes matches "\burgent\b"
 //heading union //task
@@ -51,7 +51,7 @@ Use the Bike > Outline Path Explorer to play with outline paths and learn how th
 
 Type an outline path in the top text field in the Outline Path Explorer window. The path results are displayed in a label to the trailing side of the search field. Matching rows are highlighted in green. Matching text runs are highlighted in darker green. Last you see a diagnostics text area that shows how your outline path was understood.
 
-The outline shown in the Outline Path Explorer shows outline text and all outline attributes. For example above each row you will see `@id`, `@level`, and `@type` because every row has those attributes. You might also see other attributes, for example a checked off task will include a `@done` attribute. There are the attributes you can use in your outline paths.
+The outline shown in the Outline Path Explorer shows outline text and all outline attributes. For example above each row you will see `@id`, `@level`, and `@type` because every row has those attributes. You might also see other attributes, for example a checked off task will include a `@status` attribute. There are the attributes you can use in your outline paths.
 
 ## Basic Paths
 
@@ -188,6 +188,7 @@ Each step can include a row type test at the start.
 * `unordered`
 * `ordered`
 * `task`
+* `log`
 * `hr`
 * `*` Matches any type
 
@@ -197,16 +198,16 @@ Each step can include a row type test at the start.
 
 Each step can include a predicate test. You can then combine predicates with `and`, `or`, and `not`. Use `@` to name the row attribute to testing against.
 
-*   `//@done`
+*   `//@status`
 
-    Matches rows that have a @done attribute.
-*   `//not @done`
+    Matches rows that have a @status attribute.
+*   `//not @status`
 
-    Matches rows that do not have a @done attribute.
+    Matches rows that do not have a @status attribute.
 *   `//@text contains "get rich"`
 
     Match rows that contain the text "get rich". This example uses the `contains` relation.
-*   `//@text contains "get rich" and not @done`
+*   `//@text contains "get rich" and open()`
 
     Combine predicates. Use it to find all rows that will make you rich and are unfinished!
 
@@ -214,7 +215,7 @@ Each step can include a predicate test. You can then combine predicates with `an
 
 Each row in your outline has associated attributes that you can use in outline path predicate tests.
 
-Some attributes are built in to all rows, other attributes are optional and may be set by scripts or other features within Bike. For example when you click the checkmark of a task row it adds the @done attribute.
+Some attributes are built in to all rows, other attributes are optional and may be set by scripts or other features within Bike. For example when you click the checkmark of a task row it sets the @status attribute to `done`.
 
 Open Bike > Outline Path Explorer and notice that the outline view showns each row's attributes. The built in attributes include:
 
@@ -250,7 +251,7 @@ Use relation modifiers in brackets after the relation to change how it is evalua
 
 *   `d` Date compare
 
-    Compares both sides as dates: `@done <[d] "2026-07-01"`. Shorthand for wrapping both sides in `date(side)` functions; see [date functions](#functions-reference).
+    Compares both sides as dates: `@due <[d] "2026-07-01"`. Shorthand for wrapping both sides in `date(side)` functions; see [date functions](#functions-reference).
 
 #### Match comparisons
 
@@ -373,6 +374,14 @@ In some cases you might accomplish similar results with more complex outline pat
 *   only-of-type() -> boolean
 
     True if is only of type in siblings
+*   open() -> boolean
+
+    True if the row's `@status` is `todo` or `started`, or absent — absent is todo.
+*   closed() -> boolean
+
+    True if the row's `@status` is `done` or `canceled`.
+
+    Prefer `open()` and `closed()` to naming the states yourself. `not (@status = "done" or @status = "canceled")` means the same thing today, but it will miss any states added later.
 *   start-of-matches(relative path expression) -> boolean
 
     True if element matches relative path and previous sibling does not. Useful when styling attribute runs and you want to special case the first match in a sequence of matching runs. You can implement the same logic using the preceding-sibling axis, but this function shorter and faster.
@@ -486,9 +495,9 @@ Some examples:
 *   `@due <[d] start-of-month(1)`
 
     Rows due before next month starts.
-*   `@done >=[d] start-of-year(0)`
+*   `@log-date >=[d] start-of-year(0)`
 
-    Rows finished this year.
+    Log entries recorded this year. See [Row Log](../using-bike/row-log.md).
 *   `month(@due) = 6`
 
     Rows due in June, in any year.

@@ -21,20 +21,23 @@ This is valid markdown. Any markdown renderer will display it as a nested list.
 
 Within that list structure, Bike uses standard markdown syntax to represent different row types:
 
-| Type            | Syntax        | Example                 |
-| --------------- | ------------- | ----------------------- |
-| Body            | `- `          | `- Regular text`        |
-| Heading         | `- # `        | `- # Section title`     |
-| Blockquote      | `- > `        | `- > Quoted text`       |
-| Task            | `- [ ] `      | `- [ ] Incomplete task` |
-| Task (done)     | `- [x] `      | `- [x] Completed task`  |
-| Ordered list    | `1. `         | `1. First item`         |
-| Unordered list  | `+ `          | `+ Bullet item`         |
-| Code block      | `` - `...` `` | `` - `code content` ``  |
-| Note            | `- ` with `{type=note}` | `- A note {type=note}` |
-| Horizontal rule | `- ---`       | `- ---`                 |
+| Type            | Syntax                  | Example                 |
+| --------------- | ----------------------- | ----------------------- |
+| Body            | `- `                    | `- Regular text`        |
+| Heading         | `- # `                  | `- # Section title`     |
+| Blockquote      | `- > `                  | `- > Quoted text`       |
+| Task            | `- [ ] `                | `- [ ] Incomplete task` |
+| Task (done)     | `- [x] `                | `- [x] Completed task`  |
+| Ordered list    | `1. `                   | `1. First item`         |
+| Unordered list  | `+ `                    | `+ Bullet item`         |
+| Code block      | `` - `...` ``           | `` - `code content` ``  |
+| Note            | `- ` with `{type=note}` | `- A note {type=note}`  |
+| Log             | `- ` with `{type=log}`  | `- Log {type=log}`      |
+| Horizontal rule | `- ---`                 | `- ---`                 |
 
 Most of these (headings, blockquotes, task checkboxes, ordered lists) are standard markdown or widely supported extensions like GFM task lists.
+
+A task's [state](tasks-and-more.md#status) is richer than a checkbox, so only `done` writes `- [x] `. A started or canceled task writes an unchecked `- [ ] ` plus a `{status=value}` trailer.
 
 ## Text Formatting
 

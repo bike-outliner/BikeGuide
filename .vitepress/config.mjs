@@ -43,6 +43,7 @@ export default defineConfig({
           { text: 'Outline Links', link: '/using-bike/outline-links' },
           { text: 'Row Attributes', link: '/using-bike/row-attributes' },
           { text: 'Row Badges', link: '/using-bike/row-badges' },
+          { text: 'Row Log', link: '/using-bike/row-log' },
           { text: 'Attachments', link: '/using-bike/attachments' },
           { text: 'Accessibility', link: '/using-bike/accessibility' },
         ]

@@ -54,7 +54,8 @@ Examples:
 * `/heading`: Show top-level heading rows
 * `//heading`: Show all heading rows anywhere in the outline
 * `//task`: Show all task rows anywhere in the outline
-* `//task not @done`: Show incomplete tasks
+* `//task open()`: Show unfinished tasks
+* `//task closed()`: Show tasks that are done or canceled
 * `//note`: Show all note rows
 
 ## Sidebar Query Shortcuts

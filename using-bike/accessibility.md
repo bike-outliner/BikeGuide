@@ -36,7 +36,7 @@ When VoiceOver is on a row, open the Actions menu (<kbd>VO-Command-Space</kbd>) 
 - Indent and Outdent
 - Move Up and Move Down
 - Toggle Fold (on rows that have children)
-- Toggle Done
+- Toggle Done, Toggle Started, Toggle Canceled
 - Delete
 
 These match Bike's keyboard commands, so you can restructure a whole outline without leaving VoiceOver.
@@ -44,6 +44,9 @@ These match Bike's keyboard commands, so you can restructure a whole outline wit
 ### To open a row's context menu
 
 - Press <kbd>VO-Shift-M</kbd>, or use Voice Control. You get the same menu as a right-click.
+- Press <kbd>Control-Return</kbd>, macOS's own shortcut for showing a context menu. You can change that key in System Settings > Keyboard > Keyboard Shortcuts.
+
+Opening the menu from the keyboard leaves your selection alone. A text selection, a block selection, or a caret you've placed all survive, so the command you pick acts on what you had chosen rather than on whatever the menu landed next to.
 
 ## Feedback Appreciated
 

@@ -35,18 +35,20 @@ A `.bike` file is an HTML document. The outline lives in a nested list inside th
 Each `<li>` carries the row's identity and metadata as attributes:
 
 - **`id`**: the row's persistent id, stable across edits and used by [row links](outline-links.md).
-- **`data-type`**: the [row type](row-formatting.md), written only when it isn't the default `body`. For example `data-type="heading"` or `data-type="task"`. Type values are `heading`, `quote`, `code`, `note`, `task`, `ordered`, `unordered`, and `hr`.
+- **`data-type`**: the [row type](row-formatting.md), written only when it isn't the default `body`. For example `data-type="heading"` or `data-type="task"`. Type values are `heading`, `quote`, `code`, `note`, `task`, `ordered`, `unordered`, `log`, `page`, and `hr`.
 - **`data-created` / `data-modified`**: ISO 8601 timestamps, written when the document is set to keep row dates.
 
 ## Row Attributes
 
-Rows can carry extra attributes. Standard HTML attributes (`class`, `title`, `style`, `lang`, `dir`, `xml:lang`) are written as-is. Every other attribute is prefixed with `data-` so the file stays valid HTML. For example, when you check off a task, Bike records it as `data-done` with a timestamp:
+Rows can carry extra attributes. Standard HTML attributes (`class`, `title`, `style`, `lang`, `dir`, `xml:lang`) are written as-is. Every other attribute is prefixed with `data-` so the file stays valid HTML. For example, when you check off a task, Bike records it as `data-status`:
 
 ```html
-<li id="cT2" data-type="task" data-done="2024-02-26T12:00:00Z">
+<li id="cT2" data-type="task" data-status="done">
   <p>A finished task</p>
 </li>
 ```
+
+A file that carries `data-done` instead was written by an older version of Bike. That attribute doesn't mean anything now, so those tasks read as unfinished until you let Bike [convert the document](tasks-and-more.md#updating-older-documents).
 
 ## Text Formatting
 

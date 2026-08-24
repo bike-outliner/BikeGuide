@@ -2,7 +2,7 @@
 
 A row attribute is a `key : value` pair attached to a row.
 
-Attributes let you store extra information with a row. A priority, a due date, an estimate. Or your own custom attributes. You can then filter, style, or otherwise act on your outline based on those attribute values.
+Attributes let you store extra information with a row. A status, a priority, a due date, an estimate. Or your own custom attributes. You can then filter, style, or otherwise act on your outline based on those attribute values.
 
 ## Context menu
 
@@ -29,7 +29,11 @@ Few tricks:
 
 ## Commands
 
-There are also commands for setting common attributes such as "Priority: 1" and "Due: Soon". Use the command palette (<kbd>Command-Shift-P</kbd>) to find them. You can also assign your own keybindings to these commands in Settings > Commands. Or even add buttons to the toolbar or status bar for them using Settings > Interface Explorer.
+There are also commands for setting common attributes, such as "Priority: 1" and "Due: Soon". Use the [choice box](using-choice-box.md) (<kbd>Shift-Command-P</kbd>) to find them and more. You can assign your own keybindings to these commands in the [Commands Explorer](commands-explorer.md), or add buttons to the toolbar or status bar for them using the [Interface Explorer](interface-explorer.md).
+
+## Attribute Settings
+
+Bike > Settings > Extensions has an **Attributes** section listing every row attribute that Bike and your extensions declare, and the ones your open documents simply happen to use. Configure how Bike handles each attribute using the provided checkbox table.
 
 ## Badges
 
@@ -38,5 +42,7 @@ Attributes are made visible in the outline through badges. Badges are small labe
 ## See also
 
 * [Row Badges](row-badges.md)
+* [Row Log](row-log.md)
+* [Tasks & More](tasks-and-more.md)
 * [Creating Outline Paths](../using-bike-advanced/creating-outline-paths.md)
 * [Text Formatting](text-formatting.md#links)
