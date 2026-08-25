@@ -17,7 +17,7 @@ Sometimes attributes are not meant to be seen in your outline. You might use an 
 
 * Choose Bike > Settings > Extensions. Find the attribute in the **Attributes** table and uncheck its **Badge** column.
 
-The attribute itself is untouched, it stays in your outline, and you can still see and edit it in the [attribute editor](row-attributes.md#attribute-editor). It just stops drawing a badge.
+The attribute itself is untouched, it stays in your outline, and you can still see and edit it in the [Attributes Editor](row-attributes.md#attributes-editor). It just stops drawing a badge.
 
 ## See also
 

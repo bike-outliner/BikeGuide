@@ -34,7 +34,7 @@ In the badge menu, picking **Todo** and picking **Remove** both leave the row re
 * Click the checkbox, or press <kbd>Space</kbd> in block mode.
 * Right-click the row and choose from the **Status** submenu.
 * Click an existing status badge and pick a new state.
-* Open the [attribute editor](row-attributes.md#attribute-editor) with Format > Row Attributes…
+* Open the [Attributes Editor](row-attributes.md#attributes-editor) with Format > Row Attributes…
 * Run a command: **`status:toggle-done`**, **`status:todo`**, **`status:started`**, **`status:done`**, **`status:canceled`**.
 
 ### Filtering by status
@@ -95,7 +95,7 @@ There are a few ways to set any of these, covered in [Row Attributes](row-attrib
 
 * Right-click a row and pick from the context menu, for example Status > Started or Priority > 1. This sets the attribute on every selected row at once.
 * Click an existing badge to change its value, or right-click the badge to remove the attribute.
-* Open the attribute editor with Format > Row Attributes… (<kbd>Command-Right</kbd> at the end of a row).
+* Open the Attributes Editor with Format > Row Attributes… (<kbd>Command-Right</kbd> at the end of a row).
 * Run a command. Bike has commands for the four states, and for setting and clearing due dates and priorities. Find them in the [choice box](using-choice-box.md) with <kbd>Shift-Command-P</kbd>, or give them keys in the [Commands Explorer](commands-explorer.md).
 
 ## Updating Older Documents

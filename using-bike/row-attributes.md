@@ -13,9 +13,9 @@ Let's create an attribute using the context menu:
 
 You've now assigned the `@priority : 1` attribute to your row. The attribute is visible as a badge at the end of the row. Click that badge to pick a different priority, filter by priority, or remove the attribute. That's the essence of row attributes: you can add them, see them, and act on them.
 
-## Attribute Editor
+## Attributes Editor
 
-The attribute editor is a more general way to add, edit, or remove attributes. You can open it with Format > Row Attributes… or by right-clicking a row and choosing **Row Attributes…**. You can also move the cursor to the end of a row's text and press <kbd>Command-Right</kbd>.
+The Attributes Editor is a more general way to add, edit, or remove attributes. You can open it with Format > Row Attributes… or by right-clicking a row and choosing **Row Attributes…**. You can also move the cursor to the end of a row's text and press <kbd>Command-Right</kbd>.
 
 Once visible, use the filter to select an existing attribute and value.
 
