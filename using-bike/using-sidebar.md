@@ -36,6 +36,10 @@ The index section shows headings in your outline by default. Click any heading t
 
 Query shortcuts are saved [outline filters](outline-filtering.md). Once a filter is active you can right-click the filter field and choose **Save in Sidebar** to keep it here. After that, clicking the query shortcut reapplies that filter in one step, so a view you reach for often, like "all my incomplete tasks", is always a click away.
 
+## Hiding and Reordering Sections
+
+You won't use all of this. Maybe you never pin anything, or the index is the only part you care about. Open the [Interface Explorer](interface-explorer.md) and expand **Window Sidebar Items**: the Home location and the Pinned, Index, and Queries sections are all listed there. Click a row's eye to hide a section, or drag rows to reorder them. Locations stay on top and the sections stay below them, but within each block you can arrange things however you like.
+
 ## Focusing an Item
 
 Clicking a row in the sidebar (a heading in the index, or a pinned row) focuses that row so you see just its contents.

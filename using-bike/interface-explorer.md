@@ -12,7 +12,7 @@ Why bother rearranging? Because the buttons and panels *I* think you'll reach fo
 
 The Interface Explorer lists the editable surfaces of the Bike window, each as a section you can expand:
 
-* **Window Sidebar Items**: the locations shown in the [sidebar](using-sidebar.md).
+* **Window Sidebar Items**: the locations shown in the [sidebar](using-sidebar.md), followed by Bike's built-in **Index**, **Pinned**, and **Queries** sections.
 * **Window Inspector Tabs**: the tabs and items shown in the [inspector](using-inspector.md).
 * **Window Titlebar Menu Items**: commands in the window title bar menu.
 * **Editor Toolbar Buttons**: buttons on the editor [toolbar](using-toolbar.md).
@@ -24,11 +24,13 @@ Each section's items can be rearranged in place:
 
 * **Add** a button: click the **+** on a bar section and pick a command from the list. For inspector tabs, **+** lets you choose a symbol for a new tab.
 * **Edit** an item: double-click it, or click its pencil button, to change the command it runs and the SF Symbol it shows.
-* **Reorder** items: drag them up and down within their section.
-* **Show or hide** an item: click the eye button next to a sidebar location or inspector item to toggle whether it's visible.
+* **Reorder** items: drag them up and down within their section. In Window Sidebar Items the locations and the built-in sections each keep to their own block, so a section never ends up above a location.
+* **Show or hide** an item: click the eye button next to a sidebar location, sidebar section, or inspector item to toggle whether it's visible.
 * **Remove** a button: click its trash button.
 
 Bike remembers your changes, so the way you arrange things sticks from one launch to the next.
+
+Hiding a sidebar section takes the whole thing away, contents and all. Nothing is lost — your pinned rows and saved filters live in the document, not in the sidebar, and they're right there again the moment you show the section. Just know that while a section is hidden its rows are also out of **Go To…**, which is what I want: hidden should mean hidden.
 
 ## How Extension Items Appear
 
