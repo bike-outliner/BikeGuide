@@ -36,15 +36,15 @@ The index section shows headings in your outline by default. Click any heading t
 
 Query shortcuts are saved [outline filters](outline-filtering.md). Once a filter is active you can right-click the filter field and choose **Save in Sidebar** to keep it here. After that, clicking the query shortcut reapplies that filter in one step, so a view you reach for often, like "all my incomplete tasks", is always a click away.
 
-## Hiding and Reordering Sections
-
-You won't use all of this. Maybe you never pin anything, or the index is the only part you care about. Open the [Interface Explorer](interface-explorer.md) and expand **Window Sidebar Items**: the Home location and the Pinned, Index, and Queries sections are all listed there. Click a row's eye to hide a section, or drag rows to reorder them. Locations stay on top and the sections stay below them, but within each block you can arrange things however you like.
-
 ## Focusing an Item
 
 Clicking a row in the sidebar (a heading in the index, or a pinned row) focuses that row so you see just its contents.
 
 Sometimes, though, you'd rather land on a row while still seeing it next to its siblings. Hold <kbd>Command</kbd> while you click and Bike focuses the item's *parent* instead, then selects the item inside it. The same trick works in the [choice box](using-choice-box.md): press <kbd>Command-Return</kbd> to focus a result's parent rather than the result itself.
+
+## Hiding and Reordering Sections
+
+Use the [Interface Explorer](interface-explorer.md) to hide and reorder the sidebar's items and sections.
 
 ## See also
 

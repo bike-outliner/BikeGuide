@@ -2,8 +2,6 @@
 
 [Extensions](using-extensions.md) can add new commands and views to Bike. The Interface Explorer is where you decide how those commands and views show up in Bike's interface: which bar a button lives in, what symbol it uses, which inspector tabs exist, and what order your sidebar items appear in. Bike's own built-in interface items are organized here too.
 
-Why bother rearranging? Because the buttons and panels *I* think you'll reach for aren't always the ones *you* reach for. Maybe you live in the status bar and never touch the toolbar, or you want a command you run constantly sitting one click away. Rather than guess for everyone, Bike lets you put the things you use where you want them and tuck the rest out of sight.
-
 ## To open the Interface Explorer
 
 * Bike > Interface Explorer…
@@ -12,7 +10,7 @@ Why bother rearranging? Because the buttons and panels *I* think you'll reach fo
 
 The Interface Explorer lists the editable surfaces of the Bike window, each as a section you can expand:
 
-* **Window Sidebar Items**: the locations shown in the [sidebar](using-sidebar.md), followed by Bike's built-in **Index**, **Pinned**, and **Queries** sections.
+* **Window Sidebar Items**: the locations and sections shown in the [sidebar](using-sidebar.md).
 * **Window Inspector Tabs**: the tabs and items shown in the [inspector](using-inspector.md).
 * **Window Titlebar Menu Items**: commands in the window title bar menu.
 * **Editor Toolbar Buttons**: buttons on the editor [toolbar](using-toolbar.md).
@@ -22,15 +20,11 @@ The Interface Explorer lists the editable surfaces of the Bike window, each as a
 
 Each section's items can be rearranged in place:
 
-* **Add** a button: click the **+** on a bar section and pick a command from the list. For inspector tabs, **+** lets you choose a symbol for a new tab.
+* **Add** a button: click the **+** on a bar section and pick a command from the list.
 * **Edit** an item: double-click it, or click its pencil button, to change the command it runs and the SF Symbol it shows.
-* **Reorder** items: drag them up and down within their section. In Window Sidebar Items the locations and the built-in sections each keep to their own block, so a section never ends up above a location.
-* **Show or hide** an item: click the eye button next to a sidebar location, sidebar section, or inspector item to toggle whether it's visible.
+* **Reorder** items: drag them up and down within their section.
+* **Show or hide** an item: click the eye button to toggle whether it's visible.
 * **Remove** a button: click its trash button.
-
-Bike remembers your changes, so the way you arrange things sticks from one launch to the next.
-
-Hiding a sidebar section takes the whole thing away, contents and all. Nothing is lost — your pinned rows and saved filters live in the document, not in the sidebar, and they're right there again the moment you show the section. Just know that while a section is hidden its rows are also out of **Go To…**, which is what I want: hidden should mean hidden.
 
 ## How Extension Items Appear
 

@@ -64,6 +64,10 @@ Bike's own built-in extension contributes two sections here:
 
 One table listing every [row attribute](row-attributes.md) that Bike and your extensions declare, and the ones your open documents simply happen to use. Configure how Bike handles each attribute using the provided checkbox table.
 
+### Calendar
+
+See [Using Calendar](using-calendar.md) for details on calendar settings.
+
 ### Tasks
 
 * **Sort completed to end of list**: whether closing a task slides it to the bottom of its group. Off by default, so a checked row stays where you put it.
