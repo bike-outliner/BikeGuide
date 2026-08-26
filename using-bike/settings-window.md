@@ -71,6 +71,7 @@ See [Using Calendar](using-calendar.md) for details on calendar settings.
 ### Tasks
 
 * **Sort completed to end of list**: whether closing a task slides it to the bottom of its group. Off by default, so a checked row stays where you put it.
+* **Hide Done badge on completed tasks**: whether a done task drops its **Done** badge, since the checked box already says as much. Off by default. A canceled task keeps its badge — the checkbox looks the same either way, so the badge is the only thing telling done from canceled.
 * **Show task progress badges**: whether a row with tasks beneath it gets a progress badge, and whether that badge draws as a **Fraction** or a **Pie chart**.
 
 ## Sandbox
