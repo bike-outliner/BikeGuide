@@ -2,3 +2,4 @@ node_modules
 .vitepress/dist
 .vitepress/cache
 default.profraw
+.DS_Store
