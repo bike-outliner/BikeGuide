@@ -48,6 +48,8 @@ Rows can carry extra attributes. Standard HTML attributes (`class`, `title`, `st
 </li>
 ```
 
+Because Bike adds the `data-` prefix on write and strips it on read, the attribute *name* you work with — in the outline, in the CLI, in extensions — never includes `data-`. A name that starts with `data-` is rejected rather than written doubled.
+
 A file that carries `data-done` instead was written by an older version of Bike. That attribute doesn't mean anything now, so those tasks read as unfinished until you let Bike [convert the document](tasks-and-more.md#updating-older-documents).
 
 ## Text Formatting

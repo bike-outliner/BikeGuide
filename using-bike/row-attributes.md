@@ -31,6 +31,12 @@ Few tricks:
 
 There are also commands for setting common attributes, such as "Priority: 1" and "Due: Soon". Use the [choice box](using-choice-box.md) (<kbd>Shift-Command-P</kbd>) to find them and more. You can assign your own keybindings to these commands in the [Commands Explorer](commands-explorer.md), or add buttons to the toolbar or status bar for them using the [Interface Explorer](interface-explorer.md).
 
+## Attribute Names
+
+Names are plain, unprefixed words: `priority`, `due`, `log-date`. Bike adds the `data-` prefix itself when it saves, so don't type it yourself — `data-due` would be stored as `data-data-due` and read back as something else, so Bike refuses it.
+
+A few names are reserved because they already name something a row has: `id`, `text`, `type`, `created`, `modified`, and `indent`. A row's created and modified dates in particular are Bike's own, not attributes you can set; see [Using Documents](using-documents.md) for the **Save row created & modified attributes** setting that decides whether they're written to the file.
+
 ## Attribute Settings
 
 Bike > Settings > Extensions has an **Attributes** section listing every row attribute that Bike and your extensions declare, and the ones your open documents simply happen to use. Configure how Bike handles each attribute using the provided checkbox table.
