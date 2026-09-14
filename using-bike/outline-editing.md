@@ -50,13 +50,23 @@ These commands move rows within the outline structure. Children always move with
   The selected rows are moved down past the next sibling.
 
 * Outline > Move To… (<kbd>Command-&#92;</kbd>)  
-  A search box opens to move the selected rows to one of your [sidebar](using-sidebar.md) locations.
+  A search box opens to move the selected rows to one of your [sidebar](using-sidebar.md) locations. Your selection travels with the rows.
+
+* Outline > Send To… (<kbd>Control-Command-&#92;</kbd>)  
+  The same, except the caret stays where it was. Use this to file rows away — into an archive, say — without losing your place.
 
 * Outline > Move To Row… (<kbd>Option-Command-&#92;</kbd>)  
-  A search box opens to move the selected rows beneath any other row in the outline.
+  A search box opens to move the selected rows beneath any other row in the outline. Your selection travels with the rows.
+
+* Outline > Send To Row… (<kbd>Control-Option-Command-&#92;</kbd>)  
+  The same, except the caret stays where it was.
 
 ::: tip
-Both "Move To" commands open the same [choice box](using-choice-box.md). Move To Row… just pre-inserts a `-` in the search field, which switches the list from your sidebar locations to every row in the outline. Delete the `-` to see only sidebar items again, or type it yourself to see all rows.
+The two "Send" commands are the <kbd>Control</kbd> alternates of the "Move" items: hold <kbd>Control</kbd> with the Outline menu open and Move To… and Move To Row… become Send To… and Send To Row….
+:::
+
+::: tip
+All four commands open the same [choice box](using-choice-box.md). The "… To Row" variants just pre-insert a `-` in the search field, which switches the list from your sidebar locations to every row in the outline. Delete the `-` to see only sidebar items again, or type it yourself to see all rows.
 :::
 
 ## Text Editor Commands
