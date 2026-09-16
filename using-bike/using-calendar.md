@@ -51,6 +51,7 @@ Want your calendar somewhere specific, say under a `Calendar` row? Just move it 
 
 Open Bike > Settings > Extensions
 
+* **Insert newest date rows first**: build the structure newest-first, so today's row sits at the top of its month rather than the bottom. Only affects rows created from then on — existing rows stay where they are.
 * **Show week numbers**: toggle the week-number column in the calendar view.
 * **Year / Month / Week / Day**: the text/templates used for each level's rows.
 * **Include checkbox** (Year, Month and Week): the structure levels to include.
