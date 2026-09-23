@@ -1,8 +1,6 @@
 # Bike URL Syntax
 
-Bike links are plain URLs. The [copy commands](../using-bike/outline-links.md) write them for you, but nothing stops you from reading or writing one by hand, and this page is the reference for doing that.
-
-You don't need any of this to use Bike links. It's here for scripts, extensions, and anyone curious about what's inside the URL they just pasted.
+Bike links are plain URLs. The [copy commands](../using-bike/outline-links.md) write them for you. This page is for reading or writing them by hand.
 
 ## URL Pattern
 
@@ -21,9 +19,7 @@ Here's what an actual Bike link looks like:
 bike://KOcw9x9N/#zf
 ```
 
-The three copy commands all produce this same URL, filling in different optional parts. A document link stops after the root id, a row link adds the row to select, and a view link fills in the focused row and filter.
-
-Note that there's no file path anywhere in the URL. Bike finds the document by asking Spotlight which file carries the root id, which is why a link survives renaming or moving the outline. See [How Bike resolves links](../using-bike/outline-links.md#how-bike-resolves-links).
+A document link has only the root id. A row link adds the row to select. A view link adds the focused row and filter. There's no file path; see [How Bike resolves links](../using-bike/outline-links.md#how-bike-resolves-links).
 
 ## Row references
 

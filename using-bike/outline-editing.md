@@ -2,9 +2,9 @@
 
 Press <kbd>Return</kbd> to create a new row.
 
-Press <kbd>Tab</kbd> to indent a row, and <kbd>Shift-Tab</kbd> to unindent. Drag and drop rows by their triangle handle to move them around. Cut, copy, and paste. Outline editing should feel familar and work as you expect.
+Press <kbd>Tab</kbd> to indent a row, and <kbd>Shift-Tab</kbd> to unindent. Drag rows by their triangle handle to move them.
 
-There are two flavors of outline editing commands: those that move rows as whole units, and those that move rows on their own, leaving their children behind. The first is the natural way to work in an outliner, while the second is more like a text editor.
+Outline commands move rows with their children. Text editor commands leave the children behind.
 
 ## Outline Commands
 
@@ -62,11 +62,7 @@ These commands move rows within the outline structure. Children always move with
   The same, except the caret stays where it was.
 
 ::: tip
-The two "Send" commands are the <kbd>Control</kbd> alternates of the "Move" items: hold <kbd>Control</kbd> with the Outline menu open and Move To… and Move To Row… become Send To… and Send To Row….
-:::
-
-::: tip
-All four commands open the same [choice box](using-choice-box.md). The "… To Row" variants just pre-insert a `-` in the search field, which switches the list from your sidebar locations to every row in the outline. Delete the `-` to see only sidebar items again, or type it yourself to see all rows.
+Hold <kbd>Control</kbd> in the Outline menu to see the Send commands. In the [choice box](using-choice-box.md), a leading `-` switches between sidebar locations and every row.
 :::
 
 ## Text Editor Commands
@@ -97,11 +93,9 @@ Bike has two selection modes: text mode and block mode. In text mode your select
 
 ### Why block mode?
 
-Block mode makes it easier to move the selection through a list of rows. It also makes it easy to delete whole rows. The unit of selection is a row, not a single character.
+Block mode makes it easy to move through and delete whole rows. Typing doesn't insert text, so plain keys are free for commands.
 
-Another major difference is you can't type to insert text in block mode. So, for instance, typing `a` won't do anything. This means you can assign keybindings to all the normal text entry keys for other commands.
-
-Bike doesn't yet take good advantage of this ability, but pressing <kbd>Space</kbd> runs **`status:toggle-done`** on the selected rows: a done row reopens, and anything else is marked done. A mixed selection follows whatever the first row does. And you can assign your own block mode keybindings in the [Commands Explorer](commands-explorer.md). More to come in a future release!
+Bike doesn't use this much yet. <kbd>Space</kbd> toggles done on the selected rows, and you can add your own block mode keybindings in the [Commands Explorer](commands-explorer.md). More to come!
 
 ## See also
 

@@ -260,7 +260,7 @@ The `matches` relation treats the right side as a regular expression:
 *   `//@text matches "\bsum\b"`: the whole word "sum"
 *   `//@text matches "^Q[1-4]\b"`: starts with Q1, Q2, Q3, or Q4
 *   `//@text matches "cats?"`: "cat" or "cats"
-*   `//@tags matches "\bdone\b"`: matches item in a space-delimited list
+*   `//@tags matches "\burgent\b"`: matches item in a space-delimited list
 *   `//@cities matches "(^|,)\s*New York\s*(,|$)"` - matches item in a comma-delimited list
 
 Regex patterns use backslashes, so in an editor style write them with `String.raw`. See [Paths in editor styles](#paths-in-editor-styles).
@@ -314,15 +314,15 @@ If you don't start your outline path with a `/` or a `.` then it is treated as a
 
 ### Paths in editor styles
 
-An editor style path is *also* a JavaScript string, and JavaScript strips backslashes before Bike sees the path, so a plain `"\b"` becomes a backspace and a pattern like `matches "\bdone\b"` fails. Use `String.raw` so the path reads the same as in the filter bar:
+An editor style path is *also* a JavaScript string, and JavaScript strips backslashes before Bike sees the path, so a plain `"\b"` becomes a backspace and a pattern like `matches "\burgent\b"` fails. Use `String.raw` so the path reads the same as in the filter bar:
 
 ```js
-row(String.raw`.@tags matches "\bdone\b"`, (_, row) => {
+row(String.raw`.@tags matches "\burgent\b"`, (_, row) => {
   row.text.color = Color.systemRed()
 })
 ```
 
-Or double each backslash for JavaScript's sake (`"\\bdone\\b"`), which collapses to `\bdone\b` by the time Bike parses it.
+Or double each backslash for JavaScript's sake (`"\\burgent\\b"`), which collapses to `\burgent\b` by the time Bike parses it.
 
 ## Functions Reference
 

@@ -2,16 +2,7 @@
 
 ![Find Panel](/assets/Finding.png)
 
-Use the find panel to find text in your outline. It works the way Find works in most Mac apps: it highlights matches in place and steps you through them one at a time, without changing which rows are visible.
-
-::: tip Find, filter, or jump?
-Bike gives you a few different ways to track something down. Reach for the one that fits what you're doing:
-
-- **[Find panel](using-find-panel.md)**: search the current view and highlight matches in place. Best when you want to read or edit a match in context.
-- **[Outline filtering](outline-filtering.md)**: *hide* the rows that don't match so only the matches (and their ancestors) remain. Best when you want to see your matches as a group, act on them at once, or save the query.
-- **[Choice box](using-choice-box.md)**: a fuzzy jump-to list for commands like Go To and Add Link. Best when you already know the row you want and just want to land on it fast.
-- **[Outline paths](../using-bike-advanced/creating-outline-paths.md)**: the query language underneath filtering, styles, and scripts. Learn this when text search isn't precise enough (e.g. "every unfinished task").
-:::
+The find panel highlights matches in place and steps through them, like Find in other Mac apps. To hide non-matching rows instead, use [filtering](outline-filtering.md). To jump to a row by name, use the [choice box](using-choice-box.md).
 
 ## To show the find panel
 
@@ -36,7 +27,7 @@ The current match is highlighted brighter than other matches.
 
 ## To replace all matches
 
-* Click the replace all button. Remember this will only replace all matches in the current focused region of your outline.
+* Click the replace all button. It only replaces matches in the focused part of your outline.
 
 ## To hide the find panel
 
@@ -49,13 +40,9 @@ Find will search the focused rows of your outline including collapsed rows. Find
 
 ## Find Panel Options
 
-Find options show to the left of the search text field:
-
-`Aa` - Your search will be case sensitive.
-
-`""` - Your search will match whole words.
-
-`.*` - Your search will be interpreted as a [regular expression](https://www.quora.com/What-are-the-best-resources-for-learning-regular-expressions).
+* `Aa`: case sensitive
+* `""`: whole words
+* `.*`: [regular expression](https://www.quora.com/What-are-the-best-resources-for-learning-regular-expressions)
 
 ## See also
 

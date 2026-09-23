@@ -4,26 +4,28 @@
 
 ## General
 
-* **Enable editor animations**: Turn off all animations in the outline editor.
-* **Enable editor typing animations**: Turn off typing (slide) animations.
-* **Disable animations in macOS Low Power Mode**: Keep animations in Low Power Mode.
+* **Enable editor animations**: animate the outline editor.
+* **Enable editor typing animations**: animate text as you type.
+* **Disable animations in macOS Low Power Mode**: turn animations off in Low Power Mode.
 * **Animation Rate**: Adjust Bike's animations faster or slower.
 * **Show action images**: Turns the small icons in menus on or off.
 * **Advanced**: buttons to open the [Interface Explorer](interface-explorer.md), [Commands Explorer](commands-explorer.md), Extensions Explorer ([Using Extensions](using-extensions.md)), and [Logs Explorer](../using-bike-advanced/logs-explorer.md)
 * **Reset All Settings**: restores all settings (including extension) to their defaults.
 * Direct download version only
-    * **Check for Updates automatically**: Disable automatic update checks.
+    * **Check for Updates automatically**
     * **Include "Preview" releases in updates**: See [Software Update](software-update.md).
-    * **Prompt to send crash reports**: After a crash Bike will prepare a crash report.
+    * **Prompt to send crash reports**: offer to send a report after a crash.
 
 
 ## Typography
 
-Controls the font and spacing of your outline:
+Controls the font, spacing, and text wrap of your outline:
+
+![Text wrap adds margins](/assets/TextWrap.png)
 
 * **Font & Size**: Choose base font and size. Themes may override this. 
-* **Allow size scale when line wraps at character width**: When [text wrap](editor-view-settings.md#text-wrap) is on Bike may scale font size larger to better fit window width. (Good for fullscreen mode)
-* **Line Width**: wrap text to the editor's width or to a fixed character column.
+* **Line Width**: wrap text at the editor's width, or at a fixed column (66, 72, 80, 90, or 120 characters) centered in the window.
+* **Allow size scale when line wraps at character width**: with a fixed column, scale the text up to fill large windows.
 * **Line Height and Row Spacing** for the space within and between rows.
 * **Reset Typography Settings** returns this pane to its defaults.
 
@@ -33,11 +35,11 @@ Controls the font and spacing of your outline:
 * **Editor**: toggles for the outline editor's display.
 * **Hide outline controls when typing**: check the controls you want to hide while you type, they come back when mouse moves.
 * **Light/Dark Themes**: [Themes](using-themes.md) specify colors and fonts. **Open Themes Folder…** reveals where themes live so you can add your own.
-* **Editor Style**: the ruleset that defines your outline's layout and styling, similar to CSS; themes are inputs to it. You can create your own, but unlike a theme it requires some programming. See [Using Themes](using-themes.md) and [Creating Themes](../using-bike-advanced/creating-themes.md).
+* **Editor Style**: the programmable rules, similar to CSS, that lay out and style your outline using the theme. See [Creating Themes](../using-bike-advanced/creating-themes.md).
 
 ## Autocorrect
 
-Bike's text-correction options, covered in [Outline Checking](outline-checking.md):
+Text-correction options. See [Outline Checking](outline-checking.md).
 
 ## Links
 
@@ -62,7 +64,7 @@ Bike's own built-in extension contributes two sections here:
 
 ### Attributes
 
-One table listing every [row attribute](row-attributes.md) that Bike and your extensions declare, and the ones your open documents simply happen to use. Configure how Bike handles each attribute using the provided checkbox table.
+Every known [row attribute](row-attributes.md), with checkboxes for its Editor, Badge, and [Log](row-log.md) behavior.
 
 ### Calendar
 
@@ -70,17 +72,17 @@ See [Using Calendar](using-calendar.md) for details on calendar settings.
 
 ### Tasks
 
-* **Sort completed to end of list**: whether closing a task slides it to the bottom of its group. Off by default, so a checked row stays where you put it.
-* **Hide Done badge on completed tasks**: whether a done task drops its **Done** badge, since the checked box already says as much. Off by default. A canceled task keeps its badge — the checkbox looks the same either way, so the badge is the only thing telling done from canceled.
-* **Show task progress badges**: whether a row with tasks beneath it gets a progress badge, and whether that badge draws as a **Fraction** or a **Pie chart**.
+* **Sort completed to end of list**: move closed tasks to the bottom of their list.
+* **Hide Done badge on completed tasks**: canceled tasks keep their badge.
+* **Show task progress badges**: as a **Fraction** or **Pie chart**.
 
 ## Sandbox
 
-Grant Bike access to folders of outlines. This is only needed so Bike can resolve [row links](outline-links.md) to documents that aren't already open. Without access to the containing folder, Bike can't find the document and the link fails.
+Grant Bike access to folders of outlines, so [links](outline-links.md) to documents that aren't open can resolve.
 
 ## License
 
-Shows your license or subscription status. What you see here depends on how you got Bike: a direct download, the Mac App Store, or Setapp.
+Your license or subscription status.
 
 ## See also
 

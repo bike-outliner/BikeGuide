@@ -1,14 +1,12 @@
 # Interface Explorer
 
-[Extensions](using-extensions.md) can add new commands and views to Bike. The Interface Explorer is where you decide how those commands and views show up in Bike's interface: which bar a button lives in, what symbol it uses, which inspector tabs exist, and what order your sidebar items appear in. Bike's own built-in interface items are organized here too.
+The Interface Explorer arranges the buttons, inspector tabs, and sidebar items that come from Bike and [extensions](using-extensions.md).
 
 ## To open the Interface Explorer
 
 * Bike > Interface Explorer…
 
 ## What You Can Organize
-
-The Interface Explorer lists the editable surfaces of the Bike window, each as a section you can expand:
 
 * **Window Sidebar Items**: the locations and sections shown in the [sidebar](using-sidebar.md).
 * **Window Inspector Tabs**: the tabs and items shown in the [inspector](using-inspector.md).
@@ -18,8 +16,6 @@ The Interface Explorer lists the editable surfaces of the Bike window, each as a
 
 ## Arranging Items
 
-Each section's items can be rearranged in place:
-
 * **Add** a button: click the **+** on a bar section and pick a command from the list.
 * **Edit** an item: double-click it, or click its pencil button, to change the command it runs and the SF Symbol it shows.
 * **Reorder** items: drag them up and down within their section.
@@ -28,11 +24,7 @@ Each section's items can be rearranged in place:
 
 ## How Extension Items Appear
 
-When an extension adds a command, that command can suggest where its button should go (the title bar, toolbar, or status bar), along with a symbol to use. The first time Bike sees the command it places the button in the suggested spot. From then on the item is yours.
-
-In the Interface Explorer you can move that button to another bar, change its symbol, or remove it, and your choice persists. A removed button is not added back the next time the extension loads. Items that came from an extension show a "from \<extension>" label, and right-clicking one offers **Reset to Extension Default** to restore the placement the extension originally suggested.
-
-This division of labor is the point: an extension suggests sensible defaults, and the Interface Explorer lets you have the final say. If you're building your own extension, see [Creating Extensions](../using-bike-advanced/creating-extensions.md) to learn how to declare commands, views, and their default placements.
+An extension can suggest where its button goes. Bike places it there once, and after that your changes stick, including removals. Right-click an extension item and choose **Reset to Extension Default** to restore its suggested placement.
 
 ## See also
 

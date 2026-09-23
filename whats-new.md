@@ -41,9 +41,7 @@ The new features are out of your way when you don't need them. But when you do n
 - **[MCP Server for AI agents](using-bike/using-mcp-server.md)**: Connect AI agents to Bike for advanced automation and assistance.
 
 ::: warning Coming from an earlier preview?
-Completed tasks used to be marked with a `@done` attribute. They now use `@status`, which holds one of four states. Bike offers to convert a document the first time you open it, and nothing is written until you save.
-
-Saved filters and custom stylesheets that mention `@done` need updating — use `@status`, or better, the new `open()` and `closed()` functions. Custom keybindings on `row:toggle-done` or any `tasks:` command need the new ids. See [Updating Older Documents](using-bike/tasks-and-more.md#updating-older-documents).
+Completed tasks now use `@status` instead of `@done`. See [Updating Older Documents](using-bike/tasks-and-more.md#updating-older-documents).
 :::
 
 ## Extensions

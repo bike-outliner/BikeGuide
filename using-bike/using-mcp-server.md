@@ -1,18 +1,14 @@
 # Using MCP Server
 
-Bike can run as an MCP server, letting AI assistants like Claude read and edit your outlines directly.
-
-MCP (the [Model Context Protocol](https://modelcontextprotocol.io)) is a standard way for AI assistants to talk to the apps on your computer. When you connect an assistant to Bike's MCP server it can open your outlines, read what's there, and make changes for you: adding rows, moving things around, checking off tasks, and more.
-
-The server is part of the [`bike` command line tool](command-line-interface.md). Like the rest of that tool, it drives the running Bike app, so **Bike needs to be open** for the server to do anything.
+Bike's [MCP](https://modelcontextprotocol.io) server lets AI assistants like Claude read and edit your outlines. It's part of the [`bike` command line tool](command-line-interface.md), and **Bike needs to be open** for it to work.
 
 ::: tip
-The MCP server isn't your only option. Some agents (coding assistants like Claude Code, for example) can already run shell commands on their own. For those you can skip the MCP setup entirely and just tell the agent to use the [`bike` command line tool](command-line-interface.md) directly.
+Agents that can run shell commands, like Claude Code, don't need MCP. Just tell them to use the `bike` command.
 :::
 
 ## Starting the Server
 
-The server runs over stdio, which means you don't usually start it yourself. Instead you tell your AI assistant how to launch it, and the assistant runs it for you in the background. The command is:
+Your assistant starts the server itself. The command is:
 
 ```sh
 bike mcp
@@ -20,7 +16,7 @@ bike mcp
 
 ### To connect an AI assistant
 
-Most MCP clients let you register a server by giving it a command to run. Point your client at `bike mcp`. For clients that use a JSON configuration file, the entry looks like this:
+Point your client at `bike mcp`. In a JSON configuration file:
 
 ```json
 {
@@ -33,15 +29,15 @@ Most MCP clients let you register a server by giving it a command to run. Point 
 }
 ```
 
-After you add the server, restart your assistant so it picks up the change. It should then list Bike's tools and be ready to work with your outlines.
+Then restart your assistant.
 
 ::: warning
-Bike's MCP server can change your real outlines, and an assistant won't always do exactly what you expect. When you're trying things out, open a fresh outline first so an experiment can't disturb your real work.
+The assistant can change your real outlines. Experiment in a new outline first.
 :::
 
 ## What the Server Can Do
 
-Once connected, an assistant can:
+An assistant can:
 
 - **Read your outlines**: list open editors and outlines, read the current outline, and look up the commands Bike has available.
 - **Edit rows**: create new outlines and rows, change row text, type, and attributes, and move or delete rows along with their children.

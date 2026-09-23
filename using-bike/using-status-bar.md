@@ -2,23 +2,19 @@
 
 ![Status Bar](/assets/StatusBar.png)
 
-Bike's optional status bar, at the bottom of the window, gives you quick access to editor settings, the row type picker, and text statistics. I keep it on when I'm writing toward a length. It puts a word count and the controls I reach for most within a glance and a click, without opening any menus.
+The optional status bar at the bottom of the window shows editor settings, the row type, and text statistics.
 
-## To show the status bar
+## To show or hide the status bar
 
 * View > Show Status Bar (<kbd>Command-/</kbd>)
 
-## To hide the status bar
-
-* View > Hide Status Bar (<kbd>Command-/</kbd>)
-
 ## Editor Settings
 
-The editor settings button is on the left side of the status bar. Click it to access [writing focus mode](editor-view-settings.md#writing-focus-mode), [typewriter mode](editor-view-settings.md#typewriter-mode), and a zoom slider for adjusting the editor's font size. When any of these settings is active the button lights up.
+The button on the left opens [writing focus mode](editor-view-settings.md#writing-focus-mode), [typewriter mode](editor-view-settings.md#typewriter-mode), and a zoom slider. It lights up when any are active.
 
 ## Text Statistics
 
-Text statistics are shown in the status bar. Click the text statistics area to configure which statistics are displayed. Available statistics include:
+Click the statistics to choose which are shown:
 
 * Characters
 * Without Spaces
@@ -29,11 +25,11 @@ Text statistics are shown in the status bar. Click the text statistics area to c
 * Reading Time
 * Speaking Time
 
-If no statistics are visible to click in the status bar then use View > Text Statistics to show the statistics popover.
+If none are showing, use View > Text Statistics.
 
 ## Row Type Picker
 
-The current row's type is indicated in the status bar. Click the row type indicator to change the type of the selected row.
+Shows the current row's type. Click it to change the type.
 
 ## See also
 
