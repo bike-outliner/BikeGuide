@@ -10,33 +10,43 @@ Modes for comfortable, distraction-free writing. They combine well with each oth
 
 ![Writing Focus Mode](/assets/FocusMode.png)
 
-Writing Focus Mode dims everything except the current word, sentence, or paragraph.
+Writing Focus Mode focuses the current word, sentence, or paragraph by dimming out the rest of your outline.
 
-### To toggle Writing Focus Mode
+### To enable Writing Focus Mode
 
 * View > Writing Focus Mode > Enable Writing Focus (<kbd>Option-Command-F</kbd>)
-* Or use the Editor Settings button on the left side of the status bar
+* Alternatively you can use the "Editor Settings" button on the left side of the status bar
 
-### To choose what stays lit
+### To configure Writing Focus Mode
 
 * View > Writing Focus Mode > Writing Focus Word
 * View > Writing Focus Mode > Writing Focus Sentence
 * View > Writing Focus Mode > Writing Focus Paragraph
 
+### To disable Writing Focus Mode
+
+* View > Writing Focus Mode > Disable Writing Focus Mode (<kbd>Option-Command-F</kbd>)
+* Alternatively you can use the "Editor Settings" button on the left side of the status bar
+
 ## Typewriter Mode
 
-Typewriter Mode holds the line you're typing at a fixed height and scrolls the text past it.
+Typewriter Mode positions your text caret vertically in the window as you type. This keeps the text you are working on, and surrounding text, easily visible.
 
-### To toggle typewriter mode
+### To enable typewriter mode
 
 * View > Typewriter Mode > Enable Typewriter Mode (<kbd>Option-Command-T</kbd>)
 * Or use the Editor Settings button on the left side of the status bar
 
-### To choose the caret position
+### To configure typewriter mode position
 
 * View > Typewriter Mode > Typewriter Top
 * View > Typewriter Mode > Typewriter Center
 * View > Typewriter Mode > Typewriter Bottom
+
+### To disable typewriter mode
+
+* View > Typewriter Mode > Disable Typewriter Mode (<kbd>Option-Command-T</kbd>)
+* Or use the Editor Settings button on the left side of the status bar
 
 ## See also
 

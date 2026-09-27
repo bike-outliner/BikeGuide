@@ -1,6 +1,6 @@
 # Attachments
 
-An attachment is a file, such as a photo or PDF, stored inside your outline's document.
+An attachment is a file (a photo, a PDF, a spreadsheet) that lives inside your outline. Attachments are embedded into a file bundle. They travel with your document.
 
 ## To add an attachment
 
@@ -8,8 +8,10 @@ An attachment is a file, such as a photo or PDF, stored inside your outline's do
 * Copy a file in the Finder and paste it into your outline.
 * Choose Format > Add File Attachment… and pick the files you want.
 
+Bike copies the attachment file into your outline's file bundle, and inserts a reference to it in your outline.
+
 ::: tip
-To link to the file instead of copying it, hold <kbd>Control</kbd> while dropping, or use Edit > Paste > Paste as Link. Linked files don't get previews.
+To insert a link to the file instead of a copy of it, hold down the <kbd>Control</kbd> key while dropping, or use Edit > Paste > Paste as Link. In this linked case Bike won't be able to show a preview of the file because of Sandboxing restrictions.
 :::
 
 ## To preview or open an attachment
@@ -19,11 +21,13 @@ To link to the file instead of copying it, hold <kbd>Control</kbd> while droppin
 
 ## How attachments are displayed
 
-Use the context menu to switch between an icon with filename and a larger preview.
+By default an attachment shows as a simple icon plus its filename. Use the context menu to change the attachments display mode, to show a larger preview image.
 
 ## How attachments are stored
 
-The first time you add an attachment, Bike asks to convert your document into a file bundle. The bundle looks like one document in the Finder and holds your outline file plus the attachments as ordinary files.
+The first time you add an attachment, Bike asks to convert your outline's storage from a plain text file into a file bundle. That bundle holds the original outline file together with your attachments.
+
+The bundle still behaves like a single document in the Finder. Your outline is still plain text, and the attachments are just ordinary files in the bundle.
 
 Plain text documents can't hold attachments, so Bike offers to change their format first.
 

@@ -1,8 +1,10 @@
 # Tasks & More
 
-Don't forget [use what you need](../getting-started.md#use-what-you-need)! You don't need all of these at once. Pick what's useful.
+Don't forget [use what you need](../getting-started.md#use-what-you-need)! This section covers how to work with tasks and related attributes in Bike. Beware creating uneeded complexity, you don't need to use all these features at once. Just pick what seems useful for your particular way of working.
 
 ## Status
+
+When you click a task's checkbox, you are changing its `@status` attribute.
 
 Make a row a task by typing `[]` followed by a space. Clicking its checkbox sets the row's `@status` attribute, which has four states:
 
@@ -27,7 +29,7 @@ A row with a `@status` shows a badge naming the state. Click it to change the st
 
 ### Filtering by status
 
-Use the `open()` and `closed()` functions rather than naming states:
+Status can have multiple states, but they all fall into the `open` or `closed` categories. When filtering use the `open()` and `closed()` functions to refer to these groups rather than spelling out individual states. For example:
 
 * `//task open()` for everything unfinished.
 * `//task closed()` for everything finished or dropped.
@@ -76,7 +78,7 @@ Bike used to record completion in a `@done` attribute. It now uses `@status`, an
 When you open a document that uses `@done`, Bike offers to convert it. Until you do, completed tasks show unchecked with a stray `done` badge.
 
 * **Update** replaces `@done` with `@status` in one undo step. Nothing is written until you save.
-* **Keep completion dates as log entries** (off by default) saves each old completion time as a [log entry](row-log.md).
+* **Keep completion dates as log entries** (off by default) saves each old completion time as a [log entry](row-log.md). Probably not wanted, unless the old completion dates are important to keep.
 * **Not Now** changes nothing, and Bike asks again next time.
 
 Older versions of Bike won't see completions in a converted document. Update saved filters and [stylesheets](../using-bike-advanced/creating-themes.md) that mention `@done` to use `open()` and `closed()`, and rebind custom keybindings on `row:toggle-done` or `tasks:` commands to the new `status:` commands.

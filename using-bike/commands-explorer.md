@@ -6,7 +6,7 @@ The Commands Explorer lists every Bike command and its keybindings, and lets you
 
 Open **Bike > Commands Explorer** to view all commands and their current keybindings. Select a command and press Return (or double-click the keybinding cell) to edit it. Press Delete to clear a custom keybinding. User-customized bindings are underlined.
 
-Each command has separate keybindings for **Text Mode** and **Block Mode** (see [Selection Modes](outline-editing.md#selection-modes)).
+Each command has separate keybindings for **Text Mode** and **Block Mode**. Text mode is active when the selection is a caret or text range. Block mode is active when entire rows are selected. The same command can have different keybindings in each mode.
 
 When commands share a key sequence, the highest priority wins: your bindings, then Bike and extension bindings, then menu items, then Cocoa keybindings.
 

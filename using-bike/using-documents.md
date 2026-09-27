@@ -8,7 +8,9 @@ Bike documents are ordinary macOS files. Apple's guides cover the basics:
 
 ## Own Your Data
 
-Bike stores your outlines in documents using open file formats. They aren't locked in a web service or hidden in a database available for [export only](https://twitter.com/andy\_matuschak/status/1452438176996347907).
+Bike is a document based app that uses open file formats.
+
+This combination gives you full ownership of your data. Your notes and thoughts aren't locked behind a proprietary web-service. They aren't hidden away in a database available for [export only](https://twitter.com/andy\_matuschak/status/1452438176996347907).
 
 ## Format Options
 
@@ -32,19 +34,30 @@ Per-document settings, in File > Document Info…
 
 ## Open Options
 
-Settings > Document > When Open sets which rows are expanded when you open a document. Documents that Bike reopens at launch keep their previous state instead. See [Using Windows](using-windows.md#bike-window-restoration).
+When you open a document Bike can expand rows (or not) for you. To set which rows are expanded when you open a document use Settings > Document > When Open.
+
+This setting is for when you open a document while Bike is running. When Bike re-opens a document when starting it will restore the exact row expand/collapse state. For more information on restoring documents see [Using Windows](using-windows.md).
 
 ## File Extensions
 
-You can save with your own file extension, such as `.html` for a Bike file or `.text` for plain text.
+When you save a Bike document the filename will default to a `.bike`, `.md`, `.opml`, or `.txt` file extension. This is usually what you want.
+
+If it's not what you want you have the option to use your own file extension. For example you may wish to save "Bike" files with a `.html` file extension, or you might want to save "Plain Text" documents with a `.text` file extension.
 
 ### To use a custom file extension
 
-* Type the extension after the file name in the save panel.
+* Type the file extension after the file name in the "Save As" text field in the document save panel.
 
 ### To load an outline that has a custom file extension
 
-Open it normally. Bike tries Bike, then Bike Markdown, then OPML, then plain text. Pasted text is read the same way.
+Open the file normally and Bike will detect the content format. When Bike loads an unknown file extension it performs these steps:
+
+1. Read as Bike (the native `.bike` format), if that fails then…
+2. Read as Bike Markdown, if that fails then…
+3. Read as OPML, if that fails then…
+4. Read as Plain Text, which should never fail
+
+These same steps are followed when reading text from the pasteboard.
 
 ## See also
 

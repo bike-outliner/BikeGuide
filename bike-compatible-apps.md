@@ -1,13 +1,16 @@
 # Bike Compatible Apps
 
+Bike supports four file formats `bike`, `md`, `opml`, and `txt` as described in [Using Documents](using-bike/using-documents.md). Each is what I would describe as an "open" file format, a format for structured data that is already supported by other applications.
+
 For moving outlines between apps, I'd use [Bike Markdown](using-bike/bike-markdown-format.md) first. It's standard markdown, so almost any text or markdown tool can read and write it.
 
 [OPML](http://opml.org) is the standard outline format, with a long list of [compatible apps](http://opml.org/compatibleApps.opml). Bike's OPML keeps everything, but other apps may drop Bike-specific details on a round trip.
 
 ## Bike Compatible Apps
 
-I made this list from product pages and release notes, so some of it may be out of date. Please let me know what needs fixing!
+This list welcome your feedback, additions, results, and notes. I have made this list by searching and reading product pages and release notes. Some things may be out of date or just untrue. Please let me know what needs fixing!
 
+- [Bike (macOS)](https://www.hogbaysoftware.com/bike/) – Bike can read and write `bike`, `md`, `opml`, and `txt` directly to the file system as a supported file format. It can also read/write those formats to the clipboard.
 - [Checkvist (Web)](https://checkvist.com) – Import and export OPML. Copy and paste outlines with Bike, may need formatting cleanup.
 - [Cloud Outliner (macOS + iOS)](https://xwavesoft.com/cloud-outliner-for-iphone-ipad-mac-os-x.html) – Import and export OPML.
 - [Drummer (Web + Electron)](http://drummer.scripting.com) – Uses OPML as native format. The Electron version saves OPML directly to disk so you can work on the same file with Bike and Drummer without import/export. Both the web and Electron versions support import and export of OPML. Copy and paste outlines with Bike.

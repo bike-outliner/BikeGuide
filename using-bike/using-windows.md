@@ -12,32 +12,37 @@ From macOS User Guide:
 
 ![Multiple Window Views](/assets/Windows.png)
 
-* Window > Duplicate Tab to New Window
-
-Each window keeps its own selection, focus, and expanded rows.
+* Use the menu item Window > Duplicate Tab to New Window
+* Each window maintains its own selection, focused row, and expanded row.
 
 ### To open a single document in multiple tabs
 
 ![Multiple Tab Views](/assets/Tabs.png)
 
-* Window > Duplicate Tab
+* Use the menu item Window > Duplicate Tab
+* Each tab maintains its own selection, focused row, and expanded row.
 
 ### To open multiple documents in a single window in separate tabs
 
-* File > New Tab (<kbd>Option-Command-N</kbd>, hold <kbd>Option</kbd> to see it)
-* Window > Merge All Windows
-* Drag tabs between windows. Use View > Show Tab Bar to show the tab bar for a single tab.
+* Use the menu item File > New Tab (<kbd>Option-Command-N</kbd>) to open a new untitled document in a new tab. (Must hold down <kbd>Option</kbd> to see that menu item.)
+* Use the menu item Window > Merge All Windows to merge all windows into a single window with multiple tabs.
+* You can also drag existing tabs from window to window when the tab bar is visible. The tab bar is always visible if a window has multiple tabs… to make it visible when only a single tab is present use the menu View > Show Tab Bar.
 
 ## Full Screen Mode
 
 ![Full Screen Mode](/assets/FullScreen.png)
 
-Full Screen Mode gives Bike the whole screen.
+Full Screen Mode expands your outline editor window to fill the entire screen.
 
-### To enter or exit full screen mode
+### To enter full screen mode
 
-* View > Enter Full Screen (<kbd>Control-Command-F</kbd>), and again to exit
-* Or click the green window button
+* View > Enter Full Screen (<kbd>Control-Command-F</kbd>)
+* Alternatively click the green window button and choose "Enter Full Screen"
+
+### To exit full screen mode
+
+* View > Exit Full Screen (<kbd>Control-Command-F</kbd>)
+* Alternatively click the green window button and choose "Exit Full Screen"
 
 ## Full Window Mode
 
@@ -63,9 +68,15 @@ When **Match the current window's layout** is checked (the default), new documen
 
 ## Bike Window Restoration
 
-To have Bike reopen your windows next launch, uncheck Settings > Document > When Quit Bike: Close documents. Bike ignores the macOS "Close windows when quitting an app" setting.
+macOS has a standard feature that saves windows when you quit an application and restores them next time you open the application.
 
-When window restoration isn't available, Bike still restores each outline's focused row, expanded rows, and selection when you open it.
+To have your windows restored you need to make sure that Bike doesn't close windows before it quits. There is a system setting for this "Close windows when quitting an app", but I have found that many users want to use a separate setting for Bike, without changing that system setting.
+
+Bike no longer uses the system setting. Instead to leave windows open when quitting Bike you should open Settings > Document. And then make sure that "When Quit Bike: Close documents" is _not_ checked. After you've done that then Bike should restore your open windows and the focused row, collapsed rows, and the selection.
+
+### Bike "Secondary" Restoration
+
+If standard macOS Window Restoration, described above, is not available then Bike will use secondary restoration. Secondary restoration restores only Bike outline state such as expanded rows, focused row, and selection. It does not restore windows, a new default window is created when opening your outline document.
 
 ## See also
 

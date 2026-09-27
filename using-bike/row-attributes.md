@@ -1,6 +1,8 @@
 # Row Attributes
 
-A row attribute is a `key : value` pair attached to a row, such as a status, priority, due date, or your own data. You can filter and style your outline by attribute.
+A row attribute is a `key : value` pair attached to a row.
+
+Attributes let you store extra information with a row. A status, a priority, a due date, an estimate. Or your own custom attributes. You can then filter, style, or otherwise act on your outline based on those attribute values.
 
 ## Context menu
 
@@ -9,21 +11,25 @@ Let's create an attribute using the context menu:
 1. Right click on a row to show context menu
 2. Choose Priority > 1 from the menu
 
-The row now has `@priority : 1`, shown as a badge at the end of the row. Click the badge to change, filter by, or remove it.
+You've now assigned the `@priority : 1` attribute to your row. The attribute is visible as a badge at the end of the row. Click that badge to pick a different priority, filter by priority, or remove the attribute. That's the essence of row attributes: you can add them, see them, and act on them.
 
 ## Attributes Editor
 
-The Attributes Editor adds, edits, and removes any attribute. Open it with Format > Row Attributes…, from the row's context menu, or with <kbd>Command-Right</kbd> at the end of a row.
+The Attributes Editor is a more general way to add, edit, or remove attributes. You can open it with Format > Row Attributes… or by right-clicking a row and choosing **Row Attributes…**. You can also move the cursor to the end of a row's text and press <kbd>Command-Right</kbd>.
 
-- Type to filter attributes and values.
-- <kbd>Return</kbd> commits. <kbd>Command-Return</kbd> commits and keeps the editor open.
-- <kbd>Command-Delete</kbd> deletes the selected attribute.
-- To create an attribute, type its name and choose the "add" option.
-- <kbd>Escape</kbd> closes without committing.
+Once visible, use the filter to select an existing attribute and value.
+
+Few tricks:
+
+- Use <kbd>Return</kbd> to commit the attribute value.
+- Use <kbd>Command-Return</kbd> to commit an attribute value, and leave the editor open.
+- Use <kbd>Command-Delete</kbd> to delete the selected attribute (or click the trash icon).
+- Type a new attribute name, and select the last "add" option to create a new attribute.
+- Use <kbd>Escape</kbd> to close the editor without committing changes.
 
 ## Commands
 
-Commands such as "Priority: 1" and "Due: Soon" are in the [choice box](using-choice-box.md) (<kbd>Shift-Command-P</kbd>). Give them keys in the [Commands Explorer](commands-explorer.md) or buttons in the [Interface Explorer](interface-explorer.md).
+There are also commands for setting common attributes, such as "Priority: 1" and "Due: Soon". Use the [choice box](using-choice-box.md) (<kbd>Shift-Command-P</kbd>) to find them and more. You can assign your own keybindings to these commands in the [Commands Explorer](commands-explorer.md), or add buttons to the toolbar or status bar for them using the [Interface Explorer](interface-explorer.md).
 
 ## Attribute Names
 
@@ -35,7 +41,7 @@ Bike > Settings > Extensions > **Attributes** lists every known attribute, with 
 
 ## Badges
 
-Badges show attributes at the end of a row. Click one to edit, right-click to remove. See [Row Badges](row-badges.md).
+Attributes are made visible in the outline through badges. Badges are small labels that follow the row text, like the `P1` badge we created above. Click a badge to edit its value, right-click it to remove the attribute. See [Row Badges](row-badges.md) for the details.
 
 ## See also
 

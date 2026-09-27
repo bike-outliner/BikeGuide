@@ -2,9 +2,9 @@
 
 Press <kbd>Return</kbd> to create a new row.
 
-Press <kbd>Tab</kbd> to indent a row, and <kbd>Shift-Tab</kbd> to unindent. Drag rows by their triangle handle to move them.
+Press <kbd>Tab</kbd> to indent a row, and <kbd>Shift-Tab</kbd> to unindent. Drag and drop rows by their triangle handle to move them around. Cut, copy, and paste. Outline editing should feel familar and work as you expect.
 
-Outline commands move rows with their children. Text editor commands leave the children behind.
+There are two flavors of outline editing commands: those that move rows as whole units, and those that move rows on their own, leaving their children behind. The first is the natural way to work in an outliner, while the second is more like a text editor.
 
 ## Outline Commands
 
@@ -93,9 +93,11 @@ Bike has two selection modes: text mode and block mode. In text mode your select
 
 ### Why block mode?
 
-Block mode makes it easy to move through and delete whole rows. Typing doesn't insert text, so plain keys are free for commands.
+Block mode makes it easier to move the selection through a list of rows. It also makes it easy to delete whole rows. The unit of selection is a row, not a single character.
 
-Bike doesn't use this much yet. <kbd>Space</kbd> toggles done on the selected rows, and you can add your own block mode keybindings in the [Commands Explorer](commands-explorer.md). More to come!
+Another major difference is you can't type to insert text in block mode. So, for instance, typing `a` won't do anything. This means you can assign keybindings to all the normal text entry keys for other commands.
+
+Bike doesn't yet take good advantage of this ability, but pressing <kbd>Space</kbd> runs **`status:toggle-done`** on the selected rows: a done row reopens, and anything else is marked done. A mixed selection follows whatever the first row does. And you can assign your own block mode keybindings in the [Commands Explorer](commands-explorer.md). More to come in a future release!
 
 ## See also
 
