@@ -2,7 +2,7 @@
 
 ![Find Panel](/assets/Finding.png)
 
-The find panel highlights matches in place and steps through them, like Find in other Mac apps. To hide non-matching rows instead, use [filtering](outline-filtering.md). To jump to a row by name, use the [choice box](using-choice-box.md).
+Use the find panel to find text in your outline. To hide non-matching rows instead, use [filtering](outline-filtering.md). To jump to a row by name, use the [choice box](using-choice-box.md).
 
 ## To show the find panel
 
@@ -27,7 +27,7 @@ The current match is highlighted brighter than other matches.
 
 ## To replace all matches
 
-* Click the replace all button. It only replaces matches in the focused part of your outline.
+* Click the replace all button. Remember this will only replace all matches in the current focused region of your outline.
 
 ## To hide the find panel
 
@@ -40,9 +40,13 @@ Find will search the focused rows of your outline including collapsed rows. Find
 
 ## Find Panel Options
 
-* `Aa`: case sensitive
-* `""`: whole words
-* `.*`: [regular expression](https://www.quora.com/What-are-the-best-resources-for-learning-regular-expressions)
+Find options show to the left of the search text field:
+
+`Aa` - Your search will be case sensitive.
+
+`""` - Your search will match whole words.
+
+`.*` - Your search will be interpreted as a [regular expression](https://www.quora.com/What-are-the-best-resources-for-learning-regular-expressions).
 
 ## See also
 

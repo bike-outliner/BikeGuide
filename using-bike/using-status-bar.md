@@ -2,11 +2,15 @@
 
 ![Status Bar](/assets/StatusBar.png)
 
-The optional status bar at the bottom of the window shows editor settings, the row type, and text statistics.
+Bike's optional status bar, at the bottom of the window, gives you quick access to editor settings, the row type picker, and text statistics.
 
-## To show or hide the status bar
+## To show the status bar
 
 * View > Show Status Bar (<kbd>Command-/</kbd>)
+
+## To hide the status bar
+
+* View > Hide Status Bar (<kbd>Command-/</kbd>)
 
 ## Editor Settings
 
@@ -14,7 +18,7 @@ The button on the left opens [writing focus mode](editor-view-settings.md#writin
 
 ## Text Statistics
 
-Click the statistics to choose which are shown:
+Text statistics are shown in the status bar. Click the text statistics area to configure which statistics are displayed. Available statistics include:
 
 * Characters
 * Without Spaces
@@ -25,11 +29,11 @@ Click the statistics to choose which are shown:
 * Reading Time
 * Speaking Time
 
-If none are showing, use View > Text Statistics.
+If no statistics are visible to click in the status bar then use View > Text Statistics to show the statistics popover.
 
 ## Row Type Picker
 
-Shows the current row's type. Click it to change the type.
+The current row's type is indicated in the status bar. Click the row type indicator to change the type of the selected row.
 
 ## See also
 

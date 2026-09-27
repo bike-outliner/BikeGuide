@@ -2,7 +2,7 @@
 
 Bike supports bold, italic, code, highlight, strikethrough, superscript, and subscript text formatting. You can also insert links.
 
-My goal is to make formatting precise like Markdown, but without the syntax characters.
+Bike's rich text editing should be familiar, but also has a few innovations. My goal is to make Bike formatting precise like Markdown, but without all the syntax characters.
 
 ## To format text
 
@@ -11,7 +11,9 @@ My goal is to make formatting precise like Markdown, but without the syntax char
 
 ## Formatting Popover
 
-You only need one shortcut: <kbd>Command-E</kbd> shows the popover, which lists single-key shortcuts for each format.
+Rich text formatting is command based, to make text bold you need to use the bold command. This is straightforward, but can become slow if you can't remember the right keyboard shortcuts.
+
+Bike's formatting popover makes this easier. You only need to learn one keyboard shortcut (<kbd>Command-E</kbd>) to show the popover. Once it's showing you can use single key shortcuts to apply formatting commands, and those shortcuts are listed in the popover so you don't need to memorize them.
 
 ## Typing Affinity
 
@@ -21,17 +23,19 @@ Bike solves this problem with a new concept: _Typing Affinity_. When your text c
 
 ## Visible Typing Attributes
 
-When the text you're about to type will be formatted differently from its surroundings (for example after choosing Bold with nothing selected), Bike shows that formatting, such as a bold "B", above the caret.
+Normally when you type, the text is formatted the same as surrounding text. But there are some cases where this isn't true. For example if you have an empty selection and choose "Bold" then the text you type will be different than the surrounding text.
+
+Bike indicates this hidden formatting state by showing the hidden attributes as part of the text caret. For example in the above example the bold "B" icon would show above the text caret.
 
 ## Links
 
-Bike supports web links and its own [outline links](outline-links.md) to rows, views, and documents.
+Bike supports web links much like other rich text editors do. It also has its own application specific links that point at a row, a view, or a whole document inside one of your outlines. Those are covered in [Outline Links](outline-links.md).
 
 ![Links](/assets/Links.png)
 
 Links work like other formatting, with one twist. There's often an overlap between commands that activate a link and commands that edit it, and that overlap makes both tasks harder. Bike solves this problem with _link buttons_: a small button is added after each link, so the button does the activating and the link text stays ordinary editable text.
 
-* To add a web link, type or paste its URL (see "Use smart links" in [Settings > Autocorrect](settings-window.md#autocorrect)).
+* To add a web link, type or paste its URL. Bike detects URLs as you type and makes them clickable, which is the "Use smart links" option in [Settings > Autocorrect](settings-window.md#autocorrect), on by default.
 * To turn text you've already written into a link, select it and use Format > Add Link (<kbd>Command-K</kbd>).
 * Or copy the URL first, then select the text and paste. Bike applies the URL to your selection instead of replacing it.
 * To open a link, click its link button, or use Go > Open Link (<kbd>Command-Shift-O</kbd>).

@@ -4,28 +4,32 @@
 
 ## General
 
-* **Enable editor animations**: animate the outline editor.
-* **Enable editor typing animations**: animate text as you type.
-* **Disable animations in macOS Low Power Mode**: turn animations off in Low Power Mode.
+* **Enable editor animations**: Turn off all animations in the outline editor.
+* **Enable editor typing animations**: Turn off typing (slide) animations.
+* **Disable animations in macOS Low Power Mode**: Keep animations in Low Power Mode.
 * **Animation Rate**: Adjust Bike's animations faster or slower.
 * **Show action images**: Turns the small icons in menus on or off.
 * **Advanced**: buttons to open the [Interface Explorer](interface-explorer.md), [Commands Explorer](commands-explorer.md), Extensions Explorer ([Using Extensions](using-extensions.md)), and [Logs Explorer](../using-bike-advanced/logs-explorer.md)
 * **Reset All Settings**: restores all settings (including extension) to their defaults.
 * Direct download version only
-    * **Check for Updates automatically**
+    * **Check for Updates automatically**: Disable automatic update checks.
     * **Include "Preview" releases in updates**: See [Software Update](software-update.md).
-    * **Prompt to send crash reports**: offer to send a report after a crash.
+    * **Prompt to send crash reports**: After a crash Bike will prepare a crash report.
 
 
 ## Typography
 
-Controls the font, spacing, and text wrap of your outline:
-
 ![Text wrap adds margins](/assets/TextWrap.png)
 
+Text wrap limits the number of characters that your outline uses until the text wraps to the next line. When text is wrapping, margins are added to keep the text centered in the window. You can see text wrap in effect in the screenshot above.
+
+Text wrap will also scale your document to fit large windows. For example if you have text wrap enabled and then enter [full screen mode](using-windows.md#full-screen-mode) you'll notice that the text is scaled larger to better fit your screen.
+
+Controls the font, spacing, and text wrap of your outline:
+
 * **Font & Size**: Choose base font and size. Themes may override this. 
-* **Line Width**: wrap text at the editor's width, or at a fixed column (66, 72, 80, 90, or 120 characters) centered in the window.
-* **Allow size scale when line wraps at character width**: with a fixed column, scale the text up to fill large windows.
+* **Line Width**: wrap text to the editor's width or to a fixed character column (66, 72, 80, 90, or 120 characters).
+* **Allow size scale when line wraps at character width**: When text wrap is on Bike may scale font size larger to better fit window width. (Good for fullscreen mode)
 * **Line Height and Row Spacing** for the space within and between rows.
 * **Reset Typography Settings** returns this pane to its defaults.
 
@@ -39,7 +43,7 @@ Controls the font, spacing, and text wrap of your outline:
 
 ## Autocorrect
 
-Text-correction options. See [Outline Checking](outline-checking.md).
+Bike's text-correction options, covered in [Outline Checking](outline-checking.md).
 
 ## Links
 
