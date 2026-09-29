@@ -13,10 +13,10 @@ It looks exactly the same as Bike 1.0!
 I hope you'll find that it generally works and feels like the original too. Animations are smoother. Details are polished. But the experience is the same. At its core Bike remains a simple, clean, and fast macOS native outliner.
 
 ::: tip
-In Bike 2 the move commands don't change behavior when you switch modes like they did in Bike 1.0. Instead, either flavor of the move command is always available:
+In Bike 2 the move commands don't change behavior when you switch modes like they did in Bike 1.0. Instead, you choose a default in Settings > General > [Move, copy & delete](using-bike/outline-editing.md#move-copy-delete), and the other flavor is always available:
 
-* Move rows like an outliner (<kbd>Control-Command-Arrows</kbd>)
-* Move rows like a text editor (<kbd>Control-Option-Arrows</kbd>)
+* Move rows your default way (<kbd>Control-Command-Arrows</kbd>)
+* Move rows the other way (<kbd>Control-Option-Arrows</kbd>)
 :::
 
 ## Now, The New Features!

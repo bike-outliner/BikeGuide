@@ -4,11 +4,11 @@ Press <kbd>Return</kbd> to create a new row.
 
 Press <kbd>Tab</kbd> to indent a row, and <kbd>Shift-Tab</kbd> to unindent. Drag and drop rows by their triangle handle to move them around. Cut, copy, and paste. Outline editing should feel familar and work as you expect.
 
-There are two flavors of outline editing commands: those that move rows as whole units, and those that move rows on their own, leaving their children behind. The first is the natural way to work in an outliner, while the second is more like a text editor.
+Row commands come in two flavors: those that act on whole [branches](../glossary.md), and those that act on the selected rows only, leaving their children behind. The first is the natural way to work in an outliner, while the second is more like a text editor. [You choose](#move-copy-delete) which flavor Bike uses by default.
 
 ## Outline Commands
 
-These commands move rows within the outline structure. Children always move with their parent, even if not directly selected.
+These commands act on the selected rows. Cut, copy, delete, duplicate, move, indent, and outdent include the rows' children or not, [depending on your setting](#move-copy-delete).
 
 * Outline > New Row (<kbd>Command-Return</kbd>)  
   A new empty row is created as a sibling below the current row.
@@ -20,10 +20,10 @@ These commands move rows within the outline structure. Children always move with
   The selected rows are joined into one, or the current row is joined with the one above it.
 
 * Outline > Duplicate Rows (<kbd>Command-D</kbd>)  
-  A copy of the selected rows, including their children, is inserted.
+  A copy of the selected rows is inserted.
 
 * Outline > Delete Rows (<kbd>Command-Shift-K</kbd>)  
-  The selected rows are deleted along with their children.
+  The selected rows are deleted.
 
 * Outline > Indent (<kbd>Tab</kbd>, <kbd>Control-Command-Right</kbd>)  
   The selected rows are indented to become children of the row above.
@@ -35,7 +35,7 @@ These commands move rows within the outline structure. Children always move with
   The selected rows are sorted, with each row's children kept beneath it.
 
 * Outline > Group Rows (<kbd>Control-Command-G</kbd>)  
-  The selected rows are wrapped in a new parent row.
+  The selected rows, with their children, are wrapped in a new parent row.
 
 * Outline > Promote Children  
   Children of the selection are promoted to the same level as their parent.
@@ -65,24 +65,23 @@ These commands move rows within the outline structure. Children always move with
 Hold <kbd>Control</kbd> in the Outline menu to see the Send commands. In the [choice box](using-choice-box.md), a leading `-` switches between sidebar locations and every row.
 :::
 
-## Text Editor Commands
+## Move, Copy & Delete {#move-copy-delete}
 
-These commands move rows unconstrained by outline structure, leaving their children behind when not selected as part of the move. They appear in the Outline menu when you hold <kbd>Option</kbd>.
+Choose how row commands treat children in Settings > General > Move, copy & delete:
 
-* Outline > Indent (Text) (<kbd>Control-Option-Right</kbd>)  
-  The row is indented on its own, leaving its children behind.
+* **Whole branches (Outliner style)**: Children move, copy, and delete with their parent, even if not selected. This is the default.
+* **Selected rows only (Text editor style)**: Only the selected rows move, copy, and delete. Unselected children are left behind. A collapsed row still carries its hidden children.
 
-* Outline > Outdent (Text) (<kbd>Control-Option-Left</kbd>)  
-  The row is outdented on its own, leaving its children behind.
+The setting applies to cut, copy, delete, duplicate, move, indent, outdent, and Move To / Send To. Group Rows always includes children.
 
-* Outline > Move Up (Text) (<kbd>Control-Option-Up</kbd>)  
-  The row is moved up past the previous row, leaving its children behind.
+Hold <kbd>Option</kbd> in the Outline menu to use the other flavor once. The menu items are labeled "(Rows Only)" or "(With Children)" to match.
 
-* Outline > Move Down (Text) (<kbd>Control-Option-Down</kbd>)  
-  The row is moved down past the next row, leaving its children behind.
-
-* Outline > Delete Rows (Text) (<kbd>Control-Option-K</kbd>)  
-  The rows are deleted, and their children are left in place. Except the first row which is emptied. Like in a text editor.
+* Outline > Indent (<kbd>Control-Option-Right</kbd>)
+* Outline > Outdent (<kbd>Control-Option-Left</kbd>)
+* Outline > Move Up (<kbd>Control-Option-Up</kbd>)
+* Outline > Move Down (<kbd>Control-Option-Down</kbd>)
+* Outline > Delete Row (<kbd>Control-Option-K</kbd>)  
+  When deleting selected rows only, their children are left in place. Except the first row which is emptied. Like in a text editor.
 
 ## Selection Modes
 

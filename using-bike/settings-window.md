@@ -9,6 +9,7 @@
 * **Disable animations in macOS Low Power Mode**: Keep animations in Low Power Mode.
 * **Animation Rate**: Adjust Bike's animations faster or slower.
 * **Show action images**: Turns the small icons in menus on or off.
+* **Move, copy & delete**: Whether row commands act on whole branches or only the selected rows. See [Outline Editing](outline-editing.md#move-copy-delete).
 * **Advanced**: buttons to open the [Interface Explorer](interface-explorer.md), [Commands Explorer](commands-explorer.md), Extensions Explorer ([Using Extensions](using-extensions.md)), and [Logs Explorer](../using-bike-advanced/logs-explorer.md)
 * **Reset All Settings**: restores all settings (including extension) to their defaults.
 * Direct download version only
