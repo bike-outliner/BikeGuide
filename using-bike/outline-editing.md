@@ -96,7 +96,7 @@ Block mode makes it easier to move the selection through a list of rows. It also
 
 Another major difference is you can't type to insert text in block mode. So, for instance, typing `a` won't do anything. This means you can assign keybindings to all the normal text entry keys for other commands.
 
-Bike doesn't yet take good advantage of this ability, but pressing <kbd>Space</kbd> runs **`status:toggle-done`** on the selected rows: a done row reopens, and anything else is marked done. A mixed selection follows whatever the first row does. And you can assign your own block mode keybindings in the [Commands Explorer](commands-explorer.md). More to come in a future release!
+Bike doesn't yet take good advantage of this ability, but pressing <kbd>Space</kbd> runs **`task:toggle-done`** on the selected rows: a done row reopens, and anything else is marked done. A mixed selection follows whatever the first row does. And you can assign your own block mode keybindings in the [Commands Explorer](commands-explorer.md). More to come in a future release!
 
 ## See also
 
