@@ -8,7 +8,7 @@ The row log records changes to a row's attributes over time, giving you a histor
 
 Rows have no log until you give them one:
 
-* Run **`row:create-log`**. It adds a `Log` row as the last child of the selected row.
+* Run **`row:insert-log`**. It adds a `Log` row as the last child of the selected row.
 
 That's it. If the row is a task, click the checkbox and you'll see the status changed in the log. The expectation is that you don't want this behavior for most rows and tasks in your outline. But it can be useful for a few higher level ones that need careful tracking. Only create a log for those special rows.
 

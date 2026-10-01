@@ -25,7 +25,7 @@ A row with a `@status` shows a badge naming the state. Click it to change the st
 * Right-click the row and choose from the **Status** submenu.
 * Click the status badge.
 * Use the [Attributes Editor](row-attributes.md#attributes-editor) (Format > Row Attributes…).
-* Run a command: **`task:toggle-done`**, **`task:todo`**, **`task:started`**, **`task:done`**, **`task:canceled`**.
+* Run a command: **`task:toggle-done`**, **`task:mark-todo`**, **`task:mark-started`**, **`task:mark-done`**, **`task:mark-canceled`**.
 
 ### Filtering by status
 
